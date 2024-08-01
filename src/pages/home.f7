@@ -1,0 +1,38 @@
+<template>
+  <div class="page" data-name="home">
+    <!-- Top Navbar -->
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="left">
+          <a href="#" class="link icon-only panel-open" data-panel="left">
+            <i class="icon f7-icons if-not-md">menu</i>
+            <i class="icon material-icons if-md">menu</i>
+          </a>
+        </div>
+        <div class="title sliding">School</div>
+        
+      </div>
+    </div>
+
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="card card-raised" style="height:20%;">
+          <div class="card-content card-content-padding" style="height:75%;">
+            <swiper-container pagination pagination-hide-on-click class="demo-swiper" >
+              <swiper-slide>Slide 1</swiper-slide>
+              <swiper-slide>Slide 2</swiper-slide>
+              <swiper-slide>Slide 3</swiper-slide>
+              <swiper-slide>Slide 4</swiper-slide>
+              <swiper-slide>Slide 5</swiper-slide>
+            </swiper-container>
+          </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default () => {
+  return $render;
+}
+</script>
