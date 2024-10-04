@@ -1,18 +1,8 @@
 <template>
-  <div class="page" data-name="home">
-  <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
-  <!--<div class="navbar" style="background-image: url('assets/images/background.png');">-->
-      <div class="navbar"></div>
-      <div class="navbar-inner">
-          <div class="left">
-            <img style="border-radius: 8px" src="assets/images/logo-cny.png" width="50" />
-          </div>
-          <div class="title" style="color:#0f60aa;"><label style="color:#f78f4b;">CNY</label> Education Consultant</div>
-      </div>
-  </div>
-
+  <div class="page" data-name="logedin">
     <!-- Scrollable page content-->
-    <div class="page-content  hide-navbar-on-scroll" style="background-color:#f2f5fa;">
+    <div class="page-content" >
+
       <!--<swiper-container pagination pagination-hide-on-click class="demo-swiper" >
         <swiper-slide>
           Belajar Mandarin dari Rumah
@@ -26,63 +16,81 @@
         </swiper-slide>
       </swiper-container>-->
 
-      <div class="block" style="background: rgba(243, 209, 213,0.5);height:40vh; margin-top:0;
-        margin-bottom:0;z-index:0;background-size: cover;width:100%;position:absolute;">
+      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
       </div>
-
-      <swiper-container pagination class="demo-swiper-multiple" space-between="50" speed="300" style="height:30vh;object-fit:contain;margin:2vh;">
-        <swiper-slide style="background-image: url('assets/images/image-1.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
+      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">Wujudkan Mimpimu Belajar di China</h1>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Masa depan cerah milik kamu yang bersiap dari sekarang</h2>
+      <swiper-container pagination class="demo-swiper-multiple" space-between="50" speed="900" style="height:20vh;object-fit:contain;margin:2vh;">
+        <swiper-slide style="background-image: url('../assets/images/image-1.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
         <swiper-slide style="background-image: url('assets/images/image-2.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
         <swiper-slide style="background-image: url('assets/images/image-3.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
       </swiper-container>
-    
+
       <div class="card" style="text-align:center;"><!-- display:inline-block;max-width:100vh; -->
-        <div class="card-content card-content-padding" style="height:10vh;width:80%;padding-left:0;display:inline-flex;overflow-y:hidden;overflow-x:scroll;">
+        <!--<div class="card-content card-content-padding" style="display:inline-block;max-width:100vh;">-->
+          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+            <div class="item-media"><img style="border-radius: 8px"
+                src="assets/images/logo-university1.png" width="50" />
+            </div> University
+          </div>
+          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+            <div class="item-media"><img style="border-radius: 8px"
+                src="assets/images/logo-hsk1.png" width="50" />
+            </div> HSK Center
+          </div>
+          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+            <div class="item-media"><img style="border-radius: 8px"
+                src="assets/images/logo-testimoni1.png" width="50" />
+            </div> Testimoni
+          </div>
+          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+            <div class="item-media"><img style="border-radius: 8px"
+                src="assets/images/logo-news1.png" width="50" />
+            </div> Berita
+          </div>
+          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+            <div class="item-media"><img style="border-radius: 8px"
+                src="assets/images/logo-admissions1.png" width="50" />
+            </div> Penerimaan
+          </div>
           <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
             <div class="item-media">
-              <a href="/logedin/" data-transition="f7-cover">
-                <img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" />
+              <a href="/mailbox/" data-transition="f7-cover">
+                <img style="border-radius: 8px" src="assets/images/logo-mailbox.png" width="50" />
               </a>
-            </div><label style="font-size:x-small;"> Login</label>
+            </div> Inbox
+          </div>
+          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+            <div class="item-media"><img style="border-radius: 8px"
+                src="assets/images/logo-vacancy.png" width="50" />
+            </div> Job Vacancy
           </div>
           <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
             <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" />
-            </div> <label style="font-size:x-small;">Universitas</label>
+              <a href="/mydata/" data-transition="f7-cover">
+                <img style="border-radius: 8px" src="assets/images/logo-data.png" width="50" />
+              </a>
+            </div> My Data
           </div>
           <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
             <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-hsk1.png" width="40" />
-            </div> <label style="font-size:x-small;">HSK</label>
+              <a href="/" data-transition="f7-cover">
+                  <img style="border-radius: 8px" src="assets/images/logo-bill.png" width="50" />
+              </a>
+            </div> Payment
           </div>
           <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
             <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-testimoni1.png" width="40" />
-            </div> <label style="font-size:x-small;">Testimoni</label>
+              <a href="/" data-transition="f7-cover">
+                  <img style="border-radius: 8px" src="assets/images/logo-login2.png" width="50" />
+              </a>
+            </div> Logout
           </div>
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-news1.png" width="40" />
-            </div> <label style="font-size:x-small;">Berita</label>
-          </div>
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-admissions1.png" width="40" />
-            </div> <label style="font-size:x-small;">Penerimaan</label>
-          </div>
-          
-        </div>
-        
-        <div>
-          <i class="f7-icons" style="font-size:20px;position:absolute;left:0;top:35%;">lessthan</i>
-        </div>
-        <div>
-          <i class="f7-icons" style="font-size:20px;position:absolute;right:0;top:35%;">greaterthan</i>
-        </div>
+        <!--</div>-->
       </div>
-      
-      <div class="block" style="margin-top:0;">
-        <div class="grid grid-cols-2 medium-grid-cols-4">
+      <div class="block">
+        <div class="grid grid-cols-2 medium-grid-cols-4 grid-gap">
           <div>
             <div class="card demo-card-header-pic" style="margin:0;">
               <div style="background-image:url(assets/images/image-1.jpg)" valign="bottom"
@@ -191,7 +199,7 @@
       </swiper-slide>
     </swiper-container>
     <!-- footer -->
-    <div class="block" style="background-image: url('assets/images/background.png');height:30vh; margin-top:0;
+    <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
       margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
     </div>
     
@@ -208,11 +216,6 @@
           <i class="f7-icons" style="font-size:20px;">chat_bubble_2</i> wechat: tcmchina
           <br/>
           <i class="f7-icons" style="font-size:20px;">envelope</i> cnyedu@gmail.com
-          <!--<br />
-          <a href="https://www.facebook.com/cnyeducation/" class='external link' target="_system"><i class="f7-icons" style="font-size:20px;">logo_facebook</i> CNY Education Consultant</a>
-          <br />
-          <a href="https://www.instagram.com/cnyeducation" class='external link' target="_system"><i class="f7-icons" style="font-size:20px;">logo_instagram</i> CNY Education Consultant</a>
-          -->
         </div>
         <div>
           <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
@@ -221,7 +224,9 @@
           <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
           <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
           <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Login</u></a> <br/>
+          <a href="/mailbox/" data-transition="f7-cover"><u>Inbox</u></a> <br/>
+          <a href="/logedin/" data-transition="f7-cover"><u>Job Vacancy</u></a> <br/>
+          <a href="/" data-transition="f7-cover"><u>Logout</u></a> <br/>
         </div>
       </div>
     </div>
@@ -234,7 +239,6 @@
   </div>
 </template>
 <script>
-
 export default () => {
   return $render;
 }

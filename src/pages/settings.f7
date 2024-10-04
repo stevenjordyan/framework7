@@ -3,11 +3,11 @@
   <div class="navbar">
     <div class="navbar-bg"></div>
     <div class="navbar-inner sliding">
-      <div class="title">Settings</div>
+      <div class="title">Registration</div>
     </div>
   </div>
   <div class="page-content">
-    <div class="block-title">Form Example</div>
+    <div class="block-title">Registration</div>
     <div class="list list-strong-ios list-dividers-ios list-outline-ios">
       <ul>
         <li>
@@ -130,106 +130,9 @@
         </li>
       </ul>
     </div>
-    <div class="block-title">Buttons</div>
-    <div class="block block-strong-ios block-outline-ios grid grid-cols-2 grid-gap">
-      <a href="#" class="button">Button</a>
-      <a href="#" class="button button-fill">Fill</a>
-      <a href="#" class="button button-raised">Raised</a>
-      <a href="#" class="button button-raised button-fill">Raised Fill</a>
-      <a href="#" class="button button-round">Round</a>
-      <a href="#" class="button button-round button-fill">Round Fill</a>
-      <a href="#" class="button button-outline">Outline</a>
-      <a href="#" class="button button-round button-outline">Outline Round</a>
-      <a href="#" class="button button-small button-outline">Small</a>
-      <a href="#" class="button button-small button-round button-outline">Small Round</a>
-      <a href="#" class="button button-small button-fill">Small</a>
-      <a href="#" class="button button-small button-round button-fill">Small Round</a>
-      <a href="#" class="button button-large button-raised">Large</a>
-      <a href="#" class="button button-large button-fill button-raised">Large Fill</a>
-      <a href="#" class="button button-large button-fill button-raised color-red">Large Red</a>
-      <a href="#" class="button button-large button-fill button-raised color-green">Large Green</a>
-    </div>
-    <div class="block-title">Checkbox group</div>
-    <div class="list list-strong-ios list-outline-ios list-dividers-ios">
-      <ul>
-        <li>
-          <label class="item-checkbox item-content">
-            <input type="checkbox" name="checkbox" value="Books" checked="checked" />
-            <i class="icon icon-checkbox"></i>
-            <div class="item-inner">
-              <div class="item-title">Books</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-checkbox item-content">
-            <input type="checkbox" name="checkbox" value="Movies" />
-            <i class="icon icon-checkbox"></i>
-            <div class="item-inner">
-              <div class="item-title">Movies</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-checkbox item-content">
-            <input type="checkbox" name="checkbox" value="Food" />
-            <i class="icon icon-checkbox"></i>
-            <div class="item-inner">
-              <div class="item-title">Food</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-checkbox item-content">
-            <input type="checkbox" name="checkbox" value="Drinks" />
-            <i class="icon icon-checkbox"></i>
-            <div class="item-inner">
-              <div class="item-title">Drinks</div>
-            </div>
-          </label>
-        </li>
-      </ul>
-    </div>
-    <div class="block-title">Radio buttons group</div>
-    <div class="list list-strong-ios list-outline-ios list-dividers-ios">
-      <ul>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Books" checked="checked" />
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Books</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Movies" />
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Movies</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Food" />
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Food</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Drinks" />
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Drinks</div>
-            </div>
-          </label>
-        </li>
-      </ul>
+    <div class="block block-strong-ios block-outline-ios grid grid-cols-1 grid-gap">
+      
+      <a href="#" class="button button-fill">Submit</a>
     </div>
   </div>
 </div>

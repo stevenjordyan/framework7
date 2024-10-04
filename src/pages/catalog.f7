@@ -22,7 +22,7 @@
       </div>
       ${products.value.length === 3 && $h`
       <div class="block">
-        <button class="button button-fill" @click=${addProduct}>Add Product</Button>
+        <button class="button button-fill" @click=${addProduct}>Add New Thread</Button>
       </div>
       `}
     </div>
@@ -35,7 +35,7 @@
     const addProduct = () => {
       $store.dispatch('addProduct', {
         id: '4',
-        title: 'Apple iPhone 12',
+        title: 'Thread post-4',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora similique reiciendis, error nesciunt vero, blanditiis pariatur dolor, minima sed sapiente rerum, dolorem corrupti hic modi praesentium unde saepe perspiciatis.'
       });
     }

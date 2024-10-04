@@ -1,0 +1,263 @@
+<template>
+  <div class="page" data-name="mydata">
+    <!-- Scrollable page content-->
+    <div class="page-content" >
+      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>
+      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">Wujudkan Mimpimu Belajar di China</h1>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Masa depan cerah milik kamu yang bersiap dari sekarang</h2>
+      <div class="card" style="text-align:left;">
+        <div class="card-header">My Data</div>
+        <div class="list">
+          <ul>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">person</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Name</div>
+                <div class="item-input-wrap">
+                  <input type="text" placeholder="Your name" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline item-input-with-value">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">lock</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Password</div>
+                <div class="item-input-wrap">
+                  <input type="password" placeholder="Your password" class="input-with-value" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">phone</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Phone</div>
+                <div class="item-input-wrap">
+                  <input type="text" placeholder="Phone" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">chat_bubble_2</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Phone-2 / Wechat</div>
+                <div class="item-input-wrap">
+                  <input type="text" placeholder="Phone-2 / wechat" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">creditcard</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Paspor</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">person_crop_square</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Pas Foto Layar Putih ( tidak pakai kemeja putih )</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">person_crop_rectangle</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">KTP</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">person_2_square_stack</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Kartu Keluarga</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">doc_person</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">2 Buah Recommendation Letter</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">doc_person</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Study Plan in English</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">doc_person</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Ijazah / Pre-Graduation Letter</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">doc_person</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Transcript Nilai</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">doc_person</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">SKCK ( Surat Keterangan Catatan Kriminal )</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">doc_person</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Medical Checkup Form ( Form disiapkan )</div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-media">
+                <i class="f7-icons" style="font-size:20px;">doc_person</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title item-label">Application Form <a><u> Download Form disini </u></a></div>
+                <div class="item-input-wrap">
+                  <input type="file" placeholder="" class="" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <a class="button button-fill button-round color-blue" @click=${showToastLargeMessage}>SUBMIT</a>
+          </ul>
+        </div>
+      </div>
+    
+      
+      <!-- footer -->
+      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>
+      
+      <div class="block" style="">
+        <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
+          <div>
+            <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office
+              Runata Building
+              Jalan Kyai Tapa No.99A
+              Grogol, West Jakarta 14450 , Indonesia
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">phone</i> +62812-8958-1218
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">chat_bubble_2</i> wechat: tcmchina
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">envelope</i> cnyedu@gmail.com
+          </div>
+          <div>
+            <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
+            <a href="/mailbox/" data-transition="f7-cover"><u>Inbox</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Job Vacancy</u></a> <br/>
+            <a href="/" data-transition="f7-cover"><u>Logout</u></a> <br/>
+          </div>
+        </div>
+      </div>
+      <!--end footer -->
+    </div>
+  </div>
+</template>
+<script>
+export default (props, { $f7, $theme, $on }) => {
+  let toastLargeMessage;
+  const showToastLargeMessage = () => {
+      // Create toast
+      if (!toastLargeMessage) {
+        toastLargeMessage = $f7.toast.create({
+          text: 'Data anda telah terkirim dan akan di verifikasi oleh admin.',
+          position: 'center',
+          closeTimeout: 2000,
+        });
+      }
+      // Open it
+      toastLargeMessage.open();
+    }
+    $on('pageBeforeOut', () => {
+      $f7.toast.close();
+    })
+
+    $on('pageBeforeRemove', () => {
+      if (toastLargeMessage) toastLargeMessage.destroy();
+    })
+
+
+  return $render;
+}
+
+</script>

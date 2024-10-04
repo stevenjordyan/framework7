@@ -19,11 +19,12 @@ import store from './store.js';
 import App from '../app.f7';
 
 var device = getDevice();
+
 var app = new Framework7({
   name: 'testing001', // App name
   theme: 'auto', // Automatic theme detection
   colors: {
-    primary: '#007aff',
+    primary: '#f2d1d5',
   },
 
   el: '#app', // App root element
@@ -51,7 +52,41 @@ var app = new Framework7({
       if (f7.device.cordova) {
         // Init cordova APIs (see cordova-app.js)
         cordovaApp.init(f7);
+        
+      }
+      
+      //console.log(f7.device);
+      if(f7.device.android){
+        /*console.log("asd");
+        console.log(f7);
+        var mySwiper3 = f7.swiper.create('.swiperTestimoni', {
+          pagination:'.swiperTestimoni .swiper-pagination',
+          spaceBetween: 10,
+          slidesPerView: 2,
+          paginationHide: false,
+        paginationClickable: true
+        });
+        console.log(mySwiper3);*/
+
       }
     },
   },
 });
+var evt = new Event('backbutton');
+document.addEventListener("backbutton", tst, false);
+
+function tst(e) {
+  debugger
+  if (app.sheet.get('.sheet-modal') && app.sheet.get('.sheet-modal').opened) app.sheet.close()
+  else app.router.back()
+}
+
+
+$('.backBtn').on('click', function() {
+  document.dispatchEvent(evt)
+})
+
+$(document).on('page:init', '.page[data-page="home"]', function (e) {
+  console.log('init')
+  console.log('e',e)
+})  

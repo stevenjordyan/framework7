@@ -9,6 +9,9 @@ import SettingsPage from '../pages/settings.f7';
 import DynamicRoutePage from '../pages/dynamic-route.f7';
 import RequestAndLoad from '../pages/request-and-load.f7';
 import NotFoundPage from '../pages/404.f7';
+import LogedinPage from '../pages/logedin.f7';
+import Mailbox from '../pages/mailbox.f7';
+import Mydata from '../pages/mydata.f7';
 
 var routes = [
   {
@@ -35,7 +38,18 @@ var routes = [
     path: '/settings/',
     component: SettingsPage,
   },
-
+  {
+    path: '/logedin/',
+    component: LogedinPage,
+  },
+  {
+    path: '/mailbox/',
+    component: Mailbox,
+  },
+  {
+    path: '/mydata/',
+    component: Mydata,
+  },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',
     component: DynamicRoutePage,
@@ -91,6 +105,7 @@ var routes = [
     path: '(.*)',
     component: NotFoundPage,
   },
+  
 ];
 
 export default routes;

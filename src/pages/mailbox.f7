@@ -1,0 +1,135 @@
+<template>
+  <div class="page" data-name="mailbox">
+    <!-- Scrollable page content-->
+    <div class="page-content" >
+      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>
+      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">Wujudkan Mimpimu Belajar di China</h1>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Masa depan cerah milik kamu yang bersiap dari sekarang</h2>
+      <div class="card" style="text-align:left;">
+        <div class="card-header">Inbox</div>
+        <div class="list media-list list-outline-ios list-strong-ios list-dividers-ios">
+          <ul>
+            <li>
+              <a class="item-link item-content popup-open" data-popup=".demo-popup">
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Invoice</div>
+                    <div class="item-after">17:14</div>
+                  </div>
+                  <div class="item-subtitle">New messages from Admin CNY Education</div>
+                  <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut
+                    turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit
+                    amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In
+                    vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Kelengkapan Data</div>
+                    <div class="item-after">17:14</div>
+                  </div>
+                  <div class="item-subtitle">New messages from Admin CNY Education</div>
+                  <div class="item-text">Halo xxxx, silahkan kunjungi halaman my Data untuk melengkapi data anda.</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Welcome to CNY Education</div>
+                    <div class="item-after">17:11</div>
+                  </div>
+                  <div class="item-subtitle">Welcome!</div>
+                  <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut
+                    turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit
+                    amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In
+                    vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+                </div>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    
+      
+
+
+      <!-- footer -->
+      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>
+      
+      <div class="block" style="">
+        <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
+          <div>
+            <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office
+              Runata Building
+              Jalan Kyai Tapa No.99A
+              Grogol, West Jakarta 14450 , Indonesia
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">phone</i> +62812-8958-1218
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">chat_bubble_2</i> wechat: tcmchina
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">envelope</i> cnyedu@gmail.com
+          </div>
+          <div>
+            <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
+            <a href="/mailbox/" data-transition="f7-cover"><u>Inbox</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Job Vacancy</u></a> <br/>
+            <a href="/" data-transition="f7-cover"><u>Logout</u></a> <br/>
+          </div>
+        </div>
+      </div>
+      <!--end footer -->
+    </div>
+
+    <div class="popup demo-popup">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">Invoice</div>
+            <div class="right"><a class="link popup-close">Close</a></div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="block">
+            <p>from Admin CNY Education</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum
+              neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus,
+              viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper
+              tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat
+              nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis
+              elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.
+            </p>
+            <p>Duis ut mauris sollicitudin, venenatis nisi sed, luctus ligula. Phasellus blandit nisl ut lorem semper
+              pharetra. Nullam tortor nibh, suscipit in consequat vel, feugiat sed quam. Nam risus libero, auctor vel
+              tristique ac, malesuada ut ante. Sed molestie, est in eleifend sagittis, leo tortor ullamcorper erat, at
+              vulputate eros sapien nec libero. Mauris dapibus laoreet nibh quis bibendum. Fusce dolor sem, suscipit in
+              iaculis id, pharetra at urna. Pellentesque tempor congue massa quis faucibus. Vestibulum nunc eros,
+              convallis blandit dui sit amet, gravida adipiscing libero.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default () => {
+  return $render;
+}
+
+</script>
