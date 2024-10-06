@@ -12,6 +12,7 @@ import NotFoundPage from '../pages/404.f7';
 import LogedinPage from '../pages/logedin.f7';
 import Mailbox from '../pages/mailbox.f7';
 import Mydata from '../pages/mydata.f7';
+import Registration from '../pages/registration.f7';
 
 var routes = [
   {
@@ -49,6 +50,10 @@ var routes = [
   {
     path: '/mydata/',
     component: Mydata,
+  },
+  {
+    path: '/registration/',
+    component: Registration,
   },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',

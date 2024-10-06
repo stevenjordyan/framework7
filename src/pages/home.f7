@@ -40,10 +40,24 @@
         <div class="card-content card-content-padding" style="height:10vh;width:80%;padding-left:0;display:inline-flex;overflow-y:hidden;overflow-x:scroll;">
           <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
             <div class="item-media">
-              <a href="/logedin/" data-transition="f7-cover">
+              <a class="login-screen-open" data-transition="f7-cover" data-login-screen=".login-screen">
                 <img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" />
               </a>
             </div><label style="font-size:x-small;"> Login</label>
+          </div>
+          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+            <div class="item-media">
+              <a href="/registration/" data-transition="f7-cover">
+                <img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" />
+              </a>
+            </div><label style="font-size:x-small;"> Registration</label>
+          </div>
+          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+            <div class="item-media">
+              <a href="/logedin/" data-transition="f7-cover">
+                <img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" />
+              </a>
+            </div> <label style="font-size:x-small;">ByPass</label>
           </div>
           <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
             <div class="item-media">
@@ -146,6 +160,45 @@
         </div>
       </div>
     <div class="block-title">Testimoni</div>
+    <!-- login -->
+    <div class="login-screen">
+      <div class="page login-screen-page">
+        <div class="page-content login-screen-content">
+          <div class="login-screen-title">CNY Education</div>
+          <form>
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Email</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="username" id="demo-username-1" placeholder="Email" />
+                      <span class="input-clear-button"></span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="password" id="demo-password-1" placeholder="Your password" />
+                      <span class="input-clear-button"></span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list inset">
+              <ul>
+                <li><a class="list-button" @click=${signIn}>Sign In</a></li>
+              </ul>
+              <div class="block-footer"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> 
+    <!-- end login -->
     <swiper-container pagination pagination-hide-on-click class="swiperTestimoni11" space-between="20" slides-per-view="1" style="width:auto;height:auto;">
       <swiper-slide>
         <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
@@ -221,22 +274,36 @@
           <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
           <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
           <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Login</u></a> <br/>
+          
+          <a href="/logedin/" data-transition="f7-cover"><u>Registration</u></a> <br/>
         </div>
       </div>
     </div>
     <!--end footer -->
-     
+    
       
      
      
     </div>
   </div>
+  
 </template>
 <script>
 
-export default () => {
-  return $render;
+export default (props, { $f7, $theme, $on }) => {
+  
+  const signIn = () => {
+    
+      /*var username = $('input#demo-username-1').val();
+      var password = $('input#demo-password-1').val();
+      $f7.dialog.alert('Username: ' + username + '<br />Password: ' + password, function () {
+        $f7.loginScreen.close();
+      })*/
+      $f7.loginScreen.close();
+
+    }
+
+    return $render;
 }
 
 </script>
