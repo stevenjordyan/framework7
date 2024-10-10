@@ -29,12 +29,19 @@
       <div class="block" style="background: rgba(243, 209, 213,0.5);height:40vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;width:100%;position:absolute;">
       </div>
-
-      <swiper-container pagination class="demo-swiper-multiple" space-between="50" speed="300" style="height:30vh;object-fit:contain;margin:2vh;">
-        <swiper-slide style="background-image: url('assets/images/image-1.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
-        <swiper-slide style="background-image: url('assets/images/image-2.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
-        <swiper-slide style="background-image: url('assets/images/image-3.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
-      </swiper-container>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('assets/images/image-1.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></div>
+          <div class="swiper-slide" style="background-image: url('assets/images/image-2.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></div>
+          <div class="swiper-slide" style="background-image: url('assets/images/image-3.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></div>
+        </div>
+       <!--<swiper-container id="swiperHeader" pagination class="demo-swiper-multiple" space-between="50" speed="300" style="height:30vh;object-fit:contain;margin:2vh;">
+          <swiper-slide style="background-image: url('assets/images/image-1.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
+          <swiper-slide style="background-image: url('assets/images/image-2.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
+          <swiper-slide style="background-image: url('assets/images/image-3.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
+        </swiper-container>-->
+      </div>
+      
     
       <div class="card" style="text-align:center;"><!-- display:inline-block;max-width:100vh; -->
         <div class="card-content card-content-padding" style="height:10vh;width:80%;padding-left:0;display:inline-flex;overflow-y:hidden;overflow-x:scroll;">
@@ -291,7 +298,15 @@
 <script>
 
 export default (props, { $f7, $theme, $on }) => {
-  
+  console.log($f7.swiper);
+  var swiper = $f7.swiper.create('.swiper-container #swiperHeader', {
+      speed: 1500,
+      loop: true,
+      //loopedSlides: 3,
+      autoHeight: true,
+      shortSwipes: false,
+      longSwipes: false
+  });
   const signIn = () => {
     
       /*var username = $('input#demo-username-1').val();
