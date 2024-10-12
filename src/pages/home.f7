@@ -1,5 +1,5 @@
 <template>
-  <div class="page" data-name="home">
+  <div class="page" data-page="home">
   <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
   <!--<div class="navbar" style="background-image: url('assets/images/background.png');">-->
       <div class="navbar"></div>
@@ -29,78 +29,81 @@
       <div class="block" style="background: rgba(243, 209, 213,0.5);height:40vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;width:100%;position:absolute;">
       </div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('assets/images/image-1.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></div>
-          <div class="swiper-slide" style="background-image: url('assets/images/image-2.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></div>
-          <div class="swiper-slide" style="background-image: url('assets/images/image-3.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></div>
-        </div>
-       <!--<swiper-container id="swiperHeader" pagination class="demo-swiper-multiple" space-between="50" speed="300" style="height:30vh;object-fit:contain;margin:2vh;">
-          <swiper-slide style="background-image: url('assets/images/image-1.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
-          <swiper-slide style="background-image: url('assets/images/image-2.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
-          <swiper-slide style="background-image: url('assets/images/image-3.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
-        </swiper-container>-->
+
+      <swiper-container pagination class="demo-swiper-multiple" space-between="50" speed="150" style="height:60vh;object-fit:contain;margin:2vh;" autoplay>
+        <swiper-slide style="background-image: url('assets/images/image-1.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
+        <swiper-slide style="background-image: url('assets/images/image-2.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
+        <swiper-slide style="background-image: url('assets/images/image-3.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
+      </swiper-container>
+
+
+      <div class="card" style="text-align:center;height:11vh;">
+        <swiper-container space-between="1" slides-per-view="7" scrollbar="true" pagination="false" navigation="true" style="height:10vh;">
+          <swiper-slide style="padding-top:1%;">
+            <div style="" class="item-media">
+              <div class="item-media">
+                <a class="login-screen-open" data-transition="f7-cover" data-login-screen=".login-screen">
+                  <img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" />
+                </a>
+              </div><label style="font-size:x-small;"> Login</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;">
+            <div class="item-media">
+              <div class="item-media">
+                <a href="/registration/" data-transition="f7-cover">
+                  <img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" />
+                </a>
+              </div><label style="font-size:x-small;"> Registration</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;">
+            <div class="item-media">
+              <div class="item-media">
+                <a href="/logedin/" data-transition="f7-cover">
+                  <img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" />
+                </a>
+              </div> <label style="font-size:x-small;">ByPass</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;">
+            <div class="item-media">
+              <div class="item-media">
+                <img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" />
+              </div> <label style="font-size:x-small;">Universitas</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;">
+            <div class="item-media">
+              <div class="item-media">
+                <img style="border-radius: 8px" src="assets/images/logo-hsk1.png" width="40" />
+              </div> <label style="font-size:x-small;">HSK</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;">
+            <div class="item-media">
+              <div class="item-media">
+                <img style="border-radius: 8px" src="assets/images/logo-testimoni1.png" width="40" />
+              </div> <label style="font-size:x-small;">Testimoni</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;">
+            <div class="item-media">
+              <div class="item-media">
+                <img style="border-radius: 8px" src="assets/images/logo-news1.png" width="40" />
+              </div> <label style="font-size:x-small;">Berita</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;">
+            <div class="item-media">
+              <div class="item-media">
+                <img style="border-radius: 8px" src="assets/images/logo-admissions1.png" width="40" />
+              </div> <label style="font-size:x-small;">Penerimaan</label>
+            </div>
+          </swiper-slide>
+        </swiper-container>
       </div>
       
-    
-      <div class="card" style="text-align:center;"><!-- display:inline-block;max-width:100vh; -->
-        <div class="card-content card-content-padding" style="height:10vh;width:80%;padding-left:0;display:inline-flex;overflow-y:hidden;overflow-x:scroll;">
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <a class="login-screen-open" data-transition="f7-cover" data-login-screen=".login-screen">
-                <img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" />
-              </a>
-            </div><label style="font-size:x-small;"> Login</label>
-          </div>
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <a href="/registration/" data-transition="f7-cover">
-                <img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" />
-              </a>
-            </div><label style="font-size:x-small;"> Registration</label>
-          </div>
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <a href="/logedin/" data-transition="f7-cover">
-                <img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" />
-              </a>
-            </div> <label style="font-size:x-small;">ByPass</label>
-          </div>
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" />
-            </div> <label style="font-size:x-small;">Universitas</label>
-          </div>
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-hsk1.png" width="40" />
-            </div> <label style="font-size:x-small;">HSK</label>
-          </div>
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-testimoni1.png" width="40" />
-            </div> <label style="font-size:x-small;">Testimoni</label>
-          </div>
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-news1.png" width="40" />
-            </div> <label style="font-size:x-small;">Berita</label>
-          </div>
-          <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
-            <div class="item-media">
-              <img style="border-radius: 8px" src="assets/images/logo-admissions1.png" width="40" />
-            </div> <label style="font-size:x-small;">Penerimaan</label>
-          </div>
-          
-        </div>
-        
-        <div>
-          <i class="f7-icons" style="font-size:20px;position:absolute;left:0;top:35%;">lessthan</i>
-        </div>
-        <div>
-          <i class="f7-icons" style="font-size:20px;position:absolute;right:0;top:35%;">greaterthan</i>
-        </div>
-      </div>
       
       <div class="block" style="margin-top:0;">
         <div class="grid grid-cols-2 medium-grid-cols-4">
@@ -206,7 +209,7 @@
       </div>
     </div> 
     <!-- end login -->
-    <swiper-container pagination pagination-hide-on-click class="swiperTestimoni11" space-between="20" slides-per-view="1" style="width:auto;height:auto;">
+    <swiper-container pagination pagination-hide-on-click class="swiperTestimoni11" space-between="20" slides-per-view="1" style="width:auto;height:auto;" autoplay>
       <swiper-slide>
         <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
           <div style="background-image:url(assets/images/student-1.jpeg)" valign="bottom"
@@ -295,10 +298,10 @@
   </div>
   
 </template>
+<script type="module" src="./js/app.js"></script>
 <script>
-
 export default (props, { $f7, $theme, $on }) => {
-  console.log($f7.swiper);
+  
   var swiper = $f7.swiper.create('.swiper-container #swiperHeader', {
       speed: 1500,
       loop: true,
