@@ -112,11 +112,7 @@ $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
     console.log(myApp.views.main.router.currentRoute);
     var asd=myApp.form.getFormData($$("#registrationForm"));
     console.log(asd);
-    $$('form.form-ajax-submit').on('formajax:success', function (e) {
-      var xhr = e.detail.xhr;
-      var data = e.detail.data;
-      console.log("here");
-    });
+    
     $$('#registrationForm')[0].submit();
     /*$$.ajax({
       url:"http://localhost:8080/customer/addNew",
@@ -145,14 +141,18 @@ $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
 
 
 
-    alert("Registration Complete");
+    
     //registrationForm
     //var asd=registrationPage.form.convertToData($$('#registrationForm'));
     //console.log(asd);
     $$("#registrationForm").trigger('submit');
     app.views.main.router.navigate('/', {reloadCurrent: true});
   });
-
+  $$('form#registrationForm').on('formajax:success', function (e) {
+    var xhr = e.detail.xhr;
+    var data = e.detail.data;
+    alert("Registration Complete");
+  });
 
 })
 

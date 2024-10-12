@@ -8,7 +8,7 @@
       <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">Wujudkan Mimpimu Belajar di China</h1>
       <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Masa depan cerah milik kamu yang bersiap dari sekarang</h2>
       <div class="card" style="text-align:left;">
-      <form action="http://localhost:8080/customer/fRegistration" method="POST" class="form-ajax-submit" id="registrationForm">
+      <form action="http://localhost:8080/customerAPI/fRegistration" method="POST" class="form-ajax-submit" id="registrationForm">
         <div class="card-header">Registration</div>
         <div class="list">
           <ul>
