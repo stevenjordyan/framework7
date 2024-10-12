@@ -30,16 +30,16 @@
         margin-bottom:0;z-index:0;background-size: cover;width:100%;position:absolute;">
       </div>
 
-      <swiper-container pagination class="demo-swiper-multiple" space-between="50" speed="150" style="height:60vh;object-fit:contain;margin:2vh;" autoplay>
+      <swiper-container pagination class="demo-swiper-multiple" space-between="50" speed="150" style="height:72vh;object-fit:contain;margin:2vh;" autoplay>
         <swiper-slide style="background-image: url('assets/images/image-1.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
         <swiper-slide style="background-image: url('assets/images/image-2.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
         <swiper-slide style="background-image: url('assets/images/image-3.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;"></swiper-slide>
       </swiper-container>
 
 
-      <div class="card" style="text-align:center;height:11vh;">
-        <swiper-container space-between="1" slides-per-view="7" scrollbar="true" pagination="false" navigation="true" style="height:10vh;">
-          <swiper-slide style="padding-top:1%;">
+      <div class="card" style="text-align:center;height:14vh;">
+        <swiper-container space-between="1" slides-per-view="7" scrollbar="true" pagination="false" navigation="true" style="height:13vh;" id="menuSwiper">
+          <swiper-slide style="padding-top:1%;" class="afterLogin">
             <div style="" class="item-media">
               <div class="item-media">
                 <a class="login-screen-open" data-transition="f7-cover" data-login-screen=".login-screen">
@@ -48,7 +48,7 @@
               </div><label style="font-size:x-small;"> Login</label>
             </div>
           </swiper-slide>
-          <swiper-slide style="padding-top:1%;">
+          <swiper-slide style="padding-top:1%;" class="afterLogin">
             <div class="item-media">
               <div class="item-media">
                 <a href="/registration/" data-transition="f7-cover">
@@ -57,13 +57,49 @@
               </div><label style="font-size:x-small;"> Registration</label>
             </div>
           </swiper-slide>
-          <swiper-slide style="padding-top:1%;">
-            <div class="item-media">
+          <swiper-slide style="padding-top:1%;" class="needLogin">
+            <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
               <div class="item-media">
-                <a href="/logedin/" data-transition="f7-cover">
-                  <img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" />
+                <a href="/mailbox/" data-transition="f7-cover">
+                  <img style="border-radius: 8px" src="assets/images/logo-mailbox.png" width="40" />
                 </a>
-              </div> <label style="font-size:x-small;">ByPass</label>
+              </div> <label style="font-size:x-small;">Inbox</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;" class="needLogin">
+            <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+              <div class="item-media">
+                <a href="/mailbox/" data-transition="f7-cover">
+                  <img style="border-radius: 8px" src="assets/images/logo-vacancy.png" width="40" />
+                </a>
+              </div> <label style="font-size:x-small;">Job Vacancy</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;"  class="needLogin">
+            <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+              <div class="item-media">
+                <a href="/mydata/" data-transition="f7-cover">
+                  <img style="border-radius: 8px" src="assets/images/logo-data.png" width="40" />
+                </a>
+              </div> <label style="font-size:x-small;">My Data</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;" class="needLogin">
+            <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
+              <div class="item-media">
+                <a href="/mailbox/" data-transition="f7-cover">
+                  <img style="border-radius: 8px" src="assets/images/logo-bill.png" width="40" />
+                </a>
+              </div> <label style="font-size:x-small;">Payment Confirmation</label>
+            </div>
+          </swiper-slide>
+          <swiper-slide style="padding-top:1%;" class="needLogin">
+            <div style="" class="item-media">
+              <div class="item-media">
+                <a id="btnLogout">
+                  <img style="border-radius: 8px" src="assets/images/logout.png" width="40" />
+                </a>
+              </div><label style="font-size:x-small;"> Logout</label>
             </div>
           </swiper-slide>
           <swiper-slide style="padding-top:1%;">
@@ -101,6 +137,7 @@
               </div> <label style="font-size:x-small;">Penerimaan</label>
             </div>
           </swiper-slide>
+          
         </swiper-container>
       </div>
       
@@ -115,10 +152,7 @@
                 <p class="date">Belajar Mandarin dari Rumah</p>
                 <p>Wujudkan Mimpimu belajar di China
                   Kelas dibuka untuk level: Pemula, Menengah dan Profesional
-
                   Managed by Prof. Ding
-
-
                 </p>
               </div>
               <div class="card-footer"><a class=""></a><a class="link">Read more</a></div>
@@ -170,50 +204,10 @@
         </div>
       </div>
     <div class="block-title">Testimoni</div>
-    <!-- login -->
-    <div class="login-screen">
-      <div class="page login-screen-page">
-        <div class="page-content login-screen-content">
-          <div class="login-screen-title">CNY Education</div>
-          <form>
-            <div class="list">
-              <ul>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Email</div>
-                    <div class="item-input-wrap">
-                      <input type="text" name="username" id="demo-username-1" placeholder="Email" />
-                      <span class="input-clear-button"></span>
-                    </div>
-                  </div>
-                </li>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Password</div>
-                    <div class="item-input-wrap">
-                      <input type="password" name="password" id="demo-password-1" placeholder="Your password" />
-                      <span class="input-clear-button"></span>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="list inset">
-              <ul>
-                <li><a class="list-button" @click=${signIn}>Sign In</a></li>
-              </ul>
-              <div class="block-footer"></div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div> 
-    <!-- end login -->
-    <swiper-container pagination pagination-hide-on-click class="swiperTestimoni11" space-between="20" slides-per-view="1" style="width:auto;height:auto;" autoplay>
+    <swiper-container pagination pagination-hide-on-click class="swiperTestimoni11" space-between="20" slides-per-view="5" style="width:auto;height:auto;" autoplay>
       <swiper-slide>
         <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
-          <div style="background-image:url(assets/images/student-1.jpeg)" valign="bottom"
-            class="card-header">FIANDY</div>
+          <div style="background-image:url(assets/images/student-1.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">FIANDY</div>
           <div class="card-content card-content-padding">
             <p class="date">Environmental Engineering Student</p>
             <p style="text-align:justify;">Sekarang saya sedang berada di Lanzhou Jiaotong University mengambil S1 Environmental Engineering.
@@ -227,7 +221,7 @@
       </swiper-slide>
       <swiper-slide>
         <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
-          <div style="background-image:url(assets/images/student-2.jpeg)" valign="bottom"
+          <div style="background-image:url(assets/images/student-2.jpeg);height:30vh;border-radius:77px;" valign="bottom"
             class="card-header">GERALDINE</div>
           <div class="card-content card-content-padding">
             <p class="date">International Economic Student</p>
@@ -241,7 +235,89 @@
       </swiper-slide>
       <swiper-slide>
         <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
-          <div style="background-image:url(assets/images/student-3.jpeg)" valign="bottom"
+          <div style="background-image:url(assets/images/student-3.jpeg);height:30vh;border-radius:77px;" valign="bottom"
+            class="card-header">EPSA</div>
+          <div class="card-content card-content-padding">
+            <p class="date">Medical Student</p>
+            <p style="text-align:justify;">Saya Mahasiswa Kedokteran Umum Chengdu University of TCM. Terima Kasih banyak CNY Education yang telah membantu saya untuk mencapai
+            impian saya mendapat beasiswa kuliah kedokteran di China.
+            Semoga CNY Education semakin maju
+            </p>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+          <div style="background-image:url(assets/images/student-1.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">FIANDY</div>
+          <div class="card-content card-content-padding">
+            <p class="date">Environmental Engineering Student</p>
+            <p style="text-align:justify;">Sekarang saya sedang berada di Lanzhou Jiaotong University mengambil S1 Environmental Engineering.
+              Saya dari pesantren Tahfizh Daarul Qur’an Ketapang angkatan 8.
+              Awalnya saya berpikiran bagaimana akan hidup di China. Apakah susah untuk beribadah, belanja dan makan?
+              Berkat CNY Education saya bisa mewujudkan mimpi untuk kuliah di China. Alhamdulilah di kota Lanzhou ini terdapat masjid,
+              dan banyak muslimnya. Jadi tak perlu khawatir. Terima Kasih CNY Education
+            </p>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+          <div style="background-image:url(assets/images/student-2.jpeg);height:30vh;border-radius:77px;" valign="bottom"
+            class="card-header">GERALDINE</div>
+          <div class="card-content card-content-padding">
+            <p class="date">International Economic Student</p>
+            <p style="text-align:justify;">I am a Regina Pacis Bogor Senior High School Alumna. First of all, why did I choose China? It is because the language.
+            Mandarin is one of the most spoken language in the world. Moreover, I believe it could be easier to look for a job if you able
+            to speak in Mandarin and English. To all of you who are willing to study in China, now is your chance because CNY Education have
+            opened some universities to apply!
+            </p>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+          <div style="background-image:url(assets/images/student-3.jpeg);height:30vh;border-radius:77px;" valign="bottom"
+            class="card-header">EPSA</div>
+          <div class="card-content card-content-padding">
+            <p class="date">Medical Student</p>
+            <p style="text-align:justify;">Saya Mahasiswa Kedokteran Umum Chengdu University of TCM. Terima Kasih banyak CNY Education yang telah membantu saya untuk mencapai
+            impian saya mendapat beasiswa kuliah kedokteran di China.
+            Semoga CNY Education semakin maju
+            </p>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+          <div style="background-image:url(assets/images/student-1.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">FIANDY</div>
+          <div class="card-content card-content-padding">
+            <p class="date">Environmental Engineering Student</p>
+            <p style="text-align:justify;">Sekarang saya sedang berada di Lanzhou Jiaotong University mengambil S1 Environmental Engineering.
+              Saya dari pesantren Tahfizh Daarul Qur’an Ketapang angkatan 8.
+              Awalnya saya berpikiran bagaimana akan hidup di China. Apakah susah untuk beribadah, belanja dan makan?
+              Berkat CNY Education saya bisa mewujudkan mimpi untuk kuliah di China. Alhamdulilah di kota Lanzhou ini terdapat masjid,
+              dan banyak muslimnya. Jadi tak perlu khawatir. Terima Kasih CNY Education
+            </p>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+          <div style="background-image:url(assets/images/student-2.jpeg);height:30vh;border-radius:77px;" valign="bottom"
+            class="card-header">GERALDINE</div>
+          <div class="card-content card-content-padding">
+            <p class="date">International Economic Student</p>
+            <p style="text-align:justify;">I am a Regina Pacis Bogor Senior High School Alumna. First of all, why did I choose China? It is because the language.
+            Mandarin is one of the most spoken language in the world. Moreover, I believe it could be easier to look for a job if you able
+            to speak in Mandarin and English. To all of you who are willing to study in China, now is your chance because CNY Education have
+            opened some universities to apply!
+            </p>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+          <div style="background-image:url(assets/images/student-3.jpeg);height:30vh;border-radius:77px;" valign="bottom"
             class="card-header">EPSA</div>
           <div class="card-content card-content-padding">
             <p class="date">Medical Student</p>
@@ -290,10 +366,50 @@
       </div>
     </div>
     <!--end footer -->
-    
-      
-     
-     
+    <!-- login -->
+    <div class="login-screen">
+      <div class="page login-screen-page">
+        <div class="page-content login-screen-content">
+          <div class="login-screen-title">CNY Education</div>
+          <form id="loginForm">
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Email</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="Email" id="email" placeholder="Email" />
+                      <span class="input-clear-button"></span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="Password" id="password" placeholder="Your password" />
+                      <span class="input-clear-button"></span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list inset">
+              <ul>
+                <li>
+                  <a class="list-button" @click=${cancelSignIn}>Cancel</a>
+                  <a class="list-button" id="btnLogin">Sign In</a>
+                </li>
+              </ul>
+              <div class="block-footer">Silahkan login menggunakan e-mail & password terdaftar.<br />
+                Silahkan daftar <a @click=${linkRegistration} >di-sini</a> apabila belum memiliki account
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> 
+    <!-- end login -->
     </div>
   </div>
   
@@ -311,15 +427,21 @@ export default (props, { $f7, $theme, $on }) => {
       longSwipes: false
   });
   const signIn = () => {
-    
       /*var username = $('input#demo-username-1').val();
       var password = $('input#demo-password-1').val();
       $f7.dialog.alert('Username: ' + username + '<br />Password: ' + password, function () {
         $f7.loginScreen.close();
       })*/
       $f7.loginScreen.close();
-
-    }
+      console.log($f7);
+  }
+  const cancelSignIn = () => {
+    $f7.loginScreen.close();
+  }
+  const linkRegistration=()=>{
+    $f7.loginScreen.close();
+    $f7.views.main.router.navigate('/registration/', {reloadCurrent: true});
+  }
 
     return $render;
 }

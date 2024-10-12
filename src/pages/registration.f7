@@ -1,14 +1,25 @@
 <template>
+  
   <div id="registrationPage" class="page" data-page="registration">
+    <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
+        <div class="navbar"></div>
+        <div class="navbar-inner">
+            <div class="left">
+              <img style="border-radius: 8px" src="assets/images/logo-cny.png" width="50" />
+            </div>
+            <div class="title" style="color:#0f60aa;"><label style="color:#f78f4b;">CNY</label> Education Consultant</div>
+        </div>
+    </div>
     <!-- Scrollable page content-->
-    <div class="page-content" id="registrationPageContent" >
-      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+    <div class="page-content" id="registrationPageContent" style="background-color:#f2f5fa;">
+      <!--<div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
-      </div>
+      </div>-->
+
       <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">Wujudkan Mimpimu Belajar di China</h1>
       <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Masa depan cerah milik kamu yang bersiap dari sekarang</h2>
       <div class="card" style="text-align:left;">
-      <form action="http://localhost:8080/customerAPI/fRegistration" method="POST" class="form-ajax-submit" id="registrationForm">
+      <form  method="POST" class="form-ajax-submit" id="registrationForm">
         <div class="card-header">Registration</div>
         <div class="list">
           <ul>
@@ -82,12 +93,15 @@
       </div>
     
       
-      <!-- footer -->
+      <!-- footer 
       <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>-->
+      <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
       </div>
       
-      <div class="block" style="">
+      <div class="block" style="background: rgba(243, 209, 213, 0.5)">
         <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
           <div>
             <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office

@@ -21,7 +21,7 @@ import App from '../app.f7';
 var device = getDevice();
 
 var myApp = new Framework7({
-  name: 'testing001', // App name
+  name: 'CNY Education', // App name
   theme: 'auto', // Automatic theme detection
   colors: {
     primary: '#f2d1d5',
@@ -92,28 +92,146 @@ $$('.backBtn').on('click', function() {
 $$(document).on('page:init', '.page[data-page="home"]', function (e) {
   //console.log('init')
   //console.log('e',e)
-})  
+  //console.log(myApp.params["backendUrl"]);
+  console.log(sessionStorage);
+  var swiper = myApp.swiper.get('#menuSwiper');
+  var indicesToRemove = [];
+  //console.log($$(swiper.slides).hasClass('.needLogin'));
+  swiper.slides.forEach(function(slide,index){
+    if($$(slide).hasClass('needLogin') && sessionStorage.length==0){
+      var slideIndex = swiper.slides.indexOf(slide);
+      indicesToRemove.push(slideIndex);
+    }
+    if($$(slide).hasClass('afterLogin') && sessionStorage.length>0){
+      var slideIndex = swiper.slides.indexOf(slide);
+      if (slideIndex !== -1) {
+        indicesToRemove.push(swiper.slides.indexOf(slide));
+      }
+    }
+  });
+  indicesToRemove.sort(function(a, b) { return b - a; });
+  indicesToRemove.forEach(function (index) {
+    swiper.removeSlide(index);
+  });
+  swiper.update();
+
+  /*var slidesToRemove = $$('.needLogin'); 
+  console.log(slidesToRemove);
+  slidesToRemove.each(function (index, slide) {
+    // Get the index of the slide to remove
+    var slideIndex = swiper.slides.indexOf(slide[0]); // Get the native DOM element
+    console.log(swiper.slides[slideIndex]);
+    // Remove the slide by index
+    if (slideIndex !== -1) {
+      swiper.removeSlide(slideIndex);
+    }
+  });
+  swiper.update();*/
+
+  if(sessionStorage.length>0){
+    //logedin
+    //$$('.needLogin').css('visibility','visible');
+    
+    swiper.update();
+  }else{
+    //guest
+    //$$('.needLogin').css('visibility','hidden');
+    swiper.update();
+  }
+  $$('#btnLogin').on('click',function(e){
+    var formData = new FormData(document.getElementById('loginForm'));
+    fetch(myApp.params["backendUrl"]+'frontLogin/create', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      if(data.status==201){
+        sessionStorage.setItem('userSession', JSON.stringify({
+          name: data.userdata.name,
+          email:data.userdata.email,
+          logedIn:1
+        }));
+
+        myApp.dialog.alert(data.messages.success);
+        myApp.loginScreen.close();
+        myApp.views.main.router.navigate('/', {reloadCurrent: true});
+
+      }else{
+        myApp.dialog.alert(data.messages.success);
+      }
+      
+      //myApp.dialog.alert('Registrasi Berhasil, silahkan Login untuk melanjutkan.');
+      //myApp.views.main.router.navigate();
+      //myApp.views.main.router.navigate('/', {reloadCurrent: true});
+    })
+    .catch(error => {
+      console.error(error);
+      myApp.dialog.alert('Failed to Login');
+      
+    });
+  });
+  $$('#btnLogout').on('click',function(e){
+    myApp.dialog.alert('Anda sudah logout, silahkan login kembali');
+    sessionStorage.clear();
+    myApp.views.main.router.navigate('/', {reloadCurrent: true});
+  });
+
+})
+/*$$('form#registrationForm').on('formajax:success', function (e) {
+  var xhr = e.detail.xhr;
+  var data = e.detail.data;
+  alert("Registration Complete");
+}); */
 $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
-  $$('form.form-ajax-submit').on('formajax:success', function (e) {
+  /*$$('form.form-ajax-submit').on('formajax:success', function (e) {
     var xhr = e.detail.xhr;
     var data = e.detail.data;
     console.log("here");
-  });
+    alert("registration inside complete");
+  });*/
   var _name="steven";
   $$('#btnSubmitRegistration').on('click',function(e){
-    console.log(app);
+    //console.log(app);
     /*app.request.post('http://localhost:8080/customer/addNew', { username:_name, password: 'bar' }, function (data) {
       //$$('.login').html(data);
       console.log(data);
     });*/
     //alert(myApp.router);
     $$('#currentURL').val(myApp.origin);
+    var formData = new FormData(document.getElementById('registrationForm'));
+    fetch(myApp.params["backendUrl"]+'customerAPI/create', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      myApp.dialog.alert('Registrasi Berhasil, silahkan Login untuk melanjutkan.');
+      //myApp.views.main.router.navigate();
+      myApp.views.main.router.navigate('/', {reloadCurrent: true});
+    })
+    .catch(error => {
+      console.error(error);
+      myApp.dialog.alert('Failed to submit the form.');
+      
+    });
+    //console.log(myApp.request());
+    //alert("click submit");
+    //myApp.post('http://localhost:8080/customerAPI/create', {Name:'foo', Password: 'bar'}, function (data) {
+      //$$('.login').html(data);
+    //  console.log('Load was performed');
+    //});
     
-    console.log(myApp.views.main.router.currentRoute);
-    var asd=myApp.form.getFormData($$("#registrationForm"));
-    console.log(asd);
     
-    $$('#registrationForm')[0].submit();
+    //$$('#registrationForm')[0].submit();
+    
+    
+    
+    
+    
+    //myApp.views.main.router.navigate('/', {reloadCurrent: true});
     /*$$.ajax({
       url:"http://localhost:8080/customer/addNew",
       data:{ username:_name, password: 'bar' },
@@ -145,14 +263,10 @@ $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
     //registrationForm
     //var asd=registrationPage.form.convertToData($$('#registrationForm'));
     //console.log(asd);
-    $$("#registrationForm").trigger('submit');
-    app.views.main.router.navigate('/', {reloadCurrent: true});
+    //$$("#registrationForm").trigger('submit');
+    //app.views.main.router.navigate('/', {reloadCurrent: true});
   });
-  $$('form#registrationForm').on('formajax:success', function (e) {
-    var xhr = e.detail.xhr;
-    var data = e.detail.data;
-    alert("Registration Complete");
-  });
+  
 
 })
 
