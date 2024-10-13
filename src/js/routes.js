@@ -13,6 +13,7 @@ import LogedinPage from '../pages/logedin.f7';
 import Mailbox from '../pages/mailbox.f7';
 import Mydata from '../pages/mydata.f7';
 import Registration from '../pages/registration.f7';
+import Payment from '../pages/payment.f7';
 
 var routes = [
   {
@@ -54,6 +55,10 @@ var routes = [
   {
     path: '/registration/',
     component: Registration,
+  },
+  {
+    path: '/payment/',
+    component: Payment,
   },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',

@@ -87,7 +87,7 @@
           <swiper-slide style="padding-top:1%;" class="needLogin">
             <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
               <div class="item-media">
-                <a href="/mailbox/" data-transition="f7-cover">
+                <a href="/payment/" data-transition="f7-cover">
                   <img style="border-radius: 8px" src="assets/images/logo-bill.png" width="40" />
                 </a>
               </div> <label style="font-size:x-small;">Payment Confirmation</label>

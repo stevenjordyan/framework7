@@ -93,7 +93,7 @@ $$(document).on('page:init', '.page[data-page="home"]', function (e) {
   //console.log('init')
   //console.log('e',e)
   //console.log(myApp.params["backendUrl"]);
-  console.log(sessionStorage);
+  //console.log(sessionStorage);
   var swiper = myApp.swiper.get('#menuSwiper');
   var indicesToRemove = [];
   //console.log($$(swiper.slides).hasClass('.needLogin'));
@@ -127,17 +127,6 @@ $$(document).on('page:init', '.page[data-page="home"]', function (e) {
     }
   });
   swiper.update();*/
-
-  if(sessionStorage.length>0){
-    //logedin
-    //$$('.needLogin').css('visibility','visible');
-    
-    swiper.update();
-  }else{
-    //guest
-    //$$('.needLogin').css('visibility','hidden');
-    swiper.update();
-  }
   $$('#btnLogin').on('click',function(e){
     var formData = new FormData(document.getElementById('loginForm'));
     fetch(myApp.params["backendUrl"]+'frontLogin/create', {
@@ -151,7 +140,8 @@ $$(document).on('page:init', '.page[data-page="home"]', function (e) {
         sessionStorage.setItem('userSession', JSON.stringify({
           name: data.userdata.name,
           email:data.userdata.email,
-          logedIn:1
+          logedIn:1,
+          customerID:data.userdata.IDCustomer
         }));
 
         myApp.dialog.alert(data.messages.success);
@@ -270,3 +260,68 @@ $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
 
 })
 
+$$(document).on('page:init', '.page[data-page="payment"]', function (e) {
+  
+  var sessionData = JSON.parse(sessionStorage.getItem('userSession'));
+  //console.log(sessionData.customerID);
+  var formdata = new FormData();
+  formdata.append("CustomerID", sessionData.customerID);
+  fetch(myApp.params["backendUrl"]+'frontInvoice/create', {
+    method: 'POST',
+    body: formdata
+  })
+  .then(response => response.json())
+  .then(data => {
+    if(data.data.invoices && data.status==201){
+      data.data.invoices.forEach(element => {
+        console.log(element);
+        $$('#listInvoice').append('<li>\
+          <a class="item-link item-content popup-open" data-popup=".demo-popup">\
+            <div class="item-inner"><div class="item-title-row">\
+              <div class="item-title">Invoice</div>\
+              <div class="item-after">'+element.InvoiceDate+'</div></div>\
+              <div class="item-subtitle">New invoice from '+element.UpdatedBy+'</div>\
+              <div class="item-text">'+element.Notes+'</div>\
+              </div>\
+          </a></li>');
+          
+      });
+    }
+    //myApp.dialog.alert('Registrasi Berhasil, silahkan Login untuk melanjutkan.');
+    //myApp.views.main.router.navigate();
+    //myApp.views.main.router.navigate('/', {reloadCurrent: true});
+  })
+  .catch(error => {
+    console.error(error);
+    myApp.dialog.alert('Failed to load the data.');
+  });
+})
+
+const createPopup = () => {
+  // Create popup
+  if (!popup) {
+    popup = $f7.popup.create({
+      content: /*html*/`
+        <div class="popup">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <div class="title">Dynamic Popup</div>
+                <div class="right"><a  class="link popup-close">Close</a></div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="block">
+                <p>This popup was created dynamically</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus, viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    });
+  }
+  // Open it
+  popup.open();
+}

@@ -1,0 +1,192 @@
+<template>
+  
+  <div id="paymentPage" class="page" data-page="payment">
+    <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
+        <div class="navbar"></div>
+        <div class="navbar-inner">
+            <div class="left">
+              <img style="border-radius: 8px" src="assets/images/logo-cny.png" width="50" />
+            </div>
+            <div class="title" style="color:#0f60aa;"><label style="color:#f78f4b;">CNY</label> Education Consultant</div>
+        </div>
+    </div>
+    <!-- Scrollable page content-->
+    <div class="page-content" id="registrationPageContent" style="background-color:#f2f5fa;">
+      <!--<div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>-->
+
+      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">Wujudkan Mimpimu Belajar di China</h1>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Masa depan cerah milik kamu yang bersiap dari sekarang</h2>
+      <div class="card" style="text-align:left;">
+        <div class="card-header">Payment Confirmation</div>
+        <div class="list media-list list-outline-ios list-strong-ios list-dividers-ios">
+          <ul id="listInvoice">
+            <!--<li>
+              <a class="item-link item-content popup-open" data-popup=".demo-popup">
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Invoice</div>
+                    <div class="item-after">2024-10-13 00:07</div>
+                  </div>
+                  <div class="item-subtitle">New invoice from Admin CNY Education</div>
+                  <div class="item-text">down payment</div>
+                </div>
+              </a>
+            </li>-->
+            
+            
+          </ul>
+        </div>
+        
+      </div>
+      <!-- start invoice 
+      <div class="popup demo-popup">-->
+        <div class="block">
+            <h2>Invoice #12345</h2>
+            <p>Date: 2023-02-20</p>
+            <p>CNY Education</p>
+            <p>Address: 123 Main St, Anytown, USA</p>
+        </div>
+        <div class="block">
+            <h3>Billed To:</h3>
+            <p>Client Name</p>
+            <p>Address: 456 Elm St, Anytown, USA</p>
+        </div>
+        <div class="block">
+            <h3>Payment Terms:</h3>
+            <p>Due Date: 2023-03-20</p>
+            <p>Payment Method: Bank Transfer</p>
+        </div>
+        <div class="block">
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Down Payment</td>
+                            <td>$20.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="1">Total:</td>
+                            <td>$118.80</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="block text-center">
+            <p>Thank you for your business!</p>
+        </div>
+      <!-- </div>
+      
+
+      end invoice -->
+    
+      
+      <!-- footer 
+      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>-->
+      <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>
+      
+      <div class="block" style="background: rgba(243, 209, 213, 0.5)">
+        <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
+          <div>
+            <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office
+              Runata Building
+              Jalan Kyai Tapa No.99A
+              Grogol, West Jakarta 14450 , Indonesia
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">phone</i> +62812-8958-1218
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">chat_bubble_2</i> wechat: tcmchina
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">envelope</i> cnyedu@gmail.com
+          </div>
+          <div>
+            <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
+            <a href="/mailbox/" data-transition="f7-cover"><u>Inbox</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Job Vacancy</u></a> <br/>
+            <a href="/" data-transition="f7-cover"><u>Logout</u></a> <br/>
+          </div>
+        </div>
+      </div>
+      <!--end footer -->
+
+    <div class="popup demo-popup">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">Invoice</div>
+            <div class="right"><a class="link popup-close">Close</a></div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="block">
+            <p>from Admin CNY Education</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum
+              neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus,
+              viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper
+              tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat
+              nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis
+              elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.
+            </p>
+            <p>Duis ut mauris sollicitudin, venenatis nisi sed, luctus ligula. Phasellus blandit nisl ut lorem semper
+              pharetra. Nullam tortor nibh, suscipit in consequat vel, feugiat sed quam. Nam risus libero, auctor vel
+              tristique ac, malesuada ut ante. Sed molestie, est in eleifend sagittis, leo tortor ullamcorper erat, at
+              vulputate eros sapien nec libero. Mauris dapibus laoreet nibh quis bibendum. Fusce dolor sem, suscipit in
+              iaculis id, pharetra at urna. Pellentesque tempor congue massa quis faucibus. Vestibulum nunc eros,
+              convallis blandit dui sit amet, gravida adipiscing libero.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</template>
+
+<script>
+export default (props, { $f7, $theme, $on }) => {
+  
+  let toastLargeMessage;
+  const showToastLargeMessage = () => {
+      // Create toast
+      if (!toastLargeMessage) {
+        toastLargeMessage = $f7.toast.create({
+          text: 'Data anda telah terkirim dan akan di verifikasi oleh admin.',
+          position: 'center',
+          closeTimeout: 2000,
+        });
+      }
+      // Open it
+      toastLargeMessage.open();
+      submitRegistration();
+    }
+    $on('pageBeforeOut', () => {
+      $f7.toast.close();
+    })
+
+    $on('pageBeforeRemove', () => {
+      if (toastLargeMessage) toastLargeMessage.destroy();
+    })
+  return $render;
+}
+
+</script>
