@@ -276,7 +276,10 @@ $$(document).on('page:init', '.page[data-page="payment"]', function (e) {
       data.data.invoices.forEach(element => {
         console.log(element);
         $$('#listInvoice').append('<li>\
-          <a class="item-link item-content popup-open" data-popup=".demo-popup">\
+          <a class="item-link item-content" data-popup=".demo-popup" name="listInv" id="listInvoice'+element.ID+'" \
+          data-invNo="'+element.InvoiceNumber+'" data-invDate="'+element.InvoiceDate+'" data-invCustomerName="'+element.Name+'" \
+          data-invCustomerEmail="'+element.Email+'" data-invDueDate="'+element.DueDate+'" data-invPaymentAccount="'+element.AccountNumber+'" \
+          data-invPaymentDescription="'+element.PaymentName+'" data-invNotes="'+element.Notes+'" data-invTotal="'+element.Amount+'">\
             <div class="item-inner"><div class="item-title-row">\
               <div class="item-title">Invoice</div>\
               <div class="item-after">'+element.InvoiceDate+'</div></div>\
@@ -295,33 +298,37 @@ $$(document).on('page:init', '.page[data-page="payment"]', function (e) {
     console.error(error);
     myApp.dialog.alert('Failed to load the data.');
   });
+  
 })
 
-const createPopup = () => {
-  // Create popup
-  if (!popup) {
-    popup = $f7.popup.create({
-      content: /*html*/`
-        <div class="popup">
-          <div class="page">
-            <div class="navbar">
-              <div class="navbar-bg"></div>
-              <div class="navbar-inner">
-                <div class="title">Dynamic Popup</div>
-                <div class="right"><a  class="link popup-close">Close</a></div>
-              </div>
-            </div>
-            <div class="page-content">
-              <div class="block">
-                <p>This popup was created dynamically</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus, viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      `
+
+$$(document).on('page:afterin', '.page[data-page="payment"]', function (e) {
+  var linkInvoices=$$('a[name=listInv]');
+  linkInvoices.each(function(){
+    $$(this).on('click',function(){
+      $$('#pInvoiceNo').html($$(this).attr("data-invNo"));
+      $$('#pInvoiceDate').html($$(this).attr("data-invDate"));
+      $$('#pInvoiceName').html($$(this).attr("data-invCustomerName"));
+      $$('#pInvoiceEmail').html($$(this).attr("data-invCustomerEmail"));
+      $$('#pDueDate').html($$(this).attr("data-invDueDate"));
+      $$('#pPaymentMethod').html($$(this).attr("data-invPaymentAccount")+"</br>"+$$(this).attr("data-invPaymentDescription"));
+      $$('#pNotes').html($$(this).attr("data-invNotes"));
+      var number = Number($$(this).attr("data-invTotal").replace(/[^0-9.-]+/g,""));
+      $$('#pAmount').html(number.toLocaleString());
+      $$('#pAmountTotal').html(number.toLocaleString());
+      console.log(myApp);
+      var asd=myApp.popup.get('#popupInvoice');
+      console.log(asd);
+      myApp.popup.open($$('#popupInvoice'),true,{
+        animate:true,
+        width:800
+      });
     });
-  }
-  // Open it
-  popup.open();
-}
+  });
+  $$('#btnPrintInvoice').on("click",function(e){
+    alert("print");
+  });
+  $$('#btnUploadPayment').on("click",function(e){
+    alert("upload payment");
+  });
+})
