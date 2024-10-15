@@ -91,11 +91,17 @@
         </div>
         <div class="page-content">
           <div class="grid grid-cols-2">
-            <div class="col-10"><button class="button" id="btnPrintInvoice"><i class="icon f7-icons">printer</i>Print</button></div>
+            <div class="col-10">
+              <!--<button class="button" id="btnDownload"><i class="icon f7-icons">cloud_download</i>Download</button>-->
+              <button class="button" id="btnPrintInvoice"><i class="icon f7-icons">printer</i>Print</button>
+            </div>
             <!--<div class="col-50"><button class="button" id="btnUploadPayment"><i class="icon f7-icons">shift</i>Upload Payment Confirmation</button></div>-->
-            <div class="col-50">
-              <input type="file" class="button" id="btnUploadPayment" />
-              <button class="button" id="btnUploadPayment"><i class="icon f7-icons">shift</i>Upload Payment Confirmation</button>
+            <div class="col-70">
+              <!--<input type="file" class="button" id="btnUploadPayment" />
+              <input type="file" id="fileInput" accept="image/*;capture=camera" style="" />-->
+              <input type="file" class="button"  accept="image/*;capture=camera" />
+              <button type="file" class="button" id="btnUploadPayment"><i class="icon f7-icons">shift</i>Upload Payment Confirmation</button>
+              
             </div>
           </div>
           <!-- start invoice -->

@@ -330,5 +330,39 @@ $$(document).on('page:afterin', '.page[data-page="payment"]', function (e) {
   });
   $$('#btnUploadPayment').on("click",function(e){
     alert("upload payment");
+    fetch(myApp.params["backendUrl"]+'frontLogin/create', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      if(data.status==201){
+        sessionStorage.setItem('userSession', JSON.stringify({
+          name: data.userdata.name,
+          email:data.userdata.email,
+          logedIn:1,
+          customerID:data.userdata.IDCustomer
+        }));
+
+        myApp.dialog.alert(data.messages.success);
+        myApp.loginScreen.close();
+        myApp.views.main.router.navigate('/', {reloadCurrent: true});
+
+      }else{
+        myApp.dialog.alert(data.messages.success);
+      }
+      
+      //myApp.dialog.alert('Registrasi Berhasil, silahkan Login untuk melanjutkan.');
+      //myApp.views.main.router.navigate();
+      //myApp.views.main.router.navigate('/', {reloadCurrent: true});
+    })
+    .catch(error => {
+      console.error(error);
+      myApp.dialog.alert('Failed to Login');
+      
+    });
+    
   });
+
 })
