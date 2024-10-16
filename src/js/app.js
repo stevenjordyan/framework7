@@ -274,12 +274,11 @@ $$(document).on('page:init', '.page[data-page="payment"]', function (e) {
   .then(data => {
     if(data.data.invoices && data.status==201){
       data.data.invoices.forEach(element => {
-        console.log(element);
         $$('#listInvoice').append('<li>\
           <a class="item-link item-content" data-popup=".demo-popup" name="listInv" id="listInvoice'+element.ID+'" \
           data-invNo="'+element.InvoiceNumber+'" data-invDate="'+element.InvoiceDate+'" data-invCustomerName="'+element.Name+'" \
           data-invCustomerEmail="'+element.Email+'" data-invDueDate="'+element.DueDate+'" data-invPaymentAccount="'+element.AccountNumber+'" \
-          data-invPaymentDescription="'+element.PaymentName+'" data-invNotes="'+element.Notes+'" data-invTotal="'+element.Amount+'">\
+          data-invPaymentDescription="'+element.PaymentName+'" data-invNotes="'+element.Notes+'" data-invTotal="'+element.Amount+'" data-invID="'+element.ID+'">\
             <div class="item-inner"><div class="item-title-row">\
               <div class="item-title">Invoice</div>\
               <div class="item-after">'+element.InvoiceDate+'</div></div>\
@@ -304,6 +303,7 @@ $$(document).on('page:init', '.page[data-page="payment"]', function (e) {
 
 $$(document).on('page:afterin', '.page[data-page="payment"]', function (e) {
   var linkInvoices=$$('a[name=listInv]');
+  var sessionData = JSON.parse(sessionStorage.getItem('userSession'));
   linkInvoices.each(function(){
     $$(this).on('click',function(){
       $$('#pInvoiceNo').html($$(this).attr("data-invNo"));
@@ -316,21 +316,35 @@ $$(document).on('page:afterin', '.page[data-page="payment"]', function (e) {
       var number = Number($$(this).attr("data-invTotal").replace(/[^0-9.-]+/g,""));
       $$('#pAmount').html(number.toLocaleString());
       $$('#pAmountTotal').html(number.toLocaleString());
-      console.log(myApp);
-      var asd=myApp.popup.get('#popupInvoice');
-      console.log(asd);
+      
+      $$('#idInvoice').val($$(this).attr("data-invID"));
+      $$('#amount').val(number);
+      $$('#email').val(sessionData.email);
+      //console.log(myApp);
+      var popupInvoice=myApp.popup.get('#popupInvoice');
       myApp.popup.open($$('#popupInvoice'),true,{
         animate:true,
-        width:800
+        width:800,
+        height:800
       });
     });
   });
   $$('#btnPrintInvoice').on("click",function(e){
-    alert("print");
+    var div = document.getElementById('popupInvoice');
+    var printWindow = window.open('', '', 'height=900,width=620');
+    var clonedDiv = div.cloneNode(true);
+    clonedDiv.querySelector('.navbar').remove();
+    clonedDiv.querySelector('.customHeader').remove();
+    printWindow.document.write(clonedDiv.innerHTML);
+    printWindow.print();
   });
   $$('#btnUploadPayment').on("click",function(e){
     alert("upload payment");
-    fetch(myApp.params["backendUrl"]+'frontLogin/create', {
+    var formData = new FormData(document.getElementById('paymentForm'));
+    const fileInput = document.getElementById('inputProof');
+    formData.append('inputProof', fileInput.files[0]);
+    console.log(formData);
+    fetch(myApp.params["backendUrl"]+'frontPayment/create', {
       method: 'POST',
       body: formData
     })
@@ -338,15 +352,10 @@ $$(document).on('page:afterin', '.page[data-page="payment"]', function (e) {
     .then(data => {
       console.log(data);
       if(data.status==201){
-        sessionStorage.setItem('userSession', JSON.stringify({
-          name: data.userdata.name,
-          email:data.userdata.email,
-          logedIn:1,
-          customerID:data.userdata.IDCustomer
-        }));
-
+        
         myApp.dialog.alert(data.messages.success);
-        myApp.loginScreen.close();
+        //myApp.loginScreen.close();
+        myApp.popup.close();
         myApp.views.main.router.navigate('/', {reloadCurrent: true});
 
       }else{
@@ -359,10 +368,14 @@ $$(document).on('page:afterin', '.page[data-page="payment"]', function (e) {
     })
     .catch(error => {
       console.error(error);
-      myApp.dialog.alert('Failed to Login');
+      myApp.dialog.alert('Failed to Upload');
       
     });
     
+  });
+  //const fileInput = document.getElementById('inputProof');
+  $$('#inputProof').on('change',(e)=>{
+    //alert();
   });
 
 })

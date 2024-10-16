@@ -80,7 +80,7 @@
       </div>
       <!--end footer -->
 
-    <div class="popup demo-popup" id="popupInvoice">
+    <div class="popup demo-popup" id="popupInvoice" style="width:620px;height:900px;" >
       <div class="page">
         <div class="navbar">
           <div class="navbar-bg"></div>
@@ -89,8 +89,9 @@
             <div class="right"><a class="link popup-close">Close</a></div>
           </div>
         </div>
+        <form method="POST" class="form-ajax-submit" id="paymentForm" enctype="multipart/form-data">
         <div class="page-content">
-          <div class="grid grid-cols-2">
+          <div class="grid grid-cols-2 customHeader">
             <div class="col-10">
               <!--<button class="button" id="btnDownload"><i class="icon f7-icons">cloud_download</i>Download</button>-->
               <button class="button" id="btnPrintInvoice"><i class="icon f7-icons">printer</i>Print</button>
@@ -98,10 +99,12 @@
             <!--<div class="col-50"><button class="button" id="btnUploadPayment"><i class="icon f7-icons">shift</i>Upload Payment Confirmation</button></div>-->
             <div class="col-70">
               <!--<input type="file" class="button" id="btnUploadPayment" />
-              <input type="file" id="fileInput" accept="image/*;capture=camera" style="" />-->
-              <input type="file" class="button"  accept="image/*;capture=camera" />
+              <input type="file" id="inputProof" accept="image/*;capture=camera" style="" />-->
+              <input type="file" id="inputProof" class="button"  accept="image/*;capture=camera" />
               <button type="file" class="button" id="btnUploadPayment"><i class="icon f7-icons">shift</i>Upload Payment Confirmation</button>
-              
+              <input type="hidden" id="idInvoice" name="IDInvoice" />
+              <input type="hidden" id="amount" name="Amount" />
+              <input type="hidden" id="email" name="Email" />
             </div>
           </div>
           <!-- start invoice -->
@@ -152,6 +155,7 @@
 
           <!-- end invoice -->
         </div>
+        </form>
       </div>
     </div>
 
