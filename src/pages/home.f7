@@ -105,7 +105,7 @@
           <swiper-slide style="padding-top:1%;">
             <div class="item-media">
               <div class="item-media">
-                <img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" />
+                <a href="/university/" data-transition="f7-cover"><img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" /></a>
               </div> <label style="font-size:x-small;">Universitas</label>
             </div>
           </swiper-slide>

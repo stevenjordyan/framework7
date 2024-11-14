@@ -14,6 +14,7 @@ import Mailbox from '../pages/mailbox.f7';
 import Mydata from '../pages/mydata.f7';
 import Registration from '../pages/registration.f7';
 import Payment from '../pages/payment.f7';
+import University from '../pages/university.f7';
 
 var routes = [
   {
@@ -59,6 +60,10 @@ var routes = [
   {
     path: '/payment/',
     component: Payment,
+  },
+  {
+    path: '/university/',
+    component: University,
   },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',
