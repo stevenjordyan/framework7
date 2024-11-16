@@ -178,6 +178,12 @@
   background-position: center;
   color: #fff;
 }
+.demo-card-header-pic .card-header .card-header-custom {
+  height: 15vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
 .md .demo-card-header-pic .card-header {
   margin: 0 16px 16px;
   border-radius: 16px;

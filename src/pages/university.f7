@@ -1,4 +1,5 @@
 <template>
+  
   <div id="universityPage" class="page" data-page="university">
     <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
         <div class="navbar"></div>
@@ -10,24 +11,137 @@
         </div>
     </div>
     <!-- Scrollable page content-->
-    <div class="page-content" id="registrationPageContent" style="background-color:#f2f5fa;">
+    <div class="page-content" id="universityPageContent" style="background-color:#f2f5fa;">
+      <!--<div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>-->
+      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">Wujudkan Mimpimu Belajar di China</h1>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Masa depan cerah milik kamu yang bersiap dari sekarang</h2>
 
-      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">University</h1>
-      <!-- start card -->
-      <div class="card card-outline-md demo-card-header-pic">
-      <div style="background-image:url(https://cdn.framework7.io/placeholder/nature-1000x600-3.jpg)" valign="bottom"
-        class="card-header">Journey To Mountains</div>
-      <div class="card-content card-content-padding">
-        <p class="date">Posted on January 21, 2015</p>
-        <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis
-          nibh hendrerit...</p>
+      <div class="block" style="margin-top:0;">
+        <div class="grid grid-cols-2 medium-grid-cols-4">
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/2.png'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Guangzhou College of Commerce 广州商学院</p>
+              Guangzhou College of Commerce, formerly known as Zengcheng College of South China Normal University, is located in the center of Guangzhou City.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/3.png'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Zhejiang University 浙江大学ZJU</p>
+              public university in Hangzhou City, Zhejiang Province, China, where Alibaba headquarter locates as well
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/4.png'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">The High School Affiliated to Beijing Normal University (SMA BNU)</p>
+              The High School Affiliated to Beijing Normal University (SMA BNU) was founded in 1901. It is the earliest public middle school in China and one of the most famous middle schools in China. Famous alumni can be found all over the world.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/4.png'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Lanzhou Jiaotong University (兰州交通大学)</p>
+              Universitas Lanzhou Jiaotong (兰州交通大学) adalah salah satu universitas terbaik di China Barat, terletak di Provinsi Gansu, China. Universitas Lanzhou Jiaotong memiliki pilihan jurusan yang lengkap dan terfokus ke jurusan tehnik.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/5.png'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Zhongnan University of Economics and Law (ZUEL) （中南财经政法大学）</p>
+              Located in Wuhan City, Zhongnan University of Economics and Law (ZUEL) is an institute of higher education directly administrated by the Ministry of Education of China with economics, law, and management as its core disciplines.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/6.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Central China Normal University (CCNU) （华中师范大学</p>
+              Located in Wuhan City, Central China Normal University (CCNU) ranks top 6 of its kind in China. It is a state-owned public university. Its campus is considered to be one of the most beautiful campuses of its kind in Wuhan.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/7.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Jiangxi University of Finance and Economics（江西财经大学）</p>
+              Located in Nanchang City, Jiangxi University of Finance and Economics ranks top 3 in Jiangxi Province. It is a state-owned public university. Its business-related majors are considered to be best of its kind in Jiangxi Province.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/8.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Fujian Polytechnic Normal University（福建技术师范学院）</p>
+              Located in Fuqing District, Fuzhou City, Fujian Polytechnic Normal University(FPNU) is one of the best comprehensive public universities in Fujian Province.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/9.png'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Shanghai Polytechnic University (上海第二工业大学)）</p>
+              Located in Shanghai City, Shanghai Polytechnic University is a state-owned public university. 上海第二工业大学成立于1960年，是一所工科见长，管经文理艺多学科协调发展的市属普通高等学校。是中国自行车智能制造示范基地、中国自行车智能制造中心。
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/10.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Central University of Finance and Economics (中央财经大学)</p>
+              Central University of Finance and Economics(中央财经大学) is the first economics and management public university which was founded by the China Central Government in Beijing. 
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/11.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Fujian Medical University (福建医科大学）</p>
+              Located in Fuzhou City Fujian Province, Fujian Medical University ranks top 25 of all medical universities in China.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/12.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Xiamen University of Technology (厦门理工学院)</p>
+              Universitas Teknologi Xiamen (厦门理工学院) adalah universitas negeri provinsi yang terletak di Xiamen, provinsi Fujian, China. Pada tahun 2008 XMUT dinobatkan sebagai salah satu dari “Sepuluh Besar Universitas dengan Pertumbuhan Tercepat di China”.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/13.png'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Wuhan Textile University (武汉纺织大学)</p>
+              Wuhan Textile University (武汉纺织大学) is the only public university named after Textile in China. Located in Wuhan City, Hubei Province with a strength in Master programs related to Textile.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
+            <div style="background-image:url('assets/university/14.png'); height:18vw;" valign="bottom" class="card-header"></div>
+            <div class="card-content card-content-padding">
+              <p class="date">Wuhan University (武汉大学)</p>
+              Located in Wuhan City, Wuhan University ranks top 10 in China. It is a state-owned public university. Its campus is considered to be one of the most beautiful campuses of its kind in the whole world.
+            </div>
+            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
+          </div>
+          
+        </div>
       </div>
-      <div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>
-    </div>
-    </div>
-      <!-- end card -->
       
-      </div>
     
       
       <!-- footer 
@@ -66,14 +180,45 @@
         </div>
       </div>
       <!--end footer -->
+
+    
+
     </div>
   </div>
 </template>
+<style>
+  .cardHeaderPic{
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+</style>
 
 <script>
 export default (props, { $f7, $theme, $on }) => {
   
-  
+  let toastLargeMessage;
+  const showToastLargeMessage = () => {
+      // Create toast
+      if (!toastLargeMessage) {
+        toastLargeMessage = $f7.toast.create({
+          text: 'Data anda telah terkirim dan akan di verifikasi oleh admin.',
+          position: 'center',
+          closeTimeout: 2000,
+        });
+      }
+      // Open it
+      toastLargeMessage.open();
+      submitRegistration();
+    }
+    $on('pageBeforeOut', () => {
+      $f7.toast.close();
+    })
+
+    $on('pageBeforeRemove', () => {
+      if (toastLargeMessage) toastLargeMessage.destroy();
+    })
   return $render;
 }
 
