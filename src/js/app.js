@@ -34,6 +34,7 @@ var myApp = new Framework7({
   // App routes
   routes: routes,
   backendUrl:"http://localhost:8080/",
+  //backendUrl:"https://beta.cnyeducation.com/backend/",
   // Input settings
   input: {
     scrollIntoViewOnFocus: device.cordova,
