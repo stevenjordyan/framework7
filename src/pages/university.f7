@@ -138,12 +138,8 @@
             </div>
             <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
           </div>
-          
         </div>
       </div>
-      
-    
-      
       <!-- footer 
       <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
@@ -151,7 +147,6 @@
       <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
       </div>
-      
       <div class="block" style="background: rgba(243, 209, 213, 0.5)">
         <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
           <div>
@@ -197,7 +192,6 @@
 
 <script>
 export default (props, { $f7, $theme, $on }) => {
-  
   let toastLargeMessage;
   const showToastLargeMessage = () => {
       // Create toast
@@ -221,5 +215,4 @@ export default (props, { $f7, $theme, $on }) => {
     })
   return $render;
 }
-
 </script>
