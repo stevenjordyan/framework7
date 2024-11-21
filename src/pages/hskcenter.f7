@@ -1,0 +1,200 @@
+<template>
+  
+  <div id="HSKPage" class="page" data-page="hskcenter" style="font-family:'roboto',sans-serif;">
+    <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
+        <div class="navbar"></div>
+        <div class="navbar-inner">
+            <div class="left">
+              <img style="border-radius: 8px" src="assets/images/logo-cny.png" width="50" />
+            </div>
+            <div class="title" style="color:#0f60aa;"><label style="color:#f78f4b;">CNY</label> Education Consultant</div>
+        </div>
+    </div>
+    <!-- Scrollable page content-->
+    <div class="page-content" id="universityPageContent" style="background-color:#f2f5fa;">
+      <!--<div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>-->
+      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">HSK CENTER</h1>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Materi dikelola langsung oleh Guru Santi</h2>
+      <div style="display: flex; justify-content: center;align-items: center;">
+          <div class="block" style="width: 50%;margin-left:15%;">
+              <img src="assets/images/teacher1.jpg" alt="Portrait of Teacher" class="w-12 h-12 object-cover" />
+          </div>
+      </div>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">*Ph.D from Central China Normal University (CCNU)</h2>
+      <div class="block" style="left:25%; width:50%;">
+        <ul class="txtList">
+          <li>Pengajaran interaktif via Zoom</li>
+          <li>Kelas semi private (maks. 5 orang dalam satu kelas)</li>
+          <li>Kelas berbicara dengan penutur asli (native speaker)</li>
+          <li>Feedback one on one</li>
+          <li>Termasuk buku materi & e-certificate di akhir program</li>
+          <li>Gratis kelas persiapan untuk murid yang sudah deposit untuk studi ke China</li>
+          <li>Syarat Dan ketentuan berlaku</li>
+        </ul>
+      </div>
+      <div class="block">
+          <!-- First Testimonial -->
+          <div class="grid grid-cols-2 medium-grid-cols-4">
+            <div class="card">
+              <div class="card-content card-content-padding text-align-center">
+                <div class="flex justify-center mb-4">
+                  <img src="https://storage.googleapis.com/a1aa/image/gKkwSlFtvCK2BVW7N6hXpyaYNwmoWfPsHQ75CPEn7i3jEQ5JA.jpg" alt="Portrait of Ivony" class="rounded-full w-24 h-24 object-cover testimonial-img" />
+                </div>
+                <p class="text-color-gray mb-4 txtQuote">“Hai semuanya, nama saya Ivony. Saya bekerja di salah satu perusahaan minyak goreng. Awalnya saya belajar bahasa mandarin untuk meningkatkan kemampuan bahasa mandarin saya dan berharap bisa melanjutkan pendidikan S2 saya di China. Saya sudah belajar di CNY education selama 6 bulan. Sampai saat ini, saya telah melewati ujian HSK 4 dengan nilai yang memuaskan. Suasana belajar di CNY education sangat menarik dan tidak membosankan. Gurunya juga dapat mendorong kita untuk terus.”</p>
+                <p class="text-color-gray font-bold">IVONY, <span class="text-color-orange">General Employees</span></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content card-content-padding text-align-center">
+                <div class="flex justify-center mb-4">
+                  <img src="https://storage.googleapis.com/a1aa/image/6d5rJu1fB1SsLCZbSBmTUkYpOzQZWnofQfcj0ieGbJTakAKPB.jpg" alt="Portrait of Harold" class="rounded-full w-24 h-24 object-cover testimonial-img" />
+                </div>
+                <p class="text-color-gray mb-4 txtQuote">“Hallo nama saya Harold, saya berumur 17 tahun atau kelas 11. Saya bersekolah di Lentera Harapan dan mengambil jurusan IPS. Awalnya saya ingin belajar bahasa mandarin karena saya tertarik untuk kuliah di China, karena saya memperkirakan bahwa bahasa mandarin akan menjadi bahasa universal. Saya sudah belajar mandarin sekitar hampir 5 bulan di CNY. Dari kursus ini, membawa saya kepada suatu perkembangan dalam berbahasa mandarin. Sebelum kursus, saya kurang lancar dalam berbicara dan memahami bahasa mandarin. Tetapi saat ini saya mengalami kemajuan dengan mempelajari banyak vocab, walaupun masih banyak yang kurang. Kursus di CNY juga sangat nyaman, karena gurunya yang sangat terbuka dan teman-teman yang baik.”</p>
+                <p class="text-color-gray font-bold">HAROLD, <span class="text-color-orange">Student</span></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content card-content-padding text-align-center">
+                <div class="flex justify-center mb-4">
+                  <img src="https://storage.googleapis.com/a1aa/image/ADW2rwYCwDLiGhCMX9zZEPpUJytSYd1IoJjFqBpucUJSCo8E.jpg" alt="Portrait of Tiffani" class="rounded-full w-24 h-24 object-cover testimonial-img" />
+                </div>
+                <p class="text-color-gray mb-4 txtQuote">“Halo, saya Tiffani bekerja sebagai sales manager di perusahaan advertising. Awalnya belajar mandarin karena sedang banyak tawaran bekerja di perusahaan China yang mengharuskan karyawannya bisa lancar berbahasa mandarin. Sudah belajar di CNY Education sekitar 3 bulanan dan saat ini sudah sampai ke tahap HSK 4. Di CNY Education, losi nya mengajarnya seru dan yang paling penting kita selalu didorong untuk berkembang terus ilmu berbahasa mandarinnya sehingga cepat ada kemajuan. Yang paling berkesan saya dapat bekerja di perusahaan sekarang dengan gaji yang naik 50% karena saya menguasai bahasa Mandarin.”</p>
+                <p class="text-color-gray font-bold">TIFFANI, <span class="text-color-orange">Sales Manager</span></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content card-content-padding text-align-center">
+                <div class="flex justify-center mb-4">
+                  <img src="https://storage.googleapis.com/a1aa/image/ADW2rwYCwDLiGhCMX9zZEPpUJytSYd1IoJjFqBpucUJSCo8E.jpg" alt="Portrait of Tiffani" class="rounded-full w-24 h-24 object-cover testimonial-img" />
+                </div>
+                <p class="text-color-gray mb-4 txtQuote">““Halo, saya Felicia, saya bersekolah di Penabur dan sekarang saya kelas 11, jurusan IPS. Saya awalnya pengen belajar mandarin karena ada tujuan kuliah di China. Aku udh belajar di CNY Education sekitar hampir 5 bulan. Sebelum aku les,aku kurang lancar dalam bicara dan banyak kosa kata yang aku krg tahu, sekarang saya memiliki kemajuan dalam berbicara Bahasa Mandarin walaupun masih banyak yang perlu dipelajari lagi, sekarang aku juga lebih banyak memahami kosa kata nya. Di CNY juga suasana belajarnya enak, teman nya baik dan gurunya juga sangat open dgn pertanyaan muridnya yg banyak.”</p>
+                <p class="text-color-gray font-bold">FELICIA, <span class="text-color-orange">Student</span></p>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      <!-- footer 
+      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>-->
+      <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+      </div>
+      <div class="block" style="background: rgba(243, 209, 213, 0.5)">
+        <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
+          <div>
+            <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office
+              Runata Building
+              Jalan Kyai Tapa No.99A
+              Grogol, West Jakarta 14450 , Indonesia
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">phone</i> +62812-8958-1218
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">chat_bubble_2</i> wechat: tcmchina
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">envelope</i> cnyedu@gmail.com
+          </div>
+          <div>
+            <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
+            <a href="/mailbox/" data-transition="f7-cover"><u>Inbox</u></a> <br/>
+            <a href="/logedin/" data-transition="f7-cover"><u>Job Vacancy</u></a> <br/>
+            <a href="/" data-transition="f7-cover"><u>Logout</u></a> <br/>
+          </div>
+        </div>
+      </div>
+      <!--end footer -->
+    </div>
+  </div>
+</template>
+<style>
+  .cardHeaderPic{
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  .testimonial-img {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+  }
+  .txtQuote{
+    box-sizing:border-box;
+    color:rgb(126, 136, 144);
+    display:inline;
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-style:italic;
+    font-weight:400;
+    height:auto;
+    letter-spacing:2px;
+    line-height:30px;
+    margin-bottom:0px;
+    pointer-events:auto;
+    text-align:center;
+    text-size-adjust:100%;
+    text-transform:none;
+    width:auto;
+  }
+  .txtList{
+    box-sizing:border-box;
+    color:rgb(126, 136, 144);
+    display:block;
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-style:normal;
+    font-weight:400;
+    height:224px;
+    letter-spacing:normal;
+    line-height:32px;
+    list-style-type:disc;
+    margin-block-end:20px;
+    margin-block-start:20px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    padding-inline-start:40px;
+    text-align:left;
+    text-size-adjust:100%;
+    text-transform:none;
+    unicode-bidi:isolate;
+  }
+  .font-bold{
+    font-weight:600;
+  }
+</style>
+
+<script>
+export default (props, { $f7, $theme, $on }) => {
+  let toastLargeMessage;
+  const showToastLargeMessage = () => {
+      // Create toast
+      if (!toastLargeMessage) {
+        toastLargeMessage = $f7.toast.create({
+          text: 'Data anda telah terkirim dan akan di verifikasi oleh admin.',
+          position: 'center',
+          closeTimeout: 2000,
+        });
+      }
+      // Open it
+      toastLargeMessage.open();
+      submitRegistration();
+    }
+    $on('pageBeforeOut', () => {
+      $f7.toast.close();
+    })
+
+    $on('pageBeforeRemove', () => {
+      if (toastLargeMessage) toastLargeMessage.destroy();
+    })
+  return $render;
+}
+</script>

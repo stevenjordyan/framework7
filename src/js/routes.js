@@ -15,6 +15,7 @@ import Mydata from '../pages/mydata.f7';
 import Registration from '../pages/registration.f7';
 import Payment from '../pages/payment.f7';
 import University from '../pages/university.f7';
+import Hskcenter from '../pages/hskcenter.f7';
 
 var routes = [
   {
@@ -64,6 +65,10 @@ var routes = [
   {
     path: '/university/',
     component: University,
+  },
+  {
+    path: '/hskcenter/',
+    component: Hskcenter,
   },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',

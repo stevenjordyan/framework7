@@ -112,7 +112,7 @@
           <swiper-slide style="padding-top:1%;">
             <div class="item-media">
               <div class="item-media">
-                <img style="border-radius: 8px" src="assets/images/logo-hsk1.png" width="40" />
+                <a href="/hskcenter/" data-transition="f7-cover"><img style="border-radius: 8px" src="assets/images/logo-hsk1.png" width="40" /></a>
               </div> <label style="font-size:x-small;">HSK</label>
             </div>
           </swiper-slide>
