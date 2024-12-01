@@ -19,59 +19,131 @@
           <div class="block news-grid">
        <div class="card news-post">
         <div class="card-header">
-         <img alt="A bustling city street with people walking and tall buildings in the background" height="400" src="https://storage.googleapis.com/a1aa/image/B4aZEjUpmw6lNhJwcjMZPeGVWWUfRri7MQ524bX6foafrfleE.jpg" width="600"/>
+         <img id="img1" alt="A bustling city street with people walking and tall buildings in the background" height="400" src="assets/posts/1.jpg" width="600"/>
         </div>
         <div class="card-content card-content-padding">
-         <div class="card-title">
-          News Title 1
+         <div class="card-title" id="title1">
+          Belajar Mandarin Dari rumah!
          </div>
-         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+         <p id="content1">
+          Wujudkan Mimpimu belajar di China Kelas dibuka untuk level: Pemula, Menengah dan Profesional Managed by Prof. Ding Jadwal : Senin Jumat 19.00 WIB Selasa Sabtu 19.00 WIB Investasi mulai dari 700 ribu per bulan ! Kuota terbatas Live teaching by qualified tutor via zoom Proper learning materials One on one feedback Semi private (max 5 person in one class) E-certificate Speaking class once in 2 weeks directly
          </p>
         </div>
         <div class="card-footer">
-         <a class="button button-fill" href="#">
+         <a class="button button-fill" href="#" id="read-more1">
           Read More
          </a>
         </div>
        </div>
        <div class="card news-post">
         <div class="card-header">
-         <img alt="A serene beach with golden sand and clear blue water under a bright sky" height="400" src="https://storage.googleapis.com/a1aa/image/EJWxBeuHeOrt6EKbR8SQZN8wH3y6kG4BBzBkYDSW9ChB7v0TA.jpg" width="600"/>
+         <img id="img2" alt="A serene beach with golden sand and clear blue water under a bright sky" height="400" src="assets/posts/2.jpg" width="600"/>
         </div>
         <div class="card-content card-content-padding">
-         <div class="card-title">
-          News Title 2
+         <div class="card-title" id="title2">
+          Program S1 Kedokteran Fujian Medical University
          </div>
-         <p>
-          Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
+         <p id="content2">
+          Gelar dari universitas China dan kemampuan berbahasa Mandarin kini menjadi incaran perusahaan dalam dan luar negeri. Lapangan pekerjaan dan peluang bisnis semakin terbuka luas. Jadilah bagian dari pergaulan internasional, belajar di China, dan wujudkan mimpimu. A. Masa dan program kuliah: 1. Periode kuliah: Oktober 2023- Juni 2029 2. Bahasa Mandarin akan dipelajari di semester pertama masa perkuliahan sebagai mata kuliah wajib 3. Bahasa pengantar: Bahasa Inggris 4
          </p>
         </div>
         <div class="card-footer">
-         <a class="button button-fill" href="#">
+         <a class="button button-fill" href="#" id="read-more2">
           Read More
          </a>
         </div>
        </div>
        <div class="card news-post">
         <div class="card-header">
-         <img alt="A close-up of a person holding a smartphone with a news app open on the screen" height="400" src="https://storage.googleapis.com/a1aa/image/F2S8U9nXZH6EKxZKSvRqxmUcxVxRpI2WyHVgLJYGMsWveX6JA.jpg" width="600"/>
+         <img id="img3" alt="A close-up of a person holding a smartphone with a news app open on the screen" height="400" src="assets/posts/3.jpg" width="600"/>
         </div>
         <div class="card-content card-content-padding">
-         <div class="card-title">
-          News Title 3
+         <div class="card-title" id="title3">
+          Program S1 Universitas Lanzhou
          </div>
-         <p>
-          Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+         <p id="content3">
+          Lanzhou Jiaotong University dan Lanzhou University of Technology (Lanzhou Ligong University) Jurusan Teknik dan Bisnis Program S1 2023 A. Masa dan program kuliah bahasa mandarin 1 tahun: 1. Periode kuliah: September 2023- Juni 2028 2. Pelajaran menggunakan Bahasa pengantar: Bahasa Mandarin 3. Lama belajar 5 tahun (1 tahun Bahasa Mandarin + 4 tahun jurusan) B. Biaya yang perlu dikeluarkan: Biaya untuk tahun PERTAMA satu paket senilai Rp98.800.000, dengan
          </p>
         </div>
         <div class="card-footer">
-         <a class="button button-fill" href="#">
+         <a class="button button-fill" href="#" id="read-more3">
           Read More
          </a>
         </div>
        </div>
+       <div class="card news-post">
+        <div class="card-header">
+         <img id="img4" alt="A close-up of a person holding a smartphone with a news app open on the screen" height="400" src="assets/posts/4.jpg" width="600"/>
+        </div>
+        <div class="card-content card-content-padding">
+         <div class="card-title" id="title4">
+          Tiongkok Terus Berinvestasi Pada Universitas terbaiknya
+         </div>
+         <p id="content4">
+          Learn to think smart. Etiam consectetur odio erat, quis mattis leo vestibulum non. Fusce ex ligula, tristique quis finibus sed, placerat sed libero. Phasellus convallis, sem ac tristique interdum, purus purus vehicula quam, ut fermentum sem orci in est. Aliquam leo purus, iaculis non condimentum hendrerit, vestibulum quis tortor. Vestibulum quis viverra felis. Vestibulum elementum magna ut diam placerat, in venenatis est egestas. Vivamus at libero auctor, ullamcorper
+         </p>
+        </div>
+        <div class="card-footer">
+         <a class="button button-fill" href="#" id="read-more4">
+          Read More
+         </a>
+        </div>
+       </div>
+       <div class="card news-post">
+        <div class="card-header">
+         <img id="img5" alt="A close-up of a person holding a smartphone with a news app open on the screen" height="400" src="assets/posts/5.jpg" width="600"/>
+        </div>
+        <div class="card-content card-content-padding">
+         <div class="card-title" id="title5">
+          Pengalaman Anisa Belajar di Beijing Language & Culture University
+         </div>
+         <p id="content5">
+          My success is no accident. Etiam consectetur odio erat, quis mattis leo vestibulum non. Fusce ex ligula, tristique quis finibus sed, placerat sed libero. Phasellus convallis, sem ac tristique interdum, purus purus vehicula quam, ut fermentum sem orci in est. Aliquam leo purus, iaculis non condimentum hendrerit, vestibulum quis tortor. Vestibulum quis viverra felis. Vestibulum elementum magna ut diam placerat, in venenatis est egestas. Vivamus at libero auctor, ullamcorper
+         </p>
+        </div>
+        <div class="card-footer">
+         <a class="button button-fill" href="#" id="read-more5">
+          Read More
+         </a>
+        </div>
+       </div>
+       <div class="card news-post">
+        <div class="card-header">
+         <img id="img6" alt="A close-up of a person holding a smartphone with a news app open on the screen" height="400" src="assets/posts/6.jpg" width="600"/>
+        </div>
+        <div class="card-content card-content-padding">
+         <div class="card-title" id="title6">
+          Persiapan Sebelum Studi Ke Tiongkok
+         </div>
+         <p id="content6">
+          Focus on exam results. Etiam consectetur odio erat, quis mattis leo vestibulum non. Fusce ex ligula, tristique quis finibus sed, placerat sed libero. Phasellus convallis, sem ac tristique interdum, purus purus vehicula quam, ut fermentum sem orci in est. Aliquam leo purus, iaculis non condimentum hendrerit, vestibulum quis tortor. Vestibulum quis viverra felis. Vestibulum elementum magna ut diam placerat, in venenatis est egestas. Vivamus at libero auctor, ullamcorper libero
+         </p>
+        </div>
+        <div class="card-footer">
+         <a class="button button-fill" href="#" id="read-more6">
+          Read More
+         </a>
+        </div>
+       </div>
+
       </div>
+      <!-- start popup -->
+      <div class="popup" id="read-more-popup">
+        <div class="popup-inner">
+          <div class="page-content">
+            <h2 id="pTitle" style="text-align:center;">More About Anisa's Experience</h2>
+            <div style="text-align:center;"><img id="pImg" alt="" height="300" src="" width="400"/></div>
+            <p id="pContent" style="margin-left:10px;margin-right:10px;">
+              My success is no accident. Etiam consectetur odio erat, quis mattis leo vestibulum non. Fusce ex ligula, tristique quis finibus sed, placerat sed libero. Phasellus convallis, sem ac tristique interdum, purus purus vehicula quam, ut fermentum sem orci in est. Aliquam leo purus, iaculis non condimentum hendrerit, vestibulum quis tortor. Vestibulum quis viverra felis. Vestibulum elementum magna ut diam placerat, in venenatis est egestas. Vivamus at libero auctor, ullamcorper.
+            </p>
+            <div class="popup-footer">
+              <a href="#" class="button popup-close">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end popup -->
+
     </div>
     <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0; margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
     
@@ -173,7 +245,6 @@
       gap: 20px;
   }
 </style>
-
 <script>
 export default (props, { $f7, $theme, $on }) => {
   return $render;

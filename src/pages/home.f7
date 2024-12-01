@@ -133,7 +133,7 @@
           <swiper-slide style="padding-top:1%;">
             <div class="item-media">
               <div class="item-media">
-                <img style="border-radius: 8px" src="assets/images/logo-admissions1.png" width="40" />
+                <a href="https://app.cnyeducation.com/registration" class="external" data-transition="f7-cover"><img style="border-radius: 8px" src="assets/images/logo-admissions1.png" width="40" /></a>
               </div> <label style="font-size:x-small;">Penerimaan</label>
             </div>
           </swiper-slide>
