@@ -1,6 +1,6 @@
 <template>
   
-  <div id="HSKPage" class="page" data-page="hskcenter" style="font-family:'roboto',sans-serif;">
+  <div id="TestimoniPage" class="page" data-page="testimoni" style="font-family:'roboto',sans-serif;">
     <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
         <div class="navbar"></div>
         <div class="navbar-inner">
@@ -15,27 +15,37 @@
       <!--<div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
       </div>-->
-      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">HSK CENTER</h1>
-      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Materi dikelola langsung oleh Guru Santi</h2>
-      <div style="display: flex; justify-content: center;align-items: center;">
-          <div class="block" style="width: 50%;text-align:center;">
-              <img src="assets/images/teacher1.jpg" alt="Portrait of Teacher" class="w-12 h-12 object-cover" />
-          </div>
-      </div>
-      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">*Ph.D from Central China Normal University (CCNU)</h2>
-      <div class="block" style="left:25%; width:50%;">
-        <ul class="txtList">
-          <li>Pengajaran interaktif via Zoom</li>
-          <li>Kelas semi private (maks. 5 orang dalam satu kelas)</li>
-          <li>Kelas berbicara dengan penutur asli (native speaker)</li>
-          <li>Feedback one on one</li>
-          <li>Termasuk buku materi & e-certificate di akhir program</li>
-          <li>Gratis kelas persiapan untuk murid yang sudah deposit untuk studi ke China</li>
-          <li>Syarat Dan ketentuan berlaku</li>
-        </ul>
-      </div>
+      
+      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;"><img src="assets/images/logo-cny.png" alt="Portrait of Teacher" class="w-12 h-12 object-cover" /><br/>Testimoni & Alumni</h1>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Study In China, Realize Your Dream</h2>
+      
+      <u><h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Testimonial from Alumni</h2></u>
       <div class="block">
           <!-- First Testimonial -->
+          <div class="grid grid-cols-4 medium-grid-cols-2">
+            <div class="card">
+              <div class="card-content card-content-padding text-align-center">
+                <div class="flex justify-center mb-4">
+                  <img src="assets/alumni/1.jpg" alt="Portrait of Ivony" class="rounded-full w-24 h-24 object-cover testimonial-img" />
+                </div>
+                <p class="text-color-gray mb-4 txtQuote">“Alhamdulilah banyak santriwan-santriwati kami yang melanjutkan studi di China. Beberapa santri kami bahkan ada yang mendapatkan beasiswa juga berkat CNY Education. Terima Kasih sudah CNY yang Sudah memberikan jalan bagi santri DAQU untuk melanjutkan studi di perguruan tinggai di China.”</p>
+                <p class="text-color-gray font-bold">K.H. UST. YUSUF MANSYUR,, <span class="text-color-orange">Pengasuh Ponpes DAQU</span></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content card-content-padding text-align-center">
+                <div class="flex justify-center mb-4">
+                  <img src="assets/alumni/2.jpeg" alt="Portrait of Harold" class="rounded-full w-24 h-24 object-cover testimonial-img" />
+                </div>
+                <p class="text-color-gray mb-4 txtQuote">“Terima Kasih kepada CNY Education yang sudah memberikan kesempatan kepada santriwati ponpes Al-Fatimah untuk melanjutkan studi ke China. Alhamdulilah impian santriwati yang ingin kuliah ke luar negeri terutama di China bisa terwujud berkat bantuan CNY Education Consultant.”</p>
+                <p class="text-color-gray font-bold">KH.TAMAN SYAIFUDDIN, <span class="text-color-orange">Pengasuh Ponpes AL-FATIMAH</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- End First Testimonial -->
+
+        <u><h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Testimonial from Student</h2></u>
+          <!-- student testimonial -->
           <div class="grid grid-cols-2 medium-grid-cols-4">
             <div class="card">
               <div class="card-content card-content-padding text-align-center">

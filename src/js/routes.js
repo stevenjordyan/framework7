@@ -16,6 +16,8 @@ import Registration from '../pages/registration.f7';
 import Payment from '../pages/payment.f7';
 import University from '../pages/university.f7';
 import Hskcenter from '../pages/hskcenter.f7';
+import Testimoni from '../pages/testimoni.f7';
+import Berita from '../pages/berita.f7';
 
 var routes = [
   {
@@ -56,7 +58,9 @@ var routes = [
   },
   {
     path: '/registration/',
-    component: Registration,
+    //component: Registration,
+    url: 'http://app.cnyeducation.com',
+    target:"_system",
   },
   {
     path: '/payment/',
@@ -69,6 +73,14 @@ var routes = [
   {
     path: '/hskcenter/',
     component: Hskcenter,
+  },
+  {
+    path: '/testimoni/',
+    component: Testimoni,
+  },
+  {
+    path: '/berita/',
+    component: Berita,
   },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',

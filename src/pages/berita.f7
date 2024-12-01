@@ -1,0 +1,181 @@
+<template>
+  <div id="BeritaPage" class="page" data-page="berita" style="font-family:'roboto',sans-serif;">
+    <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
+        <div class="navbar">
+        </div>
+        <div class="navbar-inner">
+            <div class="left">
+              <img style="border-radius: 8px" src="assets/images/logo-cny.png" width="50" />
+            </div>
+            <div class="title" style="color:#0f60aa;">
+              <label style="color:#f78f4b;">CNY</label> Education Consultant
+            </div>
+        </div>
+    </div>
+    <!-- Scrollable page content-->
+    <div class="page-content" id="beritaPageContent" style="background-color:#f2f5fa;">
+      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;"><img src="assets/images/logo-cny.png" alt="Portrait of Teacher" class="w-12 h-12 object-cover" /><br/>Berita Terbaru</h1>
+      <div class="block">
+          <div class="block news-grid">
+       <div class="card news-post">
+        <div class="card-header">
+         <img alt="A bustling city street with people walking and tall buildings in the background" height="400" src="https://storage.googleapis.com/a1aa/image/B4aZEjUpmw6lNhJwcjMZPeGVWWUfRri7MQ524bX6foafrfleE.jpg" width="600"/>
+        </div>
+        <div class="card-content card-content-padding">
+         <div class="card-title">
+          News Title 1
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+         </p>
+        </div>
+        <div class="card-footer">
+         <a class="button button-fill" href="#">
+          Read More
+         </a>
+        </div>
+       </div>
+       <div class="card news-post">
+        <div class="card-header">
+         <img alt="A serene beach with golden sand and clear blue water under a bright sky" height="400" src="https://storage.googleapis.com/a1aa/image/EJWxBeuHeOrt6EKbR8SQZN8wH3y6kG4BBzBkYDSW9ChB7v0TA.jpg" width="600"/>
+        </div>
+        <div class="card-content card-content-padding">
+         <div class="card-title">
+          News Title 2
+         </div>
+         <p>
+          Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
+         </p>
+        </div>
+        <div class="card-footer">
+         <a class="button button-fill" href="#">
+          Read More
+         </a>
+        </div>
+       </div>
+       <div class="card news-post">
+        <div class="card-header">
+         <img alt="A close-up of a person holding a smartphone with a news app open on the screen" height="400" src="https://storage.googleapis.com/a1aa/image/F2S8U9nXZH6EKxZKSvRqxmUcxVxRpI2WyHVgLJYGMsWveX6JA.jpg" width="600"/>
+        </div>
+        <div class="card-content card-content-padding">
+         <div class="card-title">
+          News Title 3
+         </div>
+         <p>
+          Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+         </p>
+        </div>
+        <div class="card-footer">
+         <a class="button button-fill" href="#">
+          Read More
+         </a>
+        </div>
+       </div>
+      </div>
+    </div>
+    <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0; margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
+    
+    </div>
+    <div class="block" style="background: rgba(243, 209, 213, 0.5)">
+      <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
+        <div>
+          <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office
+            Runata Building
+            Jalan Kyai Tapa No.99A
+            Grogol, West Jakarta 14450 , Indonesia
+          <br/>
+          <i class="f7-icons" style="font-size:20px;">phone</i> +62812-8958-1218
+          <br/>
+          <i class="f7-icons" style="font-size:20px;">chat_bubble_2</i> wechat: tcmchina
+          <br/>
+          <i class="f7-icons" style="font-size:20px;">envelope</i> cnyedu@gmail.com
+        </div>
+        <div>
+          <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
+          <a href="/logedin/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
+          <a href="/logedin/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
+          <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
+          <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
+          <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
+          <a href="/mailbox/" data-transition="f7-cover"><u>Inbox</u></a> <br/>
+          <a href="/logedin/" data-transition="f7-cover"><u>Job Vacancy</u></a> <br/>
+          <a href="/" data-transition="f7-cover"><u>Logout</u></a> <br/>
+        </div>
+      </div>
+    </div>
+    <!--end footer -->
+    </div>
+  </div>
+</template>
+<style>
+  .cardHeaderPic{
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  .testimonial-img {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+  }
+  .txtQuote{
+    box-sizing:border-box;
+    color:rgb(126, 136, 144);
+    display:inline;
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-style:italic;
+    font-weight:400;
+    height:auto;
+    letter-spacing:2px;
+    line-height:30px;
+    margin-bottom:0px;
+    pointer-events:auto;
+    text-align:center;
+    text-size-adjust:100%;
+    text-transform:none;
+    width:auto;
+  }
+  .txtList{
+    box-sizing:border-box;
+    color:rgb(126, 136, 144);
+    display:block;
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-style:normal;
+    font-weight:400;
+    height:224px;
+    letter-spacing:normal;
+    line-height:32px;
+    list-style-type:disc;
+    margin-block-end:20px;
+    margin-block-start:20px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    padding-inline-start:40px;
+    text-align:left;
+    text-size-adjust:100%;
+    text-transform:none;
+    unicode-bidi:isolate;
+  }
+  .font-bold{
+    font-weight:600;
+  }
+  .news-post img {
+      max-width: 100%;
+      height: auto;
+  }
+  .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+  }
+</style>
+
+<script>
+export default (props, { $f7, $theme, $on }) => {
+  return $render;
+}
+</script>
