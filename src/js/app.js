@@ -260,9 +260,83 @@ $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
   
 
 })
+$$(document).on('page:init', '.page[data-page="berita"]', function (e) {
+
+  $$('#read-more1').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img1')[0].src;
+    $$('#pTitle').html($$('#title1')[0].innerHTML);
+    $$('#pContent').html($$('#content1')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popup'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more2').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img2')[0].src;
+    $$('#pTitle').html($$('#title2')[0].innerHTML);
+    $$('#pContent').html($$('#content2')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popup'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more3').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img3')[0].src;
+    $$('#pTitle').html($$('#title3')[0].innerHTML);
+    $$('#pContent').html($$('#content3')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popup'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more4').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img4')[0].src;
+    $$('#pTitle').html($$('#title4')[0].innerHTML);
+    $$('#pContent').html($$('#content4')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popup'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more5').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img5')[0].src;
+    $$('#pTitle').html($$('#title5')[0].innerHTML);
+    $$('#pContent').html($$('#content5')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popup'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more6').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img6')[0].src;
+    $$('#pTitle').html($$('#title6')[0].innerHTML);
+    $$('#pContent').html($$('#content6')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popup'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+});
 
 $$(document).on('page:init', '.page[data-page="payment"]', function (e) {
-  
   var sessionData = JSON.parse(sessionStorage.getItem('userSession'));
   //console.log(sessionData.customerID);
   var formdata = new FormData();
@@ -378,5 +452,6 @@ $$(document).on('page:afterin', '.page[data-page="payment"]', function (e) {
   $$('#inputProof').on('change',(e)=>{
     //alert();
   });
+  
 
 })
