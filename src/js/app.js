@@ -26,13 +26,16 @@ var myApp = new Framework7({
   colors: {
     primary: '#f2d1d5',
   },
-
   el: '#app', // App root element
   component: App, // App main component
   // App store
   store: store,
   // App routes
   routes: routes,
+  view:{
+    browserHistory:true,
+  },
+  stackPages: true,
   backendUrl:"http://localhost:8080/",
   //backendUrl:"https://beta.cnyeducation.com/backend/",
   // Input settings
@@ -74,17 +77,22 @@ var myApp = new Framework7({
       }
     }
   },
+  methods:{
+    onBackKeyDown: function(e) {
+      alert('back');
+    }
+  }
 });
 
-var evt = new Event('backbutton');
+/*//var evt = new Event('backbutton');
 document.addEventListener("backbutton", tst, false);
-
 function tst(e) {
+  alert();
   debugger
   if (myApp.sheet.get('.sheet-modal') && myApp.sheet.get('.sheet-modal').opened) myApp.sheet.close()
   else myApp.router.back()
 }
-
+*/
 
 $$('.backBtn').on('click', function() {
   document.dispatchEvent(evt)
@@ -95,7 +103,7 @@ $$(document).on('page:init', '.page[data-page="home"]', function (e) {
   //console.log('e',e)
   //console.log(myApp.params["backendUrl"]);
   //console.log(sessionStorage);
-  var swiper = myApp.swiper.get('#menuSwiper');
+  /*var swiper = myApp.swiper.get('#menuSwiper');
   var indicesToRemove = [];
   //console.log($$(swiper.slides).hasClass('.needLogin'));
   swiper.slides.forEach(function(slide,index){
@@ -114,7 +122,7 @@ $$(document).on('page:init', '.page[data-page="home"]', function (e) {
   indicesToRemove.forEach(function (index) {
     swiper.removeSlide(index);
   });
-  swiper.update();
+  swiper.update();*/
 
   /*var slidesToRemove = $$('.needLogin'); 
   console.log(slidesToRemove);
@@ -261,7 +269,8 @@ $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
 
 })
 $$(document).on('page:init', '.page[data-page="berita"]', function (e) {
-
+  console.log(myApp.views.main.router.history)
+  myApp.views.main.router.navigate('/', {reloadCurrent: true});
   $$('#read-more1').on('click',function(e){
     e.preventDefault();
     const mainImage = document.getElementById('pImg');
@@ -455,3 +464,13 @@ $$(document).on('page:afterin', '.page[data-page="payment"]', function (e) {
   
 
 })
+$$(document).on('page:init', '.page[data-page="university"]', function (e) {
+  if(device.desktop){
+    //$$('.cardUniversity').css('height','32vw');
+    //$$('[name=imgUniv]').css('height','600px');
+    $$('[name=imgUniv]').css('background-size','contain');
+    $$('[name=imgUniv]').css('height','310px');
+  }else{
+    $$('[name=imgUniv]').css('background-size','contain');
+  }
+});

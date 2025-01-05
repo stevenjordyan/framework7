@@ -11,19 +11,7 @@
   </div>
 
     <!-- Scrollable page content-->
-    <div class="page-content  hide-navbar-on-scroll" style="background-color:#f2f5fa;">
-      <!--<swiper-container pagination pagination-hide-on-click class="demo-swiper" >
-        <swiper-slide>
-          Belajar Mandarin dari Rumah
-          <img src="assets/images/image-1.jpg"></img>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="assets/images/image-2.jpg"></img>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="assets/images/image-3.jpg"></img>
-        </swiper-slide>
-      </swiper-container>-->
+    <div class="page-content" style="background-color:#f2f5fa;">
 
       <div class="block" style="background: rgba(243, 209, 213,0.5);height:40vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;width:100%;position:absolute;">
@@ -203,9 +191,9 @@
         </div>
       </div>
     <div class="block-title">Testimoni</div>
-    <swiper-container pagination pagination-hide-on-click class="swiperTestimoni11" space-between="20" slides-per-view="5" style="width:auto;height:auto;" autoplay>
+    <swiper-container pagination class="swiperTestimoni11" space-between="20" slides-per-view="1" style="width:auto;height:auto;" autoplay>
       <swiper-slide>
-        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+        <div class="card card-outline-md demo-card-header-pic">
           <div style="background-image:url(assets/images/student-1.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">FIANDY</div>
           <div class="card-content card-content-padding">
             <p class="date">Environmental Engineering Student</p>
@@ -219,7 +207,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+        <div class="card card-outline-md demo-card-header-pic">
           <div style="background-image:url(assets/images/student-2.jpeg);height:30vh;border-radius:77px;" valign="bottom"
             class="card-header">GERALDINE</div>
           <div class="card-content card-content-padding">
@@ -233,7 +221,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+        <div class="card card-outline-md demo-card-header-pic">
           <div style="background-image:url(assets/images/student-3.jpeg);height:30vh;border-radius:77px;" valign="bottom"
             class="card-header">EPSA</div>
           <div class="card-content card-content-padding">
@@ -246,7 +234,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+        <div class="card card-outline-md demo-card-header-pic">
           <div style="background-image:url(assets/images/student-1.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">FIANDY</div>
           <div class="card-content card-content-padding">
             <p class="date">Environmental Engineering Student</p>
@@ -260,7 +248,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+        <div class="card card-outline-md demo-card-header-pic">
           <div style="background-image:url(assets/images/student-2.jpeg);height:30vh;border-radius:77px;" valign="bottom"
             class="card-header">GERALDINE</div>
           <div class="card-content card-content-padding">
@@ -274,7 +262,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+        <div class="card card-outline-md demo-card-header-pic">
           <div style="background-image:url(assets/images/student-3.jpeg);height:30vh;border-radius:77px;" valign="bottom"
             class="card-header">EPSA</div>
           <div class="card-content card-content-padding">
@@ -287,7 +275,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+        <div class="card card-outline-md demo-card-header-pic">
           <div style="background-image:url(assets/images/student-1.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">FIANDY</div>
           <div class="card-content card-content-padding">
             <p class="date">Environmental Engineering Student</p>
@@ -301,7 +289,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+        <div class="card card-outline-md demo-card-header-pic">
           <div style="background-image:url(assets/images/student-2.jpeg);height:30vh;border-radius:77px;" valign="bottom"
             class="card-header">GERALDINE</div>
           <div class="card-content card-content-padding">
@@ -315,7 +303,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="card card-outline-md demo-card-header-pic" style="font-size:small;">
+        <div class="card card-outline-md demo-card-header-pic">
           <div style="background-image:url(assets/images/student-3.jpeg);height:30vh;border-radius:77px;" valign="bottom"
             class="card-header">EPSA</div>
           <div class="card-content card-content-padding">
@@ -416,7 +404,17 @@
 <script type="module" src="./js/app.js"></script>
 <script>
 export default (props, { $f7, $theme, $on }) => {
+  $on('pageInit', () => {
+    const swiperTestimoni = document.querySelector('.swiperTestimoni11');
+    if($f7.device.desktop){
+      swiperTestimoni.setAttribute('slides-per-view', '5');
+    }else{
+      swiperTestimoni.setAttribute('slides-per-view', '1');
+    }
+  });
   
+  
+
   var swiper = $f7.swiper.create('.swiper-container #swiperHeader', {
       speed: 1500,
       loop: true,

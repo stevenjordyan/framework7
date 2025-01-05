@@ -691,3 +691,24 @@ code {
     border-left-color: #282828;
   }
 }
+.univH1{
+  color:#fc4904;
+}
+.univTitle{
+  color:white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+.univClose{
+  color:#9b4055;
+  
+}
+.cardUniversity{
+  height:400px;
+}
+.card-expandable{
+  height:400px;
+}

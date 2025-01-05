@@ -27,60 +27,74 @@ var routes = [
   {
     path: '/about/',
     component: AboutPage,
+    browserHistory:true
   },
   {
     path: '/form/',
     component: FormPage,
+    browserHistory:true
   },
   {
     path: '/catalog/',
     component: CatalogPage,
+    browserHistory:true
   },
   {
     path: '/product/:id/',
     component: ProductPage,
+    browserHistory:true
   },
   {
     path: '/settings/',
     component: SettingsPage,
+    browserHistory:true
   },
   {
     path: '/logedin/',
     component: LogedinPage,
+    browserHistory:true
   },
   {
     path: '/mailbox/',
     component: Mailbox,
+    browserHistory:true
   },
   {
     path: '/mydata/',
     component: Mydata,
+    browserHistory:true
   },
   {
     path: '/registration/',
     //component: Registration,
     url: 'http://app.cnyeducation.com',
     target:"_system",
+    browserHistory:true
   },
   {
     path: '/payment/',
     component: Payment,
+    browserHistory:true
   },
   {
     path: '/university/',
     component: University,
+    browserHistory:true
   },
   {
     path: '/hskcenter/',
     component: Hskcenter,
+    browserHistory:true
   },
   {
     path: '/testimoni/',
     component: Testimoni,
+    browserHistory:true
   },
   {
     path: '/berita/',
     component: Berita,
+    browserHistory:true
   },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',

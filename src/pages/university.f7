@@ -8,138 +8,414 @@
             <img style="border-radius: 8px" src="assets/images/logo-org-Photoroom.png" width="50" />
           </div>
           <div class="title" style="color:#0f60aa;"> Education Consultant</div>
+          <div class="right">
+            <a href="#" data-panel=".panel-right" class="panel-open"><i class="icon material-icons md-only">menu</i>asdasd</a>
+            
+          </div>
         </div>
     </div>
+      <!-- Right Panel with Cover effect -->
+    <div class="panel panel-right panel-cover panel-init">
+      <div class="block">
+        ...
+        <!-- Click on link with "panel-close" class will close panel -->
+        <p><a href="#" class="panel-close">Close me</a></p>
+        <!-- Click on link with "panel-open" and data-panel=".panel-left" attribute will open Left panel -->
+        <p><a href="#" data-panel=".panel-left" class="panel-open">Open Left Panel</a></p>
+      </div>
+    </div>
+
     <!-- Scrollable page content-->
     <div class="page-content" id="universityPageContent" style="background-color:#f2f5fa;">
+      <div class="right">
+        <a href="#" data-panel=".panel-right" class="panel-open"><i class="icon material-icons md-only">menu</i></a>
+      </div>
       <!--<div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
       </div>-->
-      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;">Wujudkan Mimpimu Belajar di China</h1>
-      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Masa depan cerah milik kamu yang bersiap dari sekarang</h2>
-
-      <div class="block" style="margin-top:0;">
-        <div class="grid grid-cols-2 medium-grid-cols-4">
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/2.png'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Guangzhou College of Commerce 广州商学院</p>
-              Guangzhou College of Commerce, formerly known as Zengcheng College of South China Normal University, is located in the center of Guangzhou City.
+      <div class="block-title block-title-large" style="text-align:center;"><label class="univH1">Kerja sama Universitas</label></div>
+      <div class="block">
+        <p style="text-align: center;">
+          Untuk mendorong pertukaran budaya dan pendidikan yang lebih lanjut antara dua negara sahabat, Kami bertekad untuk memainkan peran yang lebih penting dan berkontribusi lebiih besar. CNY Education menawarkan calon pelajar akses eksklusif ke Universitas terbaik di Tiongkok dan memberikan pelayanan kepada calon pelajar sebelum, selama dan setelah masa studi.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 medium-grid-cols-3 grid-gap">
+        <!-- univ1 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/1.jpg) no-repeat center top; background-size: cover;height:400px;" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Central China Normal University (CCNU) （华中师范大学) </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Located in Wuhan City, Central China Normal University (CCNU) ranks top 6 of its kind in China. It is a state-owned public university. Its campus is considered to be one of the most beautiful campuses of its kind in Wuhan.
+                </p>
+                <p>
+                  华中师范大学综合排名稳居师范类中国前六。其“中印尼人文交流研究中心”更是拥有多名知名专家学者。华中师范大学是最受印尼学生喜爱的中国高校之一。https://www.ccnu.edu.cn/
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
             </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/3.png'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Zhejiang University 浙江大学ZJU</p>
-              public university in Hangzhou City, Zhejiang Province, China, where Alibaba headquarter locates as well
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/4.png'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">The High School Affiliated to Beijing Normal University (SMA BNU)</p>
-              The High School Affiliated to Beijing Normal University (SMA BNU) was founded in 1901. It is the earliest public middle school in China and one of the most famous middle schools in China. Famous alumni can be found all over the world.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/4.png'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Lanzhou Jiaotong University (兰州交通大学)</p>
-              Universitas Lanzhou Jiaotong (兰州交通大学) adalah salah satu universitas terbaik di China Barat, terletak di Provinsi Gansu, China. Universitas Lanzhou Jiaotong memiliki pilihan jurusan yang lengkap dan terfokus ke jurusan tehnik.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/5.png'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Zhongnan University of Economics and Law (ZUEL) （中南财经政法大学）</p>
-              Located in Wuhan City, Zhongnan University of Economics and Law (ZUEL) is an institute of higher education directly administrated by the Ministry of Education of China with economics, law, and management as its core disciplines.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/6.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Central China Normal University (CCNU) （华中师范大学</p>
-              Located in Wuhan City, Central China Normal University (CCNU) ranks top 6 of its kind in China. It is a state-owned public university. Its campus is considered to be one of the most beautiful campuses of its kind in Wuhan.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/7.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Jiangxi University of Finance and Economics（江西财经大学）</p>
-              Located in Nanchang City, Jiangxi University of Finance and Economics ranks top 3 in Jiangxi Province. It is a state-owned public university. Its business-related majors are considered to be best of its kind in Jiangxi Province.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/8.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Fujian Polytechnic Normal University（福建技术师范学院）</p>
-              Located in Fuqing District, Fuzhou City, Fujian Polytechnic Normal University(FPNU) is one of the best comprehensive public universities in Fujian Province.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/9.png'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Shanghai Polytechnic University (上海第二工业大学)）</p>
-              Located in Shanghai City, Shanghai Polytechnic University is a state-owned public university. 上海第二工业大学成立于1960年，是一所工科见长，管经文理艺多学科协调发展的市属普通高等学校。是中国自行车智能制造示范基地、中国自行车智能制造中心。
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/10.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Central University of Finance and Economics (中央财经大学)</p>
-              Central University of Finance and Economics(中央财经大学) is the first economics and management public university which was founded by the China Central Government in Beijing. 
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/11.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Fujian Medical University (福建医科大学）</p>
-              Located in Fuzhou City Fujian Province, Fujian Medical University ranks top 25 of all medical universities in China.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/12.jpg'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Xiamen University of Technology (厦门理工学院)</p>
-              Universitas Teknologi Xiamen (厦门理工学院) adalah universitas negeri provinsi yang terletak di Xiamen, provinsi Fujian, China. Pada tahun 2008 XMUT dinobatkan sebagai salah satu dari “Sepuluh Besar Universitas dengan Pertumbuhan Tercepat di China”.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/13.png'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Wuhan Textile University (武汉纺织大学)</p>
-              Wuhan Textile University (武汉纺织大学) is the only public university named after Textile in China. Located in Wuhan City, Hubei Province with a strength in Master programs related to Textile.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
-          </div>
-          <div class="card card-outline-md demo-card-header-pic" style="height:40vw;">
-            <div style="background-image:url('assets/university/14.png'); height:18vw;" valign="bottom" class="card-header"></div>
-            <div class="card-content card-content-padding">
-              <p class="date">Wuhan University (武汉大学)</p>
-              Located in Wuhan City, Wuhan University ranks top 10 in China. It is a state-owned public university. Its campus is considered to be one of the most beautiful campuses of its kind in the whole world.
-            </div>
-            <!--<div class="card-footer"><a class="link">Like</a><a class="link">Read more</a></div>-->
           </div>
         </div>
+        <!-- univ2 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/2.png) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Guangzhou College of Commerce （广州商学院）</label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Guangzhou College of Commerce, formerly known as Zengcheng College of South China Normal University, is located in the center of Guangzhou City. It is a university with first-class facilities and a high level of internationalization. Guangzhou College of Commerce has a strong faculty and first-class teaching quality for one-semester and one-year Mandarin courses, and international students come from all over the world.  
+                </p>
+                <p>
+                  广州商学院前身是华南师范大学增城学院，坐落在广州市中心，是一所设施一流，国际化办学程度高的大学。广州商学院中文短期课程师资力量雄厚，教学质量一流，留学生来自世界各地。www.gcc.edu.cn
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ3 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/3.png) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Zhejiang University (浙江大学ZJU) </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Zhejiang University (浙江大学ZJU) is a public university in Hangzhou City, Zhejiang Province, China, where Alibaba headquarter locates as well. It is affiliated with the Ministry of Education. The university is part of Double First-Class Construction, Project 985, and Project 211. Ranked #44 in QS World University Rankings 2024 and #3 in China. Website: https://www.zju.edu.cn/
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ4 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/4.png) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">The High School Affiliated to Beijing Normal University (SMA BNU) </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  The High School Affiliated to Beijing Normal University (SMA BNU) was founded in 1901. It is the earliest public middle school in China and one of the most famous middle schools in China. Famous alumni can be found all over the world. The recruitment and cultivation of international students, including Indonesian students, has a history of 30 years. The High School Affiliated to Beijing Normal University is located in Xicheng District, the central area of Beijing city, adjacent to Tiananmen Square, with very convenient transportation. School goals/visi&misi: domestic first-class, internationally advanced; cultivation goals: full personality, high quality; school motto: sincerity, love, diligence, and courage. (https://www.bjsdfz.com/)
+                </p>
+                <p>
+                  北京师范大学附属中学始建于1901年，是中国成立最早的公立中学，是中国最有名的中学之一。知名校友遍布世界各地。国际学生包括印尼学生的招生和培养已有30年的历史。北京师大附中位于北京市中心区-西城区，毗邻天安门广场，交通十分便利。办学目标：国内一流，国际先进；培养目标：全人格，高素质；校训：诚、爱、勤、勇。
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ5 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/5.png) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Lanzhou Jiaotong University (兰州交通大学)</label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Universitas Lanzhou Jiaotong (兰州交通大学) adalah salah satu universitas terbaik di China Barat, terletak di Provinsi Gansu, China. Universitas Lanzhou Jiaotong memiliki pilihan jurusan yang lengkap dan terfokus ke jurusan tehnik, mempekerjakan 2.355 profesional pendidikan termasuk 1.293 guru. Di antara guru ada 121 profesor penuh, 368 profesor asosiasi, 83 penerima doktor dan 576 penerima master. Pendaftaran saat ini Universitas total lebih dari 17.000 mahasiswa sarjana penuh waktu, 1.800 mahasiswa pascasarjana, dan lebih dari 12.000 peserta dalam kursus pendidikan orang dewasa.
+                </p>
+                <p>
+                  Ada total 46 jurusan sarjana, yang semuanya berhak untuk memberikan Gelar Sarjana setelah menyelesaikan program reguler empat atau lima tahun. Selain itu, 60 jurusan berhak untuk memberikan Gelar Master dan Gelar Dokter yang ditawarkan oleh 12 jurusan ini.
+                </p>
+                <p>
+                  Universitas Lanzhou Jiaotong menempati area seluas lebih dari 1451.337 mu (0,9676 juta m2) dan menggunakan lebih dari 952 juta yuan (US $ 117,53 juta) dalam total aset dan 528 juta yuan (US $ 65,19 juta) dalam aset tetap. Melalui perjalanan panjang, Universitas telah dengan mantap menetapkan tradisi-tradisinya yang sangat baik dan mencapai posisi dominan di banyak bidang teknis. https://sie.lzjtu.edu.cn/
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ6 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/6.jpg) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Zhongnan University of Economics and Law (ZUEL) （中南财经政法大学）</label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Located in Wuhan City, Zhongnan University of Economics and Law (ZUEL) is an institute of higher education directly administrated by the Ministry of Education of China with economics, law, and management as its core disciplines. ZUEL is also one of the universities sponsored by “211 project” and “985 Project Innovation Platform”, and has been selected into the list of universities and colleges which will participate in the country’s construction plan of world-class universities and world-class disciplines (‘Double World-Class’).
+                </p>
+                <p>
+                  中南财经政法大学位于武汉市，是中国教育部直属高校，以经济学、法学、管理学为核心学科。 学校也是国家“211工程”和“985工程创新平台”建设高校之一，入选国家世界一流大学和世界一流学科建设计划高校名单。http://ies.zuel.edu.cn/main.htm
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ7 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/8.jpg) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Jiangxi University of Finance and Economics（江西财经大学）</label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Located in Nanchang City, Jiangxi University of Finance and Economics ranks top 3 in Jiangxi Province. It is a state-owned public university. Its business-related majors are considered to be best of its kind in Jiangxi Province.
+                </p>
+                <p>
+                  江西财经大学位于江西省省会南昌市，是江西省排名前三的综合性院校。国际商务硕士专业全省排名第一。https://www.jxufe.edu.cn/
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ8 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/9.png) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Fujian Polytechnic Normal University（福建技术师范学院）</label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Located in Fuqing District, Fuzhou City, Fujian Polytechnic Normal University(FPNU) is one of the best comprehensive public universities in Fujian Province. It owns the only Equestrian Team among all the public Universities in Fujian Province.
+                </p>
+                <p>
+                  China and Indonesia launched a joint program based in Fuqing, It is called “Two Countries Twin Parks” which represents a solid step in synergizing China’s Belt and Road Initiative and Indonesia’s Vision for the Global Maritime Fulcrum, as well as an innovative approach to deeper economic and trade ties at the favorable juncture of the upgrading of the China-ASEAN Free Trade Zone and the signing of the Regional Comprehensive Economic Partnership (RCEP) Agreement. FPNU is a key player in this “Two Countries Twin Parks” project and international graduates are always offered to work in this park with decent salary. http://en.fpnu.edu.cn/
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ9 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/10.jpg) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Shanghai Polytechnic University (上海第二工业大学) </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Located in Shanghai City, Shanghai Polytechnic University is a state-owned public university.
+                </p>
+                <p>
+                  上海第二工业大学成立于1960年，是一所工科见长，管经文理艺多学科协调发展的市属普通高等学校。是中国自行车智能制造示范基地、中国自行车智能制造中心
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ10 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/11.png) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Central University of Finance and Economics (中央财经大学) </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Central University of Finance and Economics(中央财经大学) is the first economics and management public university which was founded by the China Central Government in Beijing. The university is a national key university with subjects in economics, management and law covering undergraduate, masters and Ph.D programs.
+                </p>
+                <p>
+                  Central University of Finance and Economics is both a Project 221 and the 985 Innovative Platforms for Key Disciplines Project university.
+                </p>
+                <p>
+                  Central University of Finance and Economics has been regarded as the best university in Finance, Economics, business and management of China, which is known as “the Cradle of Giants in the Fields of Finance and Management”. In The Report of Chinese Universities and Courses evaluation of 2017–2018 (released by Research Center for China Science Evaluation), Central University of Finance and Economics was ranked No.1 among 67 finance and economics universities in mainland China. According to 2018 China College Rankings By Salary, the average salaries of CUFE graduates is ranked No.9 in China. In the Assessments of Ministry of Education, the Applied Economics of CUFE is ranked as No. 1 in China, accompanying with the Peking University and the Renmin University of China. http://sice.cufe.edu.cn/ywb/index_english.htm
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ11 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/12.jpg) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Fujian Medical University (福建医科大学） </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Located in Fuzhou City Fujian Province, Fujian Medical University ranks top 25 of all medical universities in China. It is a state-owned public university and recognized by both Indonesian and Chinese governments. It is also recognized and accredited by World Health Organization (WHO), Konsil Kedokteran Indonesia(KKI).
+                </p>
+                <p>
+                  福建医科大学是中国最好的医科大学之一。坐落在美丽的福建省福州市，是未来医生的摇篮。https://www.fjmu.edu.cn/
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ12 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/13.jpg) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Lanzhou University of Technology (兰州理工大学) </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Lanzhou University of Technology (兰州理工大学) is located in Lanzhou, the provincial capital of Gansu province. Founded in 1919 as Gansu Provincial Technical School, LUT witnessed nearly one hundred years of development and now has grown to be a top multi-disciplinary university which features solid foundation in Engineering, increasing development in science fields and unique characteristics in liberal arts.
+                </p>
+                <p>
+                  The total area of the two campuses (Langongping Campus and Pengjiaping Campus) is vast 400 acres. LUT has 19 colleges, one physical education department, one graduate school and one graduate school (Wenzhou Branch) in Wenzhou, Zhejiang province. LUT houses 27,075 students including over 400 international students from 39 countries and over 2,500 staff, of which more than 1,600 are full-time teachers.
+                </p>
+                <p>
+                  LUT has 5 post-doctoral research stations, 6 level one (national level) doctoral programs, 46 level two doctoral programs, 23 level one master programs, 170 level two master programs and 66 undergraduate programs.
+                </p>
+                <p>
+                LUT covers 9 disciplines including Engineering, Science, Management, Arts, Law, Education, Medicine, Fine Arts and Economics. Among all the programs, Engineering and Materials Science ranked to top 1% of ESI global ranking. Metallurgical engineering, Power engineering and Thermal physics ranked 11th and 26th respectively among the universities in China in the 3rd round China Discipline Ranking.
+                </p>
+                <p>
+                  LUT has established official exchanges and cooperation with more than 50 universities of the United States, Russia, Britain, Australia and other countries. It’s a member of Belt and Road Alliance of Universities as well as a member of Shanghai Cooperation Organization (SCO).It is authorized to enroll Chinese Government Scholarship students. http://gjy.lut.edu.cn/
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ13 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/14.jpg) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Xiamen University of Technology (厦门理工学院) </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Universitas Teknologi Xiamen (厦门理工学院) adalah universitas negeri provinsi yang terletak di Xiamen, provinsi Fujian, China. Pada tahun 2008 XMUT dinobatkan sebagai salah satu dari “Sepuluh Besar Universitas dengan Pertumbuhan Tercepat di China”. Sejak 2010 telah menjadi salah satu dari hanya tiga universitas di Fujian yang menjadi bagian dari Program Pelatihan “Outstanding Engineers” yang disponsori Kementerian Pendidikan, dan satu-satunya universitas di Fujian yang menjadi bagian dari “Program Inovasi Teknik” Kementerian Sains dan Teknologi. Pada tahun 2011 ini juga menjadi satu-satunya universitas di Fujian yang memenangkan “Penghargaan Inovasi dan Kewirausahaan Pendidikan Nasional”.
+                </p>
+                <p>
+                  Best Chinese Universities Rankings, Xiamen University of Technology (XMUT) menempati peringkat 13th pada tahun 2017 menurut Academic Ranking of World Universities.
+                </p>
+                <p>
+                  Xiamen University of Technology (XMUT) memiliki banyak pengalaman dalam menyambut mahasiswa internasional. Sudah 18 tahun XMUT pertama kali menerima lisensi untuk mengundang para siswa dari kota-kota saudara di luar negeri Xiamen, dan sejak saat itu XMUT telah diakui oleh British Council sebagai salah satu universitas tuan rumah terbaik bagi mahasiswa Inggris, mengambil alih universitas ternama di Beijing dan Shanghai. XMUT mengatur agar setiap siswa pertukaran dapat bermitra dengan siswa lokal untuk memberikan dukungan sebaik mungkin bagi pembelajaran Anda.
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ14 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/15.png) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Wuhan Textile University (武汉纺织大学) </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Wuhan Textile University (武汉纺织大学) is the only public university named after Textile in China. Located in Wuhan City, Hubei Province with a strength in Master programs related to Textile, Wuhan Textile University is one of the best Textile Universities in the whole world. For more information, please log on its English website http://english.wtu.edu.cn/
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- univ15 -->
+        <div>
+          <div class="card card-expandable cardUniversity" style="">
+            <div class="card-content" style="">
+              <div style="background: url(assets/university/16.png) no-repeat center top; background-size: cover; height: 400px" name="imgUniv">
+                <div class="card-header text-color-white"><label class="univTitle">Wuhan University (武汉大学) </label></div>
+                <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons univClose">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>
+                  Located in Wuhan City, Wuhan University ranks top 10 in China. It is a state-owned public university. Its campus is considered to be one of the most beautiful campuses of its kind in the whole world.  
+                </p>
+                <p>
+                  武汉大学综合排名稳居中国前十。武汉大学学科门类齐全、综合性强、特色明显，涵盖了哲、经、法、教育、文、史、理、工、农、医、管理、艺术等12个学科门类。现有127个本科专业，59个硕士学位授权一级学科，49个博士学位授权一级学科。有46个博士后科研流动站。武汉大学被誉为世界最美的校园之一，每年的樱花节吸引无数世界各地的游客前来赏花。https://www.whu.edu.cn/
+                </p>
+                <p>
+                  <a class="button button-fill button-round button-large card-close">Close</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+      
+      
       <!-- footer 
       <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
@@ -192,6 +468,15 @@
 
 <script>
 export default (props, { $f7, $theme, $on }) => {
+  var $$=$f7.$el;
+  $on('pageInit', () => {
+    
+  });
+  $on('cardOpened',function(e){
+    const card = document.querySelector('.card-expandable');
+    console.log(card);
+  });
+
   let toastLargeMessage;
   const showToastLargeMessage = () => {
       // Create toast
