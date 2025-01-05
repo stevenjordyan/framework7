@@ -1,14 +1,13 @@
 <template>
   <div class="page" data-page="home">
   <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
-  <!--<div class="navbar" style="background-image: url('assets/images/background.png');">-->
-      <div class="navbar"></div>
-      <div class="navbar-inner">
-          <div class="left">
-            <img style="border-radius: 8px" src="assets/images/logo-cny.png" width="50" />
-          </div>
-          <div class="title" style="color:#0f60aa;"><label style="color:#f78f4b;">CNY</label> Education Consultant</div>
+    <div class="navbar"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <img style="border-radius: 8px" src="assets/images/logo-org-Photoroom.png" width="50" />
       </div>
+      <div class="title" style="color:#0f60aa;"> Education Consultant</div>
+    </div>
   </div>
 
     <!-- Scrollable page content-->
@@ -38,11 +37,11 @@
 
 
       <div class="card" style="text-align:center;height:14vh;">
-        <swiper-container space-between="1" slides-per-view="7" scrollbar="true" pagination="false" navigation="true" style="height:13vh;" id="menuSwiper">
+        <swiper-container space-between="1" slides-per-view="6" scrollbar="true" pagination="false" navigation="true" style="height:13vh;" id="menuSwiper">
           <swiper-slide style="padding-top:1%;" class="afterLogin">
             <div style="" class="item-media">
               <div class="item-media">
-                <a class="login-screen-open" data-transition="f7-cover" data-login-screen=".login-screen">
+                <a class="login-screen-open" href="https://app.cnyeducation.com/" class="external" data-transition="f7-cover">
                   <img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" />
                 </a>
               </div><label style="font-size:x-small;"> Login</label>
@@ -57,7 +56,7 @@
               </div><label style="font-size:x-small;"> Registration</label>
             </div>
           </swiper-slide>
-          <swiper-slide style="padding-top:1%;" class="needLogin">
+          <!--<swiper-slide style="padding-top:1%;" class="needLogin">
             <div style="display:inline-block;padding-left:5%;padding-right:5%;" class="item-media">
               <div class="item-media">
                 <a href="/mailbox/" data-transition="f7-cover">
@@ -101,7 +100,7 @@
                 </a>
               </div><label style="font-size:x-small;"> Logout</label>
             </div>
-          </swiper-slide>
+          </swiper-slide>-->
           <swiper-slide style="padding-top:1%;">
             <div class="item-media">
               <div class="item-media">
@@ -130,13 +129,13 @@
               </div> <label style="font-size:x-small;">Berita</label>
             </div>
           </swiper-slide>
-          <swiper-slide style="padding-top:1%;">
+          <!--<swiper-slide style="padding-top:1%;">
             <div class="item-media">
               <div class="item-media">
                 <img style="border-radius: 8px" src="assets/images/logo-admissions1.png" width="40" />
               </div> <label style="font-size:x-small;">Penerimaan</label>
             </div>
-          </swiper-slide>
+          </swiper-slide>-->
           
         </swiper-container>
       </div>
@@ -355,13 +354,13 @@
         </div>
         <div>
           <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
+          <a href="/university/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
+          <a href="/hskcenter/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
+          <a href="/testimoni/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
+          <a href="/berita/" data-transition="f7-cover"><u>Berita</u></a> <br/>
+          <!--<a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>-->
           
-          <a href="/logedin/" data-transition="f7-cover"><u>Registration</u></a> <br/>
+          <a href="https://app.cnyeducation.com/registration" class="external" data-transition="f7-cover"><u>Registration</u></a> <br/>
         </div>
       </div>
     </div>

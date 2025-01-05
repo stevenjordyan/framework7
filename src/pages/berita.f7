@@ -4,13 +4,11 @@
         <div class="navbar">
         </div>
         <div class="navbar-inner">
-            <div class="left">
-              <img style="border-radius: 8px" src="assets/images/logo-cny.png" width="50" />
-            </div>
-            <div class="title" style="color:#0f60aa;">
-              <label style="color:#f78f4b;">CNY</label> Education Consultant
-            </div>
-        </div>
+          <div class="left">
+            <img style="border-radius: 8px" src="assets/images/logo-org-Photoroom.png" width="50" />
+          </div>
+          <div class="title" style="color:#0f60aa;"> Education Consultant</div>
+      </div>
     </div>
     <!-- Scrollable page content-->
     <div class="page-content" id="beritaPageContent" style="background-color:#f2f5fa;">
