@@ -470,6 +470,7 @@ $$(document).on('page:init', '.page[data-page="university"]', function (e) {
     //$$('[name=imgUniv]').css('height','600px');
     $$('[name=imgUniv]').css('background-size','contain');
     $$('[name=imgUniv]').css('height','310px');
+    $$('[name=imgUniv]').css('width','30vw');
   }else{
     $$('[name=imgUniv]').css('background-size','contain');
   }

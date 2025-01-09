@@ -407,17 +407,10 @@
           </div>
         </div>
 
+        
+        
       </div>
-      
-      
-      <!-- footer 
-      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
-        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
-      </div>-->
-      <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0;
-        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
-      </div>
-      <div class="block" style="background: rgba(243, 209, 213, 0.5)">
+      <div class=block>
         <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
           <div>
             <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office
@@ -433,18 +426,26 @@
           </div>
           <div>
             <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
-            <a href="/mailbox/" data-transition="f7-cover"><u>Inbox</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Job Vacancy</u></a> <br/>
-            <a href="/" data-transition="f7-cover"><u>Logout</u></a> <br/>
+            <a href="https://app.cnyeducation.com/" class="external" data-transition="f7-cover"><u>Login</u></a> <br/>
+            <a href="https://app.cnyeducation.com/registration" class="external" data-transition="f7-cover"><u>Registration</u></a> <br/>
+            <a href="/university/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
+            <a href="/hskcenter/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
+            <a href="/testimoni/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
+            <a href="/berita/" data-transition="f7-cover"><u>Berita</u></a> <br/>
           </div>
         </div>
       </div>
-      <!--end footer -->
+      
+      
+      
+      <!-- footer 
+      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:cover;">
+      </div>-->
+      <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:cover;">
+      </div>
+      
 
     
 
