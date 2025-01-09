@@ -1,13 +1,14 @@
 <template>
-  
   <div id="TestimoniPage" class="page" data-page="testimoni" style="font-family:'roboto',sans-serif;">
     <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
-        <div class="navbar"></div>
-       <div class="navbar-inner">
+        <div class="navbar-inner">
           <div class="left">
             <img style="border-radius: 8px" src="assets/images/logo-org-Photoroom.png" width="50" />
           </div>
           <div class="title" style="color:#0f60aa;"> Education Consultant</div>
+          <div class="right">
+          <a href="#" data-panel=".panel-right" class="panel-open"><i class="icon material-icons md-only">menu</i></a>
+        </div>
       </div>
     </div>
     <!-- Scrollable page content-->
@@ -18,82 +19,140 @@
       
       <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;"><img src="assets/images/logo-cny.png" alt="Portrait of Teacher" class="w-12 h-12 object-cover" /><br/>Testimoni & Alumni</h1>
       <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Study In China, Realize Your Dream</h2>
-      
-      <u><h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Testimonial from Alumni</h2></u>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Testimoni from Alumni</h2>
       <div class="block">
-          <!-- First Testimonial -->
-          <div class="grid grid-cols-4 medium-grid-cols-2">
-            <div class="card">
-              <div class="card-content card-content-padding text-align-center">
-                <div class="flex justify-center mb-4">
-                  <img src="assets/alumni/1.jpg" alt="Portrait of Ivony" class="rounded-full w-24 h-24 object-cover testimonial-img" />
-                </div>
-                <p class="text-color-gray mb-4 txtQuote">“Alhamdulilah banyak santriwan-santriwati kami yang melanjutkan studi di China. Beberapa santri kami bahkan ada yang mendapatkan beasiswa juga berkat CNY Education. Terima Kasih sudah CNY yang Sudah memberikan jalan bagi santri DAQU untuk melanjutkan studi di perguruan tinggai di China.”</p>
-                <p class="text-color-gray font-bold">K.H. UST. YUSUF MANSYUR,, <span class="text-color-orange">Pengasuh Ponpes DAQU</span></p>
+        <swiper-container class="swiperTestimoniAlumni" space-between="10" slides-per-view="4" centered-slides="false" style="width:auto;height:auto;">
+          <swiper-slide></swiper-slide>
+          <swiper-slide>
+            <div class="card card-outline-md demo-card-header-pic">
+              <div style="background-image:url(assets/alumni/1.jpg);height:30vh;border-radius:77px;color:#fc4904;" valign="bottom" class="card-header"></div>
+              <div class="card-content card-content-padding">
+                <p class="date">K.H. UST. YUSUF MANSYUR, Pengasuh Ponpes DAQU</p>
+                <p style="text-align:center;font-style: italic;">
+                  “ Alhamdulilah banyak santriwan-santriwati kami yang melanjutkan studi di China. Beberapa santri kami bahkan ada yang mendapatkan beasiswa juga berkat CNY Education. Terima Kasih sudah CNY yang Sudah memberikan jalan bagi santri DAQU untuk melanjutkan studi di perguruan tinggai di China.”
+                </p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-content card-content-padding text-align-center">
-                <div class="flex justify-center mb-4">
-                  <img src="assets/alumni/2.jpeg" alt="Portrait of Harold" class="rounded-full w-24 h-24 object-cover testimonial-img" />
-                </div>
-                <p class="text-color-gray mb-4 txtQuote">“Terima Kasih kepada CNY Education yang sudah memberikan kesempatan kepada santriwati ponpes Al-Fatimah untuk melanjutkan studi ke China. Alhamdulilah impian santriwati yang ingin kuliah ke luar negeri terutama di China bisa terwujud berkat bantuan CNY Education Consultant.”</p>
-                <p class="text-color-gray font-bold">KH.TAMAN SYAIFUDDIN, <span class="text-color-orange">Pengasuh Ponpes AL-FATIMAH</span></p>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card card-outline-md demo-card-header-pic">
+              <div style="background-image:url(assets/alumni/2.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header"></div>
+              <div class="card-content card-content-padding">
+                <p class="date">KH.TAMAN SYAIFUDDIN, Pengasuh Ponpes AL-FATIMAH</p>
+                <p style="text-align:center;font-style: italic;">
+                  “Terima Kasih kepada CNY Education yang sudah memberikan kesempatan kepada santriwati ponpes Al-Fatimah untuk melanjutkan studi ke China. Alhamdulilah impian santriwati yang ingin kuliah ke luar negeri terutama di China bisa terwujud berkat bantuan CNY Education Consultant.”
+                </p>
               </div>
             </div>
-          </div>
-          <!-- End First Testimonial -->
+          </swiper-slide>
+          <swiper-slide></swiper-slide>
+        </swiper-container>
+      </div>
 
-        <u><h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Testimonial from Student</h2></u>
-          <!-- student testimonial -->
-          <div class="grid grid-cols-2 medium-grid-cols-4">
-            <div class="card">
-              <div class="card-content card-content-padding text-align-center">
-                <div class="flex justify-center mb-4">
-                  <img src="https://storage.googleapis.com/a1aa/image/gKkwSlFtvCK2BVW7N6hXpyaYNwmoWfPsHQ75CPEn7i3jEQ5JA.jpg" alt="Portrait of Ivony" class="rounded-full w-24 h-24 object-cover testimonial-img" />
-                </div>
-                <p class="text-color-gray mb-4 txtQuote">“Hai semuanya, nama saya Ivony. Saya bekerja di salah satu perusahaan minyak goreng. Awalnya saya belajar bahasa mandarin untuk meningkatkan kemampuan bahasa mandarin saya dan berharap bisa melanjutkan pendidikan S2 saya di China. Saya sudah belajar di CNY education selama 6 bulan. Sampai saat ini, saya telah melewati ujian HSK 4 dengan nilai yang memuaskan. Suasana belajar di CNY education sangat menarik dan tidak membosankan. Gurunya juga dapat mendorong kita untuk terus.”</p>
-                <p class="text-color-gray font-bold">IVONY, <span class="text-color-orange">General Employees</span></p>
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Testimoni from Students</h2>
+      <div class="block">
+        <swiper-container pagination class="swiperTestimoniStudent" space-between="10" slides-per-view="1" style="width:auto;height:auto;" autoplay>
+          <swiper-slide>
+            <div class="card card-outline-md demo-card-header-pic">
+              <div style="background-image:url(assets/images/student-1.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">FIANDY</div>
+              <div class="card-content card-content-padding">
+                <p class="date">Environmental Engineering Student</p>
+                <p style="text-align:center;font-style: italic;">
+                  “Sekarang saya sedang berada di Lanzhou Jiaotong University mengambil S1 Environmental Engineering. Saya dari pesantren Tahfizh Daarul Qur’an Ketapang angkatan 8. Awalnya saya berpikiran bagaimana akan hidup di China. Apakah susah untuk beribadah, belanja dan makan? Berkat CNY Education saya bisa mewujudkan mimpi untuk kuliah di China. Alhamdulilah di kota Lanzhou ini terdapat masjid, dan banyak muslimnya. Jadi tak perlu khawatir. Terima Kasih CNY Education”
+                </p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-content card-content-padding text-align-center">
-                <div class="flex justify-center mb-4">
-                  <img src="https://storage.googleapis.com/a1aa/image/6d5rJu1fB1SsLCZbSBmTUkYpOzQZWnofQfcj0ieGbJTakAKPB.jpg" alt="Portrait of Harold" class="rounded-full w-24 h-24 object-cover testimonial-img" />
-                </div>
-                <p class="text-color-gray mb-4 txtQuote">“Hallo nama saya Harold, saya berumur 17 tahun atau kelas 11. Saya bersekolah di Lentera Harapan dan mengambil jurusan IPS. Awalnya saya ingin belajar bahasa mandarin karena saya tertarik untuk kuliah di China, karena saya memperkirakan bahwa bahasa mandarin akan menjadi bahasa universal. Saya sudah belajar mandarin sekitar hampir 5 bulan di CNY. Dari kursus ini, membawa saya kepada suatu perkembangan dalam berbahasa mandarin. Sebelum kursus, saya kurang lancar dalam berbicara dan memahami bahasa mandarin. Tetapi saat ini saya mengalami kemajuan dengan mempelajari banyak vocab, walaupun masih banyak yang kurang. Kursus di CNY juga sangat nyaman, karena gurunya yang sangat terbuka dan teman-teman yang baik.”</p>
-                <p class="text-color-gray font-bold">HAROLD, <span class="text-color-orange">Student</span></p>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card card-outline-md demo-card-header-pic">
+              <div style="background-image:url(assets/images/student-2.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">GERALDINE</div>
+              <div class="card-content card-content-padding">
+                <p class="date">International Economic Student</p>
+                <p style="text-align:center;font-style: italic;">
+                  “I am a Regina Pacis Bogor Senior High School Alumna. First of all, why did I choose China? It is because the language. Mandarin is one of the most spoken language in the world. Moreover, I believe it could be easier to look for a job if you able to speak in Mandarin and English. To all of you who are willing to study in China, now is your chance because CNY Education have opened some universities to apply!”
+                </p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-content card-content-padding text-align-center">
-                <div class="flex justify-center mb-4">
-                  <img src="https://storage.googleapis.com/a1aa/image/ADW2rwYCwDLiGhCMX9zZEPpUJytSYd1IoJjFqBpucUJSCo8E.jpg" alt="Portrait of Tiffani" class="rounded-full w-24 h-24 object-cover testimonial-img" />
-                </div>
-                <p class="text-color-gray mb-4 txtQuote">“Halo, saya Tiffani bekerja sebagai sales manager di perusahaan advertising. Awalnya belajar mandarin karena sedang banyak tawaran bekerja di perusahaan China yang mengharuskan karyawannya bisa lancar berbahasa mandarin. Sudah belajar di CNY Education sekitar 3 bulanan dan saat ini sudah sampai ke tahap HSK 4. Di CNY Education, losi nya mengajarnya seru dan yang paling penting kita selalu didorong untuk berkembang terus ilmu berbahasa mandarinnya sehingga cepat ada kemajuan. Yang paling berkesan saya dapat bekerja di perusahaan sekarang dengan gaji yang naik 50% karena saya menguasai bahasa Mandarin.”</p>
-                <p class="text-color-gray font-bold">TIFFANI, <span class="text-color-orange">Sales Manager</span></p>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card card-outline-md demo-card-header-pic">
+              <div style="background-image:url(assets/images/image-1.jpg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">WAFI</div>
+              <div class="card-content card-content-padding">
+                <p class="date">Physics Student</p>
+                <p style="text-align:center;font-style: italic;">
+                  “ Saya studi di Lanzhou Jiaotong University jurusan International Economic and Trade. Awalnya saya tidak ada bayangan untuk kuliah di China karena alhamdullilah saya sudah diterima di salah satu PTN di Indonesia melalui jalur SMNPTN akan tetapi CNY Education membantu dan meyakinkan mana yang terbaik untuk masa depan saya. Saya memilih studi di China karena saya pikir dengan kuliah di luar negeri akan memudahkan saya untuk mencari pekerjaan dan banyak keuntungan lainnya. Terima Kasih CNY Education telah membantu mewujudkan Mimpi saya ke luar negeri.”
+                </p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-content card-content-padding text-align-center">
-                <div class="flex justify-center mb-4">
-                  <img src="https://storage.googleapis.com/a1aa/image/ADW2rwYCwDLiGhCMX9zZEPpUJytSYd1IoJjFqBpucUJSCo8E.jpg" alt="Portrait of Tiffani" class="rounded-full w-24 h-24 object-cover testimonial-img" />
-                </div>
-                <p class="text-color-gray mb-4 txtQuote">““Halo, saya Felicia, saya bersekolah di Penabur dan sekarang saya kelas 11, jurusan IPS. Saya awalnya pengen belajar mandarin karena ada tujuan kuliah di China. Aku udh belajar di CNY Education sekitar hampir 5 bulan. Sebelum aku les,aku kurang lancar dalam bicara dan banyak kosa kata yang aku krg tahu, sekarang saya memiliki kemajuan dalam berbicara Bahasa Mandarin walaupun masih banyak yang perlu dipelajari lagi, sekarang aku juga lebih banyak memahami kosa kata nya. Di CNY juga suasana belajarnya enak, teman nya baik dan gurunya juga sangat open dgn pertanyaan muridnya yg banyak.”</p>
-                <p class="text-color-gray font-bold">FELICIA, <span class="text-color-orange">Student</span></p>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card card-outline-md demo-card-header-pic">
+              <div style="background-image:url(assets/images/image-2.jpg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">HAFIZ</div>
+              <div class="card-content card-content-padding">
+                <p class="date">Medical Student</p>
+                <p style="text-align:center;font-style: italic;">
+                  “ Saya Mahasiswa Kedokteran Umum Chengdu University of TCM. Awalnya masih ragu-ragu untuk kuliah di China apalagi ambil kedokteran umum, takut biayanya mahal. Ternyata yang saya bayangkan tak terjadi setelah dapat pemaparan dari CNY Education. Kuliah kedokteran umum di China justru biayanya lebih murah daripada kuliah di dalam negeri. Berkat CNY juga saya bisa tembus kuliah kedokteran umum.”
+                </p>
               </div>
             </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card card-outline-md demo-card-header-pic">
+              <div style="background-image:url(assets/images/student-3.jpeg);height:30vh;border-radius:77px;" valign="bottom" class="card-header">EPSA</div>
+              <div class="card-content card-content-padding">
+                <p class="date">Medical Student</p>
+                <p style="text-align:center;font-style: italic;">
+                  “Saya Mahasiswa Kedokteran Umum Chengdu University of TCM. Terima Kasih banyak CNY Education yang telah membantu saya untuk mencapai impian saya mendapat beasiswa kuliah kedokteran di China. Semoga CNY Education semakin maju.”
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+
+      <h2 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;">Terlengkap & Terpercaya</h2>
+      <div class="block">
+        <p id="h3Testimoni">
+          <h3 style="color:#f68f4a;font-size:large;text-align:center;margin-top:0;" >Hampir dua puluh tahun berkecimpung di dunia pendidikan dan komunikasi intensif dengan mahasiswa Indonesia yang kuliah di Tiongkok</h3>
+        </p>
+      </div>
+      <div class="block">
+        <p id="pTestimoni" style="text-align:center;">
+          Kami memahami banyak sekali kesulitan yang mahasiswa Indonesia alami untuk bisa menembus universitas di Tiongkok. Dengan pengalaman mendalam di dunia pendidikan Indonesia, kami sangat mengenal sistem pendidikan dan apa yang diharapkan oleh murid juga orang tua murid. Menjawab tantangan tersebut kami terpanggil untuk menjadi jembatan antara institusi di Tiongkok dan mahasiswa Indonesia dan juga mahasiswa internasional lainnya.
+        </p>
+      </div>
+      <div class="block">
+        <div class="grid grid-cols-1 medium-grid-cols-3 grid-gap">
+          <div>
+            <img src="assets/testimoni/album1.jpeg" alt="Portrait of Teacher" class="object-cover" style="width:100%;" name="imgTeacher" />
           </div>
-          
+          <div>
+            <img src="assets/testimoni/album2.jpeg" alt="Portrait of Teacher" class="object-cover" style="width:100%;" name="imgTeacher" />
+          </div>
+          <div>
+            <img src="assets/testimoni/album3.jpeg" alt="Portrait of Teacher" class="object-cover" style="width:100%;" name="imgTeacher" />
+          </div>
+          <div>
+            <img src="assets/testimoni/album4.jpeg" alt="Portrait of Teacher" class="object-cover" style="width:100%;" name="imgTeacher" />
+          </div>
+          <div>
+            <img src="assets/testimoni/album5.jpeg" alt="Portrait of Teacher" class="object-cover" style="width:100%;" name="imgTeacher" />
+          </div>
+          <div>
+            <img src="assets/testimoni/album6.jpeg" alt="Portrait of Teacher" class="object-cover" style="width:100%;" name="imgTeacher" />
+          </div>
+          <div>
+            <img src="assets/testimoni/album7.jpeg" alt="Portrait of Teacher" class="object-cover" style="width:100%;" name="imgTeacher" />
+          </div>
+          <div>
+            <img src="assets/testimoni/album8.jpeg" alt="Portrait of Teacher" class="object-cover" style="width:100%;" name="imgTeacher" />
+          </div>
+          <div>
+            <img src="assets/testimoni/album9.jpeg" alt="Portrait of Teacher" class="object-cover" style="width:100%;" name="imgTeacher" />
+          </div>
+        </div>
       </div>
-      <!-- footer 
-      <div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
-        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
-      </div>-->
-      <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0;
-        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
-      </div>
-      <div class="block" style="background: rgba(243, 209, 213, 0.5)">
+       <div class=block>
         <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
           <div>
             <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office
@@ -109,18 +168,18 @@
           </div>
           <div>
             <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
-            <a href="/mailbox/" data-transition="f7-cover"><u>Inbox</u></a> <br/>
-            <a href="/logedin/" data-transition="f7-cover"><u>Job Vacancy</u></a> <br/>
-            <a href="/" data-transition="f7-cover"><u>Logout</u></a> <br/>
+            <a href="https://app.cnyeducation.com/" class="external" data-transition="f7-cover"><u>Login</u></a> <br/>
+            <a href="https://app.cnyeducation.com/registration" class="external" data-transition="f7-cover"><u>Registration</u></a> <br/>
+            <a href="/university/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
+            <a href="/hskcenter/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
+            <a href="/testimoni/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
+            <a href="/berita/" data-transition="f7-cover"><u>Berita</u></a> <br/>
           </div>
         </div>
       </div>
-      <!--end footer -->
+      <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0;margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:cover;" id="divFooter">
+      </div>
+
     </div>
   </div>
 </template>
@@ -184,6 +243,20 @@
 
 <script>
 export default (props, { $f7, $theme, $on }) => {
+  $on('pageInit', () => {
+    const swiperTestimoniStudent = document.querySelector('.swiperTestimoniStudent');
+    const swiperTestimoniAlumni = document.querySelector('.swiperTestimoniAlumni');
+    if($f7.device.desktop){
+      swiperTestimoniStudent.setAttribute('slides-per-view', '4');
+      swiperTestimoniAlumni.setAttribute('slides-per-view', '4');
+      
+    }else{
+      swiperTestimoniStudent.setAttribute('slides-per-view', '1');
+      swiperTestimoniAlumni.setAttribute('slides-per-view', '1');
+      swiperTestimoniAlumni.swiper.removeSlide(3);
+      swiperTestimoniAlumni.swiper.removeSlide(0);
+    }
+  });
   let toastLargeMessage;
   const showToastLargeMessage = () => {
       // Create toast

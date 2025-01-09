@@ -487,3 +487,13 @@ $$(document).on('page:init', '.page[data-page="hskcenter"]', function (e) {
     $$('#divFooter').css('height','30vh');
   }
 });
+$$(document).on('page:init', '.page[data-page="testimoni"]', function (e) {
+  if(device.desktop){
+    $$('#h3Testimoni').css('width','50%');
+    $$('#h3Testimoni').css('margin-left','25%');
+    $$('#pTestimoni').css('width','50%');
+    $$('#pTestimoni').css('margin-left','25%');
+  }else{
+    //$$('#divFooter').css('height','5vh');
+  }
+});
