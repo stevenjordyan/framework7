@@ -144,7 +144,7 @@ $$(document).on('page:init', '.page[data-page="home"]', function (e) {
     })
     .then(response => response.json())
     .then(data => {
-      console.log(data);
+      
       if(data.status==201){
         sessionStorage.setItem('userSession', JSON.stringify({
           name: data.userdata.name,
@@ -206,7 +206,7 @@ $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
     })
     .then(response => response.json())
     .then(data => {
-      console.log(data);
+      
       myApp.dialog.alert('Registrasi Berhasil, silahkan Login untuk melanjutkan.');
       //myApp.views.main.router.navigate();
       myApp.views.main.router.navigate('/', {reloadCurrent: true});
@@ -269,7 +269,7 @@ $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
 
 })
 $$(document).on('page:init', '.page[data-page="berita"]', function (e) {
-  console.log(myApp.views.main.router.history)
+  
   myApp.views.main.router.navigate('/', {reloadCurrent: true});
   $$('#read-more1').on('click',function(e){
     e.preventDefault();
@@ -497,3 +497,12 @@ $$(document).on('page:init', '.page[data-page="testimoni"]', function (e) {
     //$$('#divFooter').css('height','5vh');
   }
 });
+//margin:auto;width:50%;
+/*$$(document).on('page:init', '.page[data-page="berita"]', function (e) {
+  if(device.desktop){
+    
+  }else{
+    $$('.cardBerita').css('width','');
+    $$('.cardBerita').css('margin','');
+  }
+});*/

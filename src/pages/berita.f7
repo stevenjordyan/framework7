@@ -1,18 +1,42 @@
 <template>
   <div id="BeritaPage" class="page" data-page="berita" style="font-family:'roboto',sans-serif;">
     <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
-        <div class="navbar">
-        </div>
         <div class="navbar-inner">
           <div class="left">
             <img style="border-radius: 8px" src="assets/images/logo-org-Photoroom.png" width="50" />
           </div>
           <div class="title" style="color:#0f60aa;"> Education Consultant</div>
+          <div class="right">
+          <a href="#" data-panel=".panel-right" class="panel-open"><i class="icon material-icons md-only">menu</i></a>
+        </div>
       </div>
     </div>
     <!-- Scrollable page content-->
     <div class="page-content" id="beritaPageContent" style="background-color:#f2f5fa;">
-      <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;"><img src="assets/images/logo-cny.png" alt="Portrait of Teacher" class="w-12 h-12 object-cover" /><br/>Berita Terbaru</h1>
+    <h1 style="color:#f68f4a;font-size:xx-large;text-align:center;margin-bottom:0;"><img src="assets/images/logo-cny.png" alt="Portrait of Teacher" class="w-12 h-12 object-cover" /><br/>Berita Terbaru</h1>
+    <!--<div class="grid grid-cols-1 medium-grid-cols-1 grid-gap">
+      <div class="card card-expandable cardBerita" style="margin:auto;width:50%;">
+        <div class="card-content">
+          <div style="background: url(assets/university/1.jpg) no-repeat center top; background-size: cover;height:400px;" name="imgUniv">
+            <div class="card-header text-color-white"><label class="univTitle">Central China Normal University (CCNU) （华中师范大学) </label></div>
+            <a class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+              <i class="icon f7-icons univClose">xmark_circle_fill</i>
+            </a>
+          </div>
+          <div class="card-content-padding">
+            <p>
+              Located in Wuhan City, Central China Normal University (CCNU) ranks top 6 of its kind in China. It is a state-owned public university. Its campus is considered to be one of the most beautiful campuses of its kind in Wuhan.
+            </p>
+            <p>
+              华中师范大学综合排名稳居师范类中国前六。其“中印尼人文交流研究中心”更是拥有多名知名专家学者。华中师范大学是最受印尼学生喜爱的中国高校之一。https://www.ccnu.edu.cn/
+            </p>
+            <p>
+              <a class="button button-fill button-round button-large card-close">Close</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>-->
       <div class="block">
           <div class="block news-grid">
        <div class="card news-post">
@@ -123,7 +147,34 @@
          </a>
         </div>
        </div>
-
+        <div class=block>
+        <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
+          <div>
+            <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office
+              Runata Building
+              Jalan Kyai Tapa No.99A
+              Grogol, West Jakarta 14450 , Indonesia
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">phone</i> +62812-8958-1218
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">chat_bubble_2</i> wechat: tcmchina
+            <br/>
+            <i class="f7-icons" style="font-size:20px;">envelope</i> cnyedu@gmail.com
+          </div>
+          <div>
+            <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
+            <a href="https://app.cnyeducation.com/" class="external" data-transition="f7-cover"><u>Login</u></a> <br/>
+            <a href="https://app.cnyeducation.com/registration" class="external" data-transition="f7-cover"><u>Registration</u></a> <br/>
+            <a href="/university/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
+            <a href="/hskcenter/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
+            <a href="/testimoni/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
+            <a href="/berita/" data-transition="f7-cover"><u>Berita</u></a> <br/>
+          </div>
+        </div>
+      </div>
+      <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0;
+        margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:cover;">
+      </div>
       </div>
       <!-- start popup -->
       <div class="popup" id="read-more-popup">
@@ -143,36 +194,7 @@
       <!-- end popup -->
 
     </div>
-    <div class="block" style="background: rgba(243, 209, 213, 0.5);height:30vh; margin-top:0; margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
     
-    </div>
-    <div class="block" style="background: rgba(243, 209, 213, 0.5)">
-      <div class="grid grid-cols-2 medium-grid-cols-2 grid-gap">
-        <div>
-          <i class="f7-icons" style="font-size:20px;">house</i> Jakarta Office
-            Runata Building
-            Jalan Kyai Tapa No.99A
-            Grogol, West Jakarta 14450 , Indonesia
-          <br/>
-          <i class="f7-icons" style="font-size:20px;">phone</i> +62812-8958-1218
-          <br/>
-          <i class="f7-icons" style="font-size:20px;">chat_bubble_2</i> wechat: tcmchina
-          <br/>
-          <i class="f7-icons" style="font-size:20px;">envelope</i> cnyedu@gmail.com
-        </div>
-        <div>
-          <a href="/" data-transition="f7-cover"><u>Home</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Universitas</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>HSK Center</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Testimoni</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Berita</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Penerimaan</u></a> <br/>
-          <a href="/mailbox/" data-transition="f7-cover"><u>Inbox</u></a> <br/>
-          <a href="/logedin/" data-transition="f7-cover"><u>Job Vacancy</u></a> <br/>
-          <a href="/" data-transition="f7-cover"><u>Logout</u></a> <br/>
-        </div>
-      </div>
-    </div>
     <!--end footer -->
     </div>
   </div>
