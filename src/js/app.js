@@ -465,6 +465,7 @@ $$(document).on('page:afterin', '.page[data-page="payment"]', function (e) {
 
 })
 $$(document).on('page:init', '.page[data-page="university"]', function (e) {
+  
   if(device.desktop){
     //$$('.cardUniversity').css('height','32vw');
     //$$('[name=imgUniv]').css('height','600px');
@@ -473,5 +474,16 @@ $$(document).on('page:init', '.page[data-page="university"]', function (e) {
     $$('[name=imgUniv]').css('width','30vw');
   }else{
     $$('[name=imgUniv]').css('background-size','contain');
+  }
+});
+$$(document).on('page:init', '.page[data-page="hskcenter"]', function (e) {
+  if(device.desktop){
+    $$('[name=imgTeacher]').css('width','50%');
+    $$('#txtListHskcenter').css('width','50%');
+    $$('#txtListHskcenter').css('left','25%');
+    $$('#divFooter').css('height','5vh');
+  }else{
+    $$('#imgTeacher').css('width','100%');
+    $$('#divFooter').css('height','30vh');
   }
 });

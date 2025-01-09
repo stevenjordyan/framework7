@@ -14,7 +14,6 @@
           <a href="#" data-panel=".panel-right" class="link panel-open" id="btnMenu"><i class="icon material-icons md-only">menu</i></a>
         </div>-->
         <div class="right">
-          
           <a href="#" data-panel=".panel-right" class="panel-open"><i class="icon material-icons md-only">menu</i></a>
         </div>
       </div>
