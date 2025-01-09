@@ -2,40 +2,34 @@
   
   <div id="universityPage" class="page" data-page="university">
     <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
-        <div class="navbar"></div>
-        <div class="navbar-inner">
-          <div class="left">
-            <img style="border-radius: 8px" src="assets/images/logo-org-Photoroom.png" width="50" />
-          </div>
-          <div class="title" style="color:#0f60aa;"> Education Consultant</div>
-          <div class="right">
-            <a href="#" data-panel=".panel-right" class="panel-open"><i class="icon material-icons md-only">menu</i>asdasd</a>
-            
-          </div>
+      <div class="navbar-inner">
+        <div class="left">
+          <img style="border-radius: 8px" src="assets/images/logo-org-Photoroom.png" width="50" />
         </div>
-    </div>
-      <!-- Right Panel with Cover effect -->
-    <div class="panel panel-right panel-cover panel-init">
-      <div class="block">
-        ...
-        <!-- Click on link with "panel-close" class will close panel -->
-        <p><a href="#" class="panel-close">Close me</a></p>
-        <!-- Click on link with "panel-open" and data-panel=".panel-left" attribute will open Left panel -->
-        <p><a href="#" data-panel=".panel-left" class="panel-open">Open Left Panel</a></p>
+        <div class="title" style="color:#0f60aa;"> Education Consultant</div>
+        <!--<div class="right">
+        <a href="#" data-panel=".panel-right" class="panel-open"><i class="icon material-icons md-only">menu</i></a>
+          <a href="#" class="link"@click="${rightPanel}">right link</a>
+          <a href="#" class="item-link list-button login-button" @click="${rightPanel}">Sign In</a>
+          <a href="#" data-panel=".panel-right" class="link panel-open" id="btnMenu"><i class="icon material-icons md-only">menu</i></a>
+        </div>-->
+        <div class="right">
+          
+          <a href="#" data-panel=".panel-right" class="panel-open"><i class="icon material-icons md-only">menu</i></a>
+        </div>
       </div>
     </div>
+    
 
     <!-- Scrollable page content-->
     <div class="page-content" id="universityPageContent" style="background-color:#f2f5fa;">
-      <div class="right">
-        <a href="#" data-panel=".panel-right" class="panel-open"><i class="icon material-icons md-only">menu</i></a>
-      </div>
+      
       <!--<div class="block" style="background-image: url('assets/images/banner-2.jpeg');height:30vh; margin-top:0;
         margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
       </div>-->
       <div class="block-title block-title-large" style="text-align:center;"><label class="univH1">Kerja sama Universitas</label></div>
       <div class="block">
-        <p style="text-align: center;">
+        <p style="text-align: center;font-size:16px;">
           Untuk mendorong pertukaran budaya dan pendidikan yang lebih lanjut antara dua negara sahabat, Kami bertekad untuk memainkan peran yang lebih penting dan berkontribusi lebiih besar. CNY Education menawarkan calon pelajar akses eksklusif ke Universitas terbaik di Tiongkok dan memberikan pelayanan kepada calon pelajar sebelum, selama dan setelah masa studi.
         </p>
       </div>
@@ -475,7 +469,12 @@ export default (props, { $f7, $theme, $on }) => {
   $on('cardOpened',function(e){
     const card = document.querySelector('.card-expandable');
     console.log(card);
+    //rightPanel
+    
   });
+  const rightPanel = () => {
+      alert();
+    }
 
   let toastLargeMessage;
   const showToastLargeMessage = () => {
@@ -494,6 +493,7 @@ export default (props, { $f7, $theme, $on }) => {
     $on('pageBeforeOut', () => {
       $f7.toast.close();
     })
+    //btnMenu
 
     $on('pageBeforeRemove', () => {
       if (toastLargeMessage) toastLargeMessage.destroy();

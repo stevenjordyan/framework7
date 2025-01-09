@@ -18,18 +18,94 @@
         </div>
       </div>
     </div>
-    <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-reveal dark">
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
       <div class="view">
         <div class="page">
           <div class="navbar">
             <div class="navbar-bg"></div>
             <div class="navbar-inner">
-              <div class="title">Right Panel</div>
+              <div class="title">Menu</div>
             </div>
           </div>
           <div class="page-content">
-            <div class="block">Right panel content goes here</div>
+            <div class="list list-outline-ios list-strong-ios list-dividers-ios media-list">
+              <ul>
+                <li>
+                  <a class="item-link item-content panel-close" href="/">
+                    <div class="item-media"><img style="border-radius: 8px" src="assets/images/logo-org-Photoroom.png" width="40" /></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Home</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-link item-content external" href="https://app.cnyeducation.com/">
+                    <div class="item-media"><img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" /></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Login</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-link item-content external" href="https://app.cnyeducation.com/registration">
+                    <div class="item-media"><img style="border-radius: 8px" src="assets/images/logo-login2.png" width="40" /></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Registration</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-link item-content panel-close" href="/university/">
+                    <div class="item-media"><img style="border-radius: 8px" src="assets/images/logo-university1.png" width="40" /></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">University</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-link item-content panel-close" href="/hskcenter/">
+                    <div class="item-media"><img style="border-radius: 8px" src="assets/images/logo-hsk1.png" width="40" /></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">HSK</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-link item-content panel-close" href="/testimoni/">
+                    <div class="item-media"><img style="border-radius: 8px" src="assets/images/logo-testimoni1.png" width="40" /></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Testimoni</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-link item-content panel-close" href="/berita/">
+                    <div class="item-media"><img style="border-radius: 8px" src="assets/images/logo-news1.png" width="40" /></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Berita</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+
+            
           </div>
         </div>
       </div>

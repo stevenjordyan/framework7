@@ -1,7 +1,6 @@
 <template>
   <div class="page" data-page="home">
   <div class="navbar" style="background: rgba(243, 209, 213, 0.5);">
-    <div class="navbar"></div>
     <div class="navbar-inner">
       <div class="left">
         <img style="border-radius: 8px" src="assets/images/logo-org-Photoroom.png" width="50" />
