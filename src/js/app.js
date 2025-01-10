@@ -345,7 +345,7 @@ $$(document).on('page:init', '.page[data-page="registration"]', function (e) {
 $$(document).on('page:init', '.page[data-page="berita"]', function (e) {
   
   myApp.views.main.router.navigate('/', {reloadCurrent: true});
-  $$('#read-more1').on('click',function(e){
+  /*$$('#read-more1').on('click',function(e){
     e.preventDefault();
     const mainImage = document.getElementById('pImg');
     mainImage.src=$$('#img1')[0].src;
@@ -416,7 +416,7 @@ $$(document).on('page:init', '.page[data-page="berita"]', function (e) {
       width:800,
       height:800
     });
-  });
+  });*/
 });
 
 $$(document).on('page:init', '.page[data-page="payment"]', function (e) {
