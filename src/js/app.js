@@ -36,8 +36,8 @@ var myApp = new Framework7({
     browserHistory:true,
   },
   stackPages: true,
-  backendUrl:"http://localhost:8080/",
-  //backendUrl:"https://beta.cnyeducation.com/backend/",
+  //backendUrl:"http://localhost:8080/",
+  backendUrl:"https://beta.cnyeducation.com/backend/",
   // Input settings
   input: {
     scrollIntoViewOnFocus: device.cordova,
@@ -79,7 +79,7 @@ var myApp = new Framework7({
   },
   methods:{
     onBackKeyDown: function(e) {
-      alert('back');
+      //alert('back');
     }
   }
 });
@@ -99,6 +99,80 @@ $$('.backBtn').on('click', function() {
 })
 
 $$(document).on('page:init', '.page[data-page="home"]', function (e) {
+  /*$$('#read-more1').on('click',function(e){
+    e.preventDefault();
+    const mainImage1 = document.getElementById('popupImg');
+    console.log();
+    mainImage1.src="assets/images/image-1.jpg";
+    console.log(mainImage1);
+    $$('#pTitle').html($$('#title1')[0].innerHTML);
+    $$('#pContent').html($$('#content1')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popupHome'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more2').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img2')[0].src;
+    $$('#pTitle').html($$('#title2')[0].innerHTML);
+    $$('#pContent').html($$('#content2')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popupHome'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more3').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img3')[0].src;
+    $$('#pTitle').html($$('#title3')[0].innerHTML);
+    $$('#pContent').html($$('#content3')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popupHome'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more4').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img4')[0].src;
+    $$('#pTitle').html($$('#title4')[0].innerHTML);
+    $$('#pContent').html($$('#content4')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popupHome'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more5').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img5')[0].src;
+    $$('#pTitle').html($$('#title5')[0].innerHTML);
+    $$('#pContent').html($$('#content5')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popupHome'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });
+  $$('#read-more6').on('click',function(e){
+    e.preventDefault();
+    const mainImage = document.getElementById('pImg');
+    mainImage.src=$$('#img6')[0].src;
+    $$('#pTitle').html($$('#title6')[0].innerHTML);
+    $$('#pContent').html($$('#content6')[0].innerHTML);
+    myApp.popup.open($$('#read-more-popupHome'),true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  });*/
   //console.log('init')
   //console.log('e',e)
   //console.log(myApp.params["backendUrl"]);

@@ -132,16 +132,20 @@
         <div class="grid grid-cols-2 medium-grid-cols-4">
           <div>
             <div class="card demo-card-header-pic" style="margin:0;">
-              <div style="background-image:url(assets/images/image-1.jpg)" valign="bottom"
-                class="card-header"></div>
+              <div style="background-image:url(assets/images/image-1.jpg)" valign="bottom" class="card-header">
+              </div>
               <div class="card-content card-content-padding">
-                <p class="date">Belajar Mandarin dari Rumah</p>
-                <p>Wujudkan Mimpimu belajar di China
+                <p class="date" id="title1">Belajar Mandarin dari Rumah</p>
+                <p id="content1">Wujudkan Mimpimu belajar di China
                   Kelas dibuka untuk level: Pemula, Menengah dan Profesional
                   Managed by Prof. Ding
                 </p>
               </div>
-              <div class="card-footer"><a class=""></a><a class="link">Read more</a></div>
+              <div class="card-footer">
+                <a class="button button-fill" href="#" id="read-more1" @click="${clickMore1}">
+                  Read More
+                </a>
+              </div>
             </div>
           </div>
           <div>
@@ -154,7 +158,11 @@
                   Gelar dari universitas China dan kemampuan berbahasa Mandarin kini menjadi incaran perusahaan dalam dan luar negeri.
                 </p>
               </div>
-              <div class="card-footer"><a class=""></a><a class="link">Read more</a></div>
+              <div class="card-footer">
+                <a class="button button-fill" href="#" id="read-more2" @click="${clickMore2}">
+                  Read More
+                </a>
+              </div>
             </div>
           </div>
           <div>
@@ -167,24 +175,11 @@
                   Lanzhou Jiaotong University dan Lanzhou University of Technology (Lanzhou Ligong University) Jurusan Teknik dan Bisnis Program S1 2023 A. Masa dan program kuliah bahasa mandarin 1 tahun.
                 </p>
               </div>
-              <div class="card-footer"><a class=""></a><a class="link">Read more</a></div>
-            </div>
-          </div>
-          <div>
-            <div class="card demo-card-header-pic" style="margin:0;">
-              <div style="background-image:url(assets/images/image-1.jpg)" valign="bottom"
-                class="card-header"></div>
-              <div class="card-content card-content-padding">
-                <p class="date">Belajar Mandarin dari Rumah</p>
-                <p>Wujudkan Mimpimu belajar di China
-                  Kelas dibuka untuk level: Pemula, Menengah dan Profesional
-
-                  Managed by Prof. Ding
-
-
-                </p>
+              <div class="card-footer">
+                <a class="button button-fill" href="#" id="read-more3" @click="${clickMore3}">
+                  Read More
+                </a>
               </div>
-              <div class="card-footer"><a class=""></a><a class="link">Read more</a></div>
             </div>
           </div>
         </div>
@@ -315,6 +310,22 @@
         </div>
       </swiper-slide>
     </swiper-container>
+    <!-- start popup -->
+      <div class="popup" id="read-more-popupHome">
+        <div class="popup-inner">
+          <div class="page-content">
+            <h2 id="pTitle" style="text-align:center;">More About Anisa's Experience</h2>
+            <div style="text-align:center;"><img id="popupImg" alt="" height="300" src="" width="400"/></div>
+            <p id="pContent" style="margin-left:10px;margin-right:10px;">
+              My success is no accident. Etiam consectetur odio erat, quis mattis leo vestibulum non. Fusce ex ligula, tristique quis finibus sed, placerat sed libero. Phasellus convallis, sem ac tristique interdum, purus purus vehicula quam, ut fermentum sem orci in est. Aliquam leo purus, iaculis non condimentum hendrerit, vestibulum quis tortor. Vestibulum quis viverra felis. Vestibulum elementum magna ut diam placerat, in venenatis est egestas. Vivamus at libero auctor, ullamcorper.
+            </p>
+            <div class="popup-footer">
+              <a href="#" class="button popup-close">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end popup -->
     <!-- footer -->
     <div class="block" style="background-image: url('assets/images/background.png');height:30vh; margin-top:0;
       margin-bottom:0;z-index:0;background-size: cover;opacity:0.2;width:100%;position:absolute;">
@@ -396,6 +407,7 @@
       </div>
     </div> 
     <!-- end login -->
+    
     </div>
   </div>
   
@@ -410,8 +422,212 @@ export default (props, { $f7, $theme, $on }) => {
     }else{
       swiperTestimoni.setAttribute('slides-per-view', '1');
     }
+
+
   });
-  
+  const closePopup=(e)=>{
+    $f7.popup.close();
+  }
+  let popup;
+  const clickMore1=(e)=>{
+    let title=document.getElementById('title1').innerHTML;
+    let mobileOnly="";
+    if(!$f7.device.desktop){
+      mobileOnly='style="height:100vh;"';
+    }
+    popup = $f7.popup.create({
+      content: /*html*/`
+        <div class="popup" id="read-more-popupHome">
+          <div class="popup-inner">
+            <div class="page" >
+              <a class="link card-close card-opened-fade-in popup-close color-white" @click="${closePopup}" style="position: absolute; right: 15px; top: 15px; z-index:999;">
+                <i class="icon f7-icons univClose">xmark_circle_fill</i>
+              </a>
+              <div class="page-content" `+mobileOnly+`>
+                <h2 id="pTitle" style="text-align:center;">`+title+`</h2>
+                <div style="text-align:center;"><img id="popupImg" alt="" height="300" src="assets/images/image-1.jpg" width="400"/></div>
+                <p id="pContent" style="margin-left:10px;margin-right:10px;">
+                  Wujudkan Mimpimu belajar di China</br>Kelas dibuka untuk level: Pemula, Menengah dan Profesional</br></br>Managed by Prof. Ding</br>Jadwal :</br>Senin Jumat 19.00 WIB</br>Selasa Sabtu 19.00 WIB</br></br>Investasi mulai dari 700 ribu per bulan !</br>Kuota terbatas</br></br>Live teaching by qualified tutor via zoom</br>Proper learning materials</br>One on one feedback</br>Semi private (max 5 person in one class)</br>E-certificate</br>Speaking class once in 2 weeks directly with Mr.Ding</br></br>Gratis kelas persiapan untuk murid yang sudah deposit untuk studi ke China</br>Syarat Dan ketentuan berlaku</br>
+                </p>
+                <div class="popup-footer">
+                  <a href="#" class="button popup-close">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    });
+      popup.open();
+  }
+  const clickMore2=(e)=>{
+    let title="Program S1 Kedokteran Fujian Medical University";
+    let mobileOnly="";
+    if(!$f7.device.desktop){
+      mobileOnly='style="height:90vh;"';
+    }
+    popup = $f7.popup.create({
+      content: /*html*/`
+        <div class="popup" id="read-more-popupHome">
+          <div class="popup-inner">
+            <div class="page" >
+              <a class="link card-close card-opened-fade-in popup-close color-white" @click="${closePopup}" style="position: absolute; right: 15px; top: 15px; z-index:999;">
+                <i class="icon f7-icons univClose">xmark_circle_fill</i>
+              </a>
+              <div class="page-content" `+mobileOnly+`>
+                <h2 id="pTitle" style="text-align:center;">`+title+`</h2>
+                <div style="text-align:center;"><img id="popupImg" alt="" height="300" src="assets/images/image-2.jpg" width="400"/></div>
+                  <p>Gelar dari universitas China dan kemampuan berbahasa Mandarin kini menjadi incaran perusahaan dalam dan luar negeri. Lapangan pekerjaan dan peluang bisnis semakin terbuka luas. Jadilah bagian dari pergaulan internasional, belajar di China, dan wujudkan mimpimu.</p>
+                  <p><strong>A. Masa dan program kuliah:</strong><br>
+                  1. Periode kuliah: Oktober 2023- Juni 2029<br>
+                  2. Bahasa Mandarin akan dipelajari di semester pertama masa perkuliahan sebagai mata kuliah wajib<br>
+                  3. Bahasa pengantar: Bahasa Inggris<br>
+                  4. Lama belajar 6 tahun (5 tahun jurusan + 1 tahun co-assistant)</p>
+                  <p><strong>B. Biaya yang perlu dikeluarkan:</strong><br>
+                  Biaya untuk tahun PERTAMA satu paket sebesar Rp98.800.000, yang meliputi :<br>
+                  • Biaya pendidikan bahasa Mandarin di semester pertama<br>
+                  • Asrama di tahun pertama<br>
+                  • Biaya dan formulir pendaftaran<br>
+                  • Penerjemahan dan legalisir dokumen<br>
+                  • Visa pelajar X1 ke China<br>
+                  • Biaya pengiriman dokumen Indonesia-China-Indonesia<br>
+                  • Tiket pesawat one-way Indonesia-China<br>
+                  • Ijin tinggal di China di tahun pertama<br>
+                  • Asuransi di tahun pertama<br>
+                  • Biaya pengantaran dan pemandu siswa dari Indonesia sampai ke China<br>
+                  • Cek kesehatan di China<br>
+                  • Pembelian peralatan tidur asrama</p>
+                  <p><strong>C. Jurusan yang ditawarkan</strong><br>
+                  • Kedokteran Umum (MBBS)</p>
+                  <p><strong>D. Cara pembayaran</strong><br>
+                  Total biaya dengan mata uang Indonesia adalah sebesar Rp98.800.000 (sembilan puluh delapan juta delapan ratus ribu rupiah), biaya tersebut adalah biaya kuliah di tahun pertama. Adapun perincian pembayaran adalah sebagai berikut:</p>
+                  <p>1. Sejumlah Rp7.500.000 (tujuh juta lima ratus ribu rupiah) dibayarkan saat pemberian berkas kepada CNY Education Consultant.<br>
+                  2. Sejumlah Rp91.300.000 (sembilan puluh satu juta tiga ratus ribu rupiah) dengan perincian sebagai berikut:</p>
+                  <ul>
+                  <li style="text-align: left;">Sejumlah Rp35.000.000 (tiga puluh lima juta rupiah) dibayarkan setelah calon siswa/i mendapatkan <em>pre-admission letter</em> dari universitas di China;</li>
+                  <li>Sejumlah Rp35.000.000 (tiga puluh lima juta rupiah) dibayarkan setelah calon siswa/i mendapatkan JW202 untuk pengurusan visa;</li>
+                  <li>Sejumlah Rp21.300.000 (dua puluh satu juta tiga ratus ribu rupiah) dibayarkan paling lambat sebulan sebelum keberangkatan ke China.</li>
+                  </ul>
+                  <p>Pembayaran dapat dilakukan melalui transfer ke:<br>
+                  BANK BCA<br>
+                  a.n CNY EDUKASI INTERNASIONAL<br>
+                  No.Rekening : 5310793088</p>
+                  <p>Harap bukti transfer biaya dapat dikirimkan dan diinformasikan melalui Whatsapp kepada admin CNY Education.</p>
+                  <p><strong>E. Ketentuan lain</strong><br>
+                  Kewajiban CNY Education Consultant adalah:<br>
+                  1. Proses pendaftaran siswa/i ke China berupa:<br>
+                  • Uang pendaftaran ke Fujian Medical University<br>
+                  • Biaya sekolah dan asrama di tahun pertama</p>
+                  <p>2. Persiapan keberangkatan siswa/i ke China meliputi:<br>
+                  • Pengurusan visa ke China<br>
+                  • Pengadaan tiket pesawat ke China</p>
+                  <p>3. Administrasi siswa/i ke China meliputi:<br>
+                  • Pembayaran <em>Medical Check-up</em> di China pada tahun pertama<br>
+                  • Pengadaan <em>bedding</em> setelah tiba di asrama pada tahun pertama<br>
+                  • <em>Residence permit</em> (Ijin tinggal)<br>
+                  • Asuransi kesehatan siswa/i di China pada tahun pertama<br>
+                  • Pembayaran SPP dan asrama pada tahun pertama</p>
+                  <p>Biaya yang dikeluarkan dari tahun kedua hingga lulus perkuliahan.</p>
+                  <p><img id="popupImg" alt=""  src="assets/images/imgberita.jpg" width="400"/></p>
+                  <p><em>Note 1:</em><br>
+                  Fujian Medical University is a state-owned public university and recognized by both Indonesian and Chinese governments. It is also recognized and accredited by World Health Organization (WHO), Konsil Kedokteran Indonesia(KKI).<br>
+                  <em>Note 2:</em><br>
+                  Fujian Medical University offers partial scholarship to international students according to their academic performance, attendance rate and daily performance every year.</p>
+                <div class="popup-footer">
+                  <a href="#" class="button popup-close">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    });
+      popup.open();
+  }
+  const clickMore3=(e)=>{
+    let title="Program S1 Universitas Lanzhou";
+    let mobileOnly="";
+    if(!$f7.device.desktop){
+      mobileOnly='style="height:100vh;"';
+    }
+    popup = $f7.popup.create({
+      content: /*html*/`
+        <div class="popup" id="read-more-popupHome">
+          <div class="popup-inner">
+            <div class="page" >
+              <a class="link card-close card-opened-fade-in popup-close color-white" @click="${closePopup}" style="position: absolute; right: 15px; top: 15px; z-index:999;">
+                <i class="icon f7-icons univClose">xmark_circle_fill</i>
+              </a>
+              <div class="page-content" `+mobileOnly+`>
+                <h2 id="pTitle" style="text-align:center;">`+title+`</h2>
+                <div style="text-align:center;"><img id="popupImg" alt="" height="300" src="assets/images/image-3.jpg" width="400"/></div>
+                <p>Lanzhou Jiaotong University dan Lanzhou University of Technology (Lanzhou Ligong University) Jurusan Teknik dan Bisnis Program S1 2023</p>
+                <p><strong>A. Masa dan program kuliah bahasa mandarin 1 tahun:</strong><br>
+                1. Periode kuliah: September 2023- Juni 2028<br>
+                2. Pelajaran menggunakan Bahasa pengantar: Bahasa Mandarin<br>
+                3. Lama belajar 5 tahun (1 tahun Bahasa Mandarin + 4 tahun jurusan)</p>
+                <p><strong>B. Biaya yang perlu dikeluarkan:</strong><br>
+                Biaya untuk tahun PERTAMA satu paket senilai Rp98.800.000, dengan rincian sebagai berikut:<br>
+                Biaya pendidikan Bahasa mandarin di tahun pertama Asrama di tahun pertama<br>
+                Biaya dan formulir pendaftaran Penerjemahan dan legalisir dokumen Visa pelajar X1 ke China<br>
+                Biaya pengiriman dokumen Indonesia-Tiongkok-Indonesia Tiket pesawat oneway Indonesia-Tiongkok (China)<br>
+                Ijin tinggal di Tiongkok ditahun pertama Asuransi ditahun pertama<br>
+                Biaya pengantaran dan guide siswa dari Indonesia sampai ke China (first time) Cek kesehatan di Tiongkok<br>
+                Pembelian peralatan tidur asrama</p>
+                <p><strong>C. Jurusan yang ditawarkan</strong><br>
+                1. Lanzhou Jiaotong University: Jurusan Teknik<br>
+                2. Lanzhou Ligong University: Jurusan Bisnis, Bahasa Mandarin, Ekonomi and Teknik</p>
+                <p><strong>D. Cara pembayaran</strong><br>
+                Total biaya dengan mata uang Indonesia adalah sebesar Rp98.800.000 (sembilan puluh delapan juta delapan ratus ribu rupiah), biaya tersebut adalah biaya kuliah ditahun pertama. Adapun perincian biaya adalah sebagai berikut:<br>
+                1. Dibayarkan ke CNY Education Consultant sebesar Rp7.500.000 (tujuh juta lima ratus ribu rupiah) ketika pemberian berkas.<br>
+                2. Dibayarkan ke CNY Education Consultant sejumlah Rp91.300.000 (sembilan puluh satu juta tiga ratus ribu rupiah) dengan perincian sebagai berikut:<br>
+                a. Dibayarkan setelah mendapatkan admission letter ke China, yaitu sejumlah Rp35.000.000 (tiga puluh lima juta rupiah)<br>
+                b. Dibayarkan sejumlah Rp35.000.000 (tiga puluh lima juta rupiah) setelah mendapatkan jw202 untuk pengurusan visa<br>
+                c. Dibayarkan sejumlah Rp21.300.000 (dua puluh satu juta tiga ratus ribu rupiah) paling lambat sebulan sebelum keberangkatan ke China</p>
+                <p><strong>E. Ketentuan lain</strong><br>
+                Kewajiban CNY Education Consultant adalah: Proses pendaftaran siswa/i ke China berupa:<br>
+                1. Uang pendaftaran ke Lanzhou Jiaotong/Ligong University<br>
+                2. Biaya sekolah dan asrama di tahun pertama</p>
+                <p>Persiapan keberangkatan siswa/i ke China berupa:<br>
+                1. Pengurusan Visa ke China<br>
+                2. Pengadaan Tiket pesawat ke China</p>
+                <p>Administrasi siswa/i ke China berupa:<br>
+                1. Pembayaran Medical Check-up di China pada tahun pertama<br>
+                2. Pengadaan bedding setelah tiba di asrama pada tahun pertama<br>
+                3. Residence permit (Ijin tinggal)<br>
+                4. Asuransi kesehatan siswa di China pada tahun pertama<br>
+                5. Pembayaran SPP dan asrama pada tahun pertama Full Beasiswa:</p>
+                <p>Note 1:<br>
+                Di tahun kedua, siswa wajib lulus HSK4 dan akan mendapatkan beasiswa full uang sekolah, asrama dan uang jajan 1500yuan/bulan atau kurang lebih Rp3.300.000 selama 4 tahun.</p>
+                <p>Note 2:<br>
+                Both Universities mentioned above are public universities (Universitas Negeri) and recognized by both Indonesian and Chinese governments.<br>
+                Website: http://sie.lzjtu.edu.cn (Lanzhou Jiaotong University) Website: http://gjy.lut.edu.cn (Lanzhou University of Technology)<br>
+                More information regarding the universities are available via google and youtube.</p>
+                <div class="popup-footer">
+                  <a href="#" class="button popup-close">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    });
+      popup.open();
+  }
+  const clickMore11=(e)=>{
+    e.preventDefault();
+    const mainImage1 = document.getElementById('popupImg');
+    const popup = document.getElementById('read-more-popupHome');
+    mainImage1.src="assets/images/image-1.jpg";
+    document.getElementById('pTitle').innerHTML=document.getElementById('title1').innerHTML;
+    //document.getElementById('pContent').innerHTML=document.getElementById('content1').innerHTML;
+    document.getElementById('pContent').innerHTML="Wujudkan Mimpimu belajar di China</br>Kelas dibuka untuk level: Pemula, Menengah dan Profesional</br></br>Managed by Prof. Ding</br>Jadwal :</br>Senin Jumat 19.00 WIB</br>Selasa Sabtu 19.00 WIB</br></br>Investasi mulai dari 700 ribu per bulan !</br>Kuota terbatas</br></br>Live teaching by qualified tutor via zoom</br>Proper learning materials</br>One on one feedback</br>Semi private (max 5 person in one class)</br>E-certificate</br>Speaking class once in 2 weeks directly with Mr.Ding</br></br>Gratis kelas persiapan untuk murid yang sudah deposit untuk studi ke China</br>Syarat Dan ketentuan berlaku</br>";
+    $f7.popup.open(popup,true,{
+      animate:true,
+      width:800,
+      height:800
+    });
+  }
   
 
   var swiper = $f7.swiper.create('.swiper-container #swiperHeader', {
