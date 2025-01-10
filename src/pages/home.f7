@@ -363,50 +363,7 @@
       </div>
     </div>
     <!--end footer -->
-    <!-- login -->
-    <div class="login-screen">
-      <div class="page login-screen-page">
-        <div class="page-content login-screen-content">
-          <div class="login-screen-title">CNY Education</div>
-          <form id="loginForm">
-            <div class="list">
-              <ul>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Email</div>
-                    <div class="item-input-wrap">
-                      <input type="text" name="Email" id="email" placeholder="Email" />
-                      <span class="input-clear-button"></span>
-                    </div>
-                  </div>
-                </li>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Password</div>
-                    <div class="item-input-wrap">
-                      <input type="password" name="Password" id="password" placeholder="Your password" />
-                      <span class="input-clear-button"></span>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="list inset">
-              <ul>
-                <li>
-                  <a class="list-button" @click=${cancelSignIn}>Cancel</a>
-                  <a class="list-button" id="btnLogin">Sign In</a>
-                </li>
-              </ul>
-              <div class="block-footer">Silahkan login menggunakan e-mail & password terdaftar.<br />
-                Silahkan daftar <a @click=${linkRegistration} >di-sini</a> apabila belum memiliki account
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div> 
-    <!-- end login -->
+    
     
     </div>
   </div>
